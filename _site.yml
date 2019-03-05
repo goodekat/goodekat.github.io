@@ -6,3 +6,4 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Talks"
+      href: index.html
