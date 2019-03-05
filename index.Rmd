@@ -1,5 +1,5 @@
 ---
-title: "My Website"
+title: "Katherine Goode"
 ---
       
 Welcome to my website! I am a statistics PhD student at Iowa State University. This website is pretty new, so there is not much here for now. Hopefully, more will be added soon :) 
