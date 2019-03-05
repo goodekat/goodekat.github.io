@@ -2,8 +2,8 @@
 title: "My Website"
 ---
       
-Welcome to my website! I am a PhD student at Iowa State University studying statistics. This website is pretty new, so there is not much here for now. Hopefully, more will be added soon :) 
+Welcome to my website! I am a statistics PhD student at Iowa State University. This website is pretty new, so there is not much here for now. Hopefully, more will be added soon :) 
 
-Here is a picture of me with my families dog. Her name is Nova.
+Here is a picture of me with my family's dog. Her name is Nova.
 
 ![](./images/nova.png)

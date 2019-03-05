@@ -1,7 +1,7 @@
 name: "my-website"
 output_dir: "."
 navbar:
-  title: ![](./images/star.png) "Katherine Goode"
+  title: "Katherine Goode"
   left:
     - text: "Home"
       href: index.html
