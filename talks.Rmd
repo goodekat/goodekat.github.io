@@ -2,6 +2,14 @@
 title: "Presentations"
 ---
 
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+</style>
+
 ### [An Application of LIME to a Random Forest Model](https://raw.githubusercontent.com/goodekat/presentations/master/graphics%20group/03-applying_lime_to_random_forest/An%20Application%20of%20LIME%20to%20a%20Random%20Forest.Rmd)
 
 March 1, 2019
