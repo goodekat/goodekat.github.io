@@ -43,10 +43,15 @@ title: "Presentations"
 
 <br>
 <br>
+<br>
+<br>
+<br>
 
 ### [Interpreting Predictions from Black Box Models with LIME](https://github.com/goodekat/presentations/tree/master/graphics%20group/01-understanding_lime)
 
+<div id="right">
 **November 9, 2017**
+</div>
 
 <div id="left">
 <img src="/images/lime.png" width = 150 />
