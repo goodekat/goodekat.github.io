@@ -7,7 +7,7 @@ title: "Presentations"
   left:-8.33%;
   text-align: left;
   float: left;
-  width:50%;
+  width:20%;
   z-index:-10;
 }
 
@@ -17,7 +17,7 @@ title: "Presentations"
   float: right;
   text-align: right;
   z-index:-10;
-  width:50%;
+  width:80%;
 }
 </style>
 
