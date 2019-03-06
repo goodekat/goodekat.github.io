@@ -4,4 +4,8 @@ title: "Presentation Slides"
 
 Here are links to slides from presentations I have given.
 
+### Applying LIME to a Random Forest Model
+
+Abstract: 
+
 [link](https://github.com/goodekat/presentations/blob/master/graphics%20group/03-applying_lime_to_random_forest/)
