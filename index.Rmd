@@ -1,5 +1,5 @@
 ---
-title: "Katherine Goode <font size=2>PhD Student, Statistics Department, Iowa State University</font>"
+title: "Katherine Goode <font size=3>PhD Student, Statistics Department, Iowa State University</font>"
 ---
 
 <img src="/images/gl.png" width = 1000 />
