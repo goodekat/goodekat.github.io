@@ -8,4 +8,6 @@ Here is a picture of me with my family's dog. Her name is Nova.
 
 ![](./images/nova.png)
 
-.center[[github](https://github.com/goodekat)]
+<br>
+
+->[github](https://github.com/goodekat)<-
