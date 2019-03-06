@@ -9,5 +9,7 @@ navbar:
       href: about.html
     - text: "Talks"
       href: talks.html
+    - text: "ggResidpanel"
+      href: "https://goodekat.github.io/ggResidpanel/"
     - text: "GitHub"
       href: "https://github.com/goodekat"
