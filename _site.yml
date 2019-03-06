@@ -8,5 +8,5 @@ navbar:
     - text: "Talks"
       href: /talks.html
   right:
-    - text: <img src=\"/images/github.png\" />
+    - text: "GitHub"
       href: "https://github.com/goodekat"
