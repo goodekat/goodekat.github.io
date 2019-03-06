@@ -1,9 +1,6 @@
 ---
 title: "Katherine Goode"
+subtitle: "PhD Student, Statistics Department, Iowa State University"
 ---
 
 <img src="/images/gl.png" width = 1000 />
-
-<br>
-
-Welcome to my website. Information about me and my work can be found here.
