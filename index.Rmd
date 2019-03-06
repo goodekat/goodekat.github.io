@@ -4,4 +4,6 @@ title: "Katherine Goode"
 
 <img src="/images/gl.png" width = 1000 />
 
+<br>
+
 PhD Student, Statistics Department, Iowa State University
