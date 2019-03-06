@@ -2,38 +2,6 @@
 title: "Presentations"
 ---
 
-<style>
-#left {
-  left:-8.33%;
-  text-align: left;
-  float: left;
-  width:20%;
-  z-index:-10;
-}
-
-#right {
-  left:31.25%;
-  top: 75px;
-  float: right;
-  text-align: left;
-  z-index:-10;
-  width:80%;
-}
-</style>
-
-<div id="left">
-<img src="/images/explain.png" width = 150 />
-<br>
-<br>
-<br>
-<img src="/images/ggresid.png" width = 150 />
-<br>
-<br>
-<br>
-<img src="/images/bins.png" width = 150 />
-</div>
-
-<div id="right">
 ### [An Application of LIME to a Random Forest Model](https://github.com/goodekat/presentations/tree/master/graphics%20group/03-applying_lime_to_random_forest)
 
 **March 1, 2019**
@@ -49,6 +17,4 @@ title: "Presentations"
 ### [Interpreting Predictions from Black Box Models with LIME](https://github.com/goodekat/presentations/tree/master/graphics%20group/01-understanding_lime)
 
 **November 9, 2017**
-</div>
-
 
