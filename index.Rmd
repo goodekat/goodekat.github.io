@@ -2,6 +2,6 @@
 title: "Katherine Goode"
 ---
 
-<img src="/images/gl.png" width = 700 />
+<img src="/images/gl.png" width = 1000 />
 
-Welcome to my website. You will find information about me and my work here.
+Welcome to my website. You will find information about me and my work here. This website is pretty new, so there is not much here for now. More will be added soon.
