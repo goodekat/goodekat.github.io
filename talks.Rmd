@@ -4,4 +4,4 @@ title: "Presentation Slides"
 
 Here are links to slides from presentations I have given.
 
-[link](https://github.com/goodekat/presentations/blob/master/graphics%20group/03-applying_lime_to_random_forest/An_Application_of_LIME_to_a_Random_Forest.Rmd)
+[link](https://github.com/goodekat/presentations/blob/master/graphics%20group/03-applying_lime_to_random_forest/)
