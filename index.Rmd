@@ -4,4 +4,4 @@ title: "Katherine Goode"
       
 I am a statistics PhD student at Iowa State University. This website is pretty new, so there is not much here for now. There will be more added soon. For now, here is a picture of me with my family's dog. Her name is Nova.
 
-<img src="/images/nova.png" width = 300 />"
+<img src="/images/nova.png" width = 600 />"
