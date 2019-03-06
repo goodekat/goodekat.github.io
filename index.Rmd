@@ -2,10 +2,4 @@
 title: "Katherine Goode"
 ---
 
-<br>
-
 <img src="/images/gl.png" width = 1000 />
-
-<br>
-
-Welcome to my website. Information about me and my work can be found here.
