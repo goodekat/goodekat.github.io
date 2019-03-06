@@ -5,7 +5,9 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "About"
+      href: about.html
     - text: "Talks"
-      href: /talks.html
+      href: talks.html
     - text: "GitHub"
       href: "https://github.com/goodekat"
