@@ -2,13 +2,13 @@
 title: "Presentations"
 ---
 
-### [An Application of LIME to a Random Forest Model](https://raw.githubusercontent.com/goodekat/presentations/master/graphics%20group/03-applying_lime_to_random_forest/An_Application_of_LIME_to_a_Random_Forest.html)
+### [An Application of LIME to a Random Forest Model](https://raw.githubusercontent.com/goodekat/presentations/master/graphics%20group/03-applying_lime_to_random_forest/An%20Application%20of%20LIME%20to%20a%20Random%20Forest.Rmd)
 
 March 1, 2019
 
 **Abstract**: Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for black-box predictive models. In this talk, I will explain the LIME procedure and show an application of LIME to predictions from a random forest model fit to a bullet matching dataset. I will present a Shiny app I created to view the LIME explanations. Additionally, I will discuss the issues that I have encountered while working with LIME, some of the attempts at a solution, and future directions for my research.
 
-### [Introducing ggResidpanel: An R Package for Easy Visualization of Residuals](https://github.com/goodekat/presentations/tree/master/graphics%20group/02-ggresidpanel)
+### <img src="/images/ggresid.png" width = 700 /> [Introducing ggResidpanel: An R Package for Easy Visualization of Residuals](https://github.com/goodekat/presentations/tree/master/graphics%20group/02-ggresidpanel)
 
 October 12, 2018
 
