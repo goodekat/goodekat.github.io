@@ -2,7 +2,7 @@
 title: "Presentations"
 ---
 
-### [An Application of LIME to a Random Forest Model](https://github.com/goodekat/presentations/tree/master/graphics%20group/03-applying_lime_to_random_forest#/)
+### [An Application of LIME to a Random Forest Model](https://goodekat.github.io/presentations/tree/master/graphics%20group/03-applying_lime_to_random_forest#/)
 
 **March 1, 2019**
 
