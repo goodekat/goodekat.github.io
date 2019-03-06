@@ -7,3 +7,5 @@ navbar:
       href: index.html
     - text: "Talks"
       href: index.html
+    - text: "GitHub"
+      href: "https://github.com/goodekat"
