@@ -1,8 +1,11 @@
 ---
-title: "Katherine Goode <font size=3> Statistics PhD Student, Iowa State University</font>"
+title: "<br> Katherine Goode <font size=3> Statistics PhD Student, Iowa State University</font>"
 ---
 
 <img src="/images/gl.png" width = 1000 />
+
+<br>
+<br>
 
 **Contact Information**
 
