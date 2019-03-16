@@ -4,7 +4,7 @@
 
 ## Presentations of My Work
 
-Slides for [talks](#talks) that I have given and [posters](#posters) I have presented can be found here.
+You can find slides for [talks](#talks) that I have given and [posters](#posters) I have presented here.
 
 ### Talks {#talks}
 
