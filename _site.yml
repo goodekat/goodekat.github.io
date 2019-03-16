@@ -13,5 +13,8 @@ navbar:
       href: " https://goodekat.github.io/cv/goode_cv.pdf"
     - text: "ggResidpanel"
       href: "https://goodekat.github.io/ggResidpanel/"
-    - text: "GitHub"
+  right: 
+    - icon: fa-github
       href: "https://github.com/goodekat"
+    - icon: fa-linkedin
+      href: "https://www.linkedin.com/in/katherine-goode-363517a9/"
