@@ -6,8 +6,6 @@
 
 Slides for [talks](#talks) that I have given and [posters](#posters) I have presented can be found here.
 
-<br>
-
 ### Talks {#talks}
 
 #### [An Application of LIME to a Random Forest Model](https://goodekat.github.io/presentations/graphics_group/03-applying_lime_to_random_forest/slides.html)
@@ -16,23 +14,17 @@ Slides for [talks](#talks) that I have given and [posters](#posters) I have pres
 
 **Abstract**: Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for black-box predictive models. In this talk, I will explain the LIME procedure and show an application of LIME to predictions from a random forest model fit to a bullet matching dataset. I will present a Shiny app I created to view the LIME explanations. Additionally, I will discuss the issues that I have encountered while working with LIME, some of the attempts at a solution, and future directions for my research.
 
-<br>
-
 #### [Introducing ggResidpanel: An R Package for Easy Visualization of Residuals](https://goodekat.github.io/presentations/graphics_group/02-ggResidpanel/talk.html)
 
 **October 12, 2018** - A talk given for the ISU graphics group with Katie Rey on our R package ggResidpanel.
 
 **Abstract**: As consultants on a wide variety of projects across many majors, a common oversight we encounter is a failure to examine the residuals. This is particularly true when the client is performing the analysis in R. We were inspired by the residual panel in SAS to create an R package that easily provides users with a similar panel of plots. The ggResidpanel package in R is intended to give a single view of diagnostic plots for checking the key underlying assumptions of linear models. A variety of options gives the user the ability to choose from a selection of plots to display in a window. This includes SAS’s default residual panel as well as R’s default plots for linear models. Other options have been included to ensure that this package can also be applied to deviance or Pearson residuals if the user inputs a generalized linear model. Cook’s D plots and interactive plots using Plotly are included to provide a straightforward process to identify outliers and influential points while connecting findings back to the data.
 
-<br>
-
 #### [Interpreting Predictions from Black Box Models with LIME](https://goodekat.github.io/presentations/graphics_group/01-understanding_lime/slides.html)
 
 **November 9, 2017** - A presentation for the ISU graphics group introducing LIME.
 
 **Abstract**: LIME (Local Interpretable Model-agnostic Explanations) is a method that explains how black box models determine individual predictions. It was developed by computer scientists at the University of Washington and implemented in Python, and recently, Thomas Pedersen developed the R package lime that allows R users to implement the procedure. In this talk, I will explain the motivation for LIME, discuss how it works, and show examples using LIME in R. Additionally, I will encourage participation as we work through an example the creators of LIME used to test the usefulness of LIME, so please bring your laptop if possible.
-
-<br>
 
 ### Posters {#posters}
 
