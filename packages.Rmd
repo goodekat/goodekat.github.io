@@ -4,6 +4,16 @@
 
 # R Packages
 
-#### ggResidpanel
+### <font color="blue"> ggResidpanel </font> <img align="right" src="https://goodekat.github.io/ggResidpanel/images/gg_resid_sticker4.png" width = 125 />
 
-Website: https://goodekat.github.io/ggResidpanel/
+ggResidpanel is an R package Katie Rey and I developed for creating panels of diagnostic plots for residuals from a model using ggplot2. It also allows for the creation of interactive versions of the plots using plotly. The package can currently be downloaded from GitHub. An overview of the package can be found at this [website](https://goodekat.github.io/ggResidpanel/). The source code can be found in the [GitHub repository](https://github.com/goodekat/ggResidpanel). Availability on CRAN and a vignette coming soon!
+
+Here is an example panel of diagnostic plots created using ggResidpanel.
+
+```{r}
+# Fit a linear model
+lm_model1 <- lm(Volume ~ Girth, data = trees)
+
+# Use the resid_panel function from ggResidpanel to create a panel of diagnostics plots
+ggResidpanel::resid_panel(lm_model1)
+```
