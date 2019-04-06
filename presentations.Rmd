@@ -28,7 +28,7 @@ You can find slides for [talks](#talks) that I have given and [posters](#posters
 
 ### Posters {#posters}
 
-- [Introducing ggResidpanel: An R Package for Easy Visualization of Residuals](https://goodekat.github.io/presentations/kstate/ggResidpanel_poster/goode_rey_kstate.pptx)  
+- [Introducing ggResidpanel: An R Package for Easy Visualization of Residuals](https://goodekat.github.io/presentations/kstate/poster.pdf)  
 Presented at the Kansas State University Conference on Applied Statistics in Agriculture on May 8, 2018
 
 
