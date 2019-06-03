@@ -1,2 +1,2 @@
 # goodekat.github.io
-goodekat's stats website
+goodekat's academic website
