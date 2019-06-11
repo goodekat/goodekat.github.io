@@ -12,7 +12,7 @@ The package has recently been released on CRAN! An overview of the package can b
 
 Here is an example panel of diagnostic plots created using ggResidpanel.
 
-```{r}
+```{r message = FALSE}
 # Fit a linear model
 lm_model1 <- lm(Volume ~ Girth, data = trees)
 

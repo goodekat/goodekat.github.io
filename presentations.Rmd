@@ -29,7 +29,7 @@ You can find slides for [talks](#talks) that I have given and [posters](#posters
 ### Posters {#posters}
 
 - [Using LIME to Interpret a Random Forest Model with an Application to Bullet Matching Data](https://goodekat.github.io/presentations/posters/2019-gpsrc-limetorf/poster.pdf)  
-Presented at the Iowa State University Graduate and Professional Student Research Conference on April 10, 2019
+Presented at the Midwest Statistical Machine Learning Colloquium on May 13, 2019 and Iowa State University Graduate and Professional Student Research Conference on April 10, 2019
 - [Introducing ggResidpanel: An R Package for Easy Visualization of Residuals](https://goodekat.github.io/presentations/posters/2018-kstate-ggresidpanel/poster.pdf)  
 Presented at the Kansas State University Conference on Applied Statistics in Agriculture on May 8, 2018
 
