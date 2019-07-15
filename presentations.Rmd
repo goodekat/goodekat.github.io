@@ -15,13 +15,13 @@ Models](https://goodekat.github.io/presentations/2019-NCCC-lmm_residuals/slides.
 
 **Abstract**: Residuals are a key tool used to diagnose models. As a statistical consultant for researchers in many areas, I often find myself reminding my clients to visualize residuals to assess model assumptions. Many of my clients are working with mixed models, and I recently realized that I often recommend the use of certain residual types without a full understanding of the implications of selecting one type over another. This led me to have an interest in better understanding the many residuals types for mixed model. In this talk, I will provide a review of the residual types available for linear mixed models (marginal, conditional, studentized, etc.). I will explain how the residuals are computed and how these computations differ between R and SAS. I will also discuss what I have learned from the literature about how to select a residual type when assessing a model. Lastly, I will briefly touch on residual types for generalized linear mixed models and list some unanswered questions. If time permits, I will pose these remaining questions to the attendees to discuss as a group.
 
-#### [An Application of LIME to a Random Forest Model](https://goodekat.github.io/presentations/talks/2019-isugg-limetorf/slides.html)
+#### [An Application of LIME to a Random Forest Model](https://goodekat.github.io/presentations/2019-isugg-limetorf/slides.html)
 
 **March 1, 2019** - A presentation for the ISU graphics group on the current state of my research.
 
 **Abstract**: Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for black-box predictive models. In this talk, I will explain the LIME procedure and show an application of LIME to predictions from a random forest model fit to a bullet matching dataset. I will present a Shiny app I created to view the LIME explanations. Additionally, I will discuss the issues that I have encountered while working with LIME, some of the attempts at a solution, and future directions for my research.
 
-#### [Introducing ggResidpanel: An R Package for Easy Visualization of Residuals](https://goodekat.github.io/presentations/talks/2018-isugg-ggResidpanel/talk.html)
+#### [Introducing ggResidpanel: An R Package for Easy Visualization of Residuals](https://goodekat.github.io/presentations/2018-isugg-ggResidpanel/talk.html)
 
 **October 12, 2018** - A talk given for the ISU graphics group with Katie Rey on our R package ggResidpanel.
 
