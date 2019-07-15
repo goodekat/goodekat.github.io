@@ -8,7 +8,7 @@ You can find slides for [talks](#talks) that I have given and [posters](#posters
 
 ### Talks {#talks}
 
-#### [A Review and Discussion of Residuals for Mixed Models](https://goodekat.github.io/presentations/talks/2019-NCCC-lmm_residuals/slides.html)
+#### [A Review and Discussion of Residuals for Mixed Models](https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides.html)
 
 **June 20, 2019** - A presentation for the 2019 NCCC-170 meeting on residual for mixed models.
 
