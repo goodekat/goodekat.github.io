@@ -15,7 +15,7 @@ navbar:
       href: "https://goodekat.github.io/cv/goode_cv.pdf"
   right: 
     - icon: fa-envelope
-      href: kgoode@iastate.edu
+      href: "mailto:kgoode@iastate.edu"
     - icon: fa-github
       href: "https://github.com/goodekat"
     - icon: fa-linkedin
