@@ -1,16 +1,17 @@
 
 <br>
 
-#### <font color="#2B547E"> Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations from Random Forests </font>
+#### <font color="#368BC1"> Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations from Random Forests </font>
 
 **July 29, 2019** - Speed presentation and e-poster for JSM 2019
 
 Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for predictive models. The technique fits a ridge regression model to binary encoded perturbations created from the observed data weighted by proximity to the  prediction of interest. The predicted values associated with the perturbations computed using the complex model are used as the response variable in the regression. The coefficients from the linear model are then used to determine the influential variables. We have developed some visualizations and other diagnostic tools to assess the explanations produced by LIME from a random forest. In particular, we consider how well the simple model fit by LIME captures the random forest model and how the results from LIME vary based on different algorithm input options. To demonstrate these tools, we apply LIME to a random forest fit to a forensics bullet matching dataset using the lime R package and apply our methods to diagnose the LIME explanations.
 
-##### [Slides](https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/slides.pdf) 
+[<img src="/images/slides-jsm19.png" width = 100 />](https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/slides.pdf)
+
 ##### [Poster](https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/poster.pdf)
 
-<br>
+---
 
 #### <font color="#342D7E"> A Review and Discussion of Residuals for Mixed Models </font>
 
@@ -20,9 +21,9 @@ Residuals are a key tool used to diagnose models. As a statistical consultant fo
 
 ##### [Slides](https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides.html)
 
-<br>
+---
 
-#### <font color="#368BC1"> Using LIME to Interpret a Random Forest Model with an Application to Bullet Matching Data </font>
+#### <font color="#2B547E"> Using LIME to Interpret a Random Forest Model with an Application to Bullet Matching Data </font>
 
 **May 13, 2019** - Poster for Midwest Statistical Machine Learning Colloquium
 
@@ -32,9 +33,9 @@ Random forests are known for their accurate predictive abilities, but they are a
 
 ##### [Poster](https://goodekat.github.io/presentations/2019-gpsrc-limetorf/poster.pdf)  
 
-<br>
+---
 
-#### <font color="#2B547E"> An Application of LIME to a Random Forest Model </font>
+#### <font color="#368BC1"> An Application of LIME to a Random Forest Model </font>
 
 **March 1, 2019** - Talk for ISU graphics group
 
@@ -42,19 +43,22 @@ Random forests are known for their accurate predictive abilities, but they are a
 
 ##### [Slides](https://goodekat.github.io/presentations/2019-isugg-limetorf/slides.html)
 
-<br>
+---
 
 #### <font color="#342D7E"> Introducing ggResidpanel: An R Package for Easy Visualization of Residuals </font>
 
 **October 12, 2018** - Talk for ISU graphics group with Dr. Katie Rey
 
+**May 8, 2018** - Poster for Kansas State University Conference on Applied Statistics in Agriculture
+
 As consultants on a wide variety of projects across many majors, a common oversight we encounter is a failure to examine the residuals. This is particularly true when the client is performing the analysis in R. We were inspired by the residual panel in SAS to create an R package that easily provides users with a similar panel of plots. The ggResidpanel package in R is intended to give a single view of diagnostic plots for checking the key underlying assumptions of linear models. A variety of options gives the user the ability to choose from a selection of plots to display in a window. This includes SAS’s default residual panel as well as R’s default plots for linear models. Other options have been included to ensure that this package can also be applied to deviance or Pearson residuals if the user inputs a generalized linear model. Cook’s D plots and interactive plots using Plotly are included to provide a straightforward process to identify outliers and influential points while connecting findings back to the data.
 
-##### [Slides](https://goodekat.github.io/presentations/2018-isugg-ggResidpanel/talk.html)
+##### [Talk](https://goodekat.github.io/presentations/2018-isugg-ggResidpanel/talk.html)
+##### [Poster](https://goodekat.github.io/presentations/2018-kstate-ggresidpanel/poster.pdf)
 
-<br>
+---
 
-#### <font color="#368BC1"> Interpreting Predictions from Black Box Models with LIME </font>
+#### <font color="#2B547E"> Interpreting Predictions from Black Box Models with LIME </font>
 
 **November 9, 2017** - Talk for ISU graphics group
 
@@ -62,13 +66,5 @@ LIME (Local Interpretable Model-agnostic Explanations) is a method that explains
 
 ##### [Slides](https://goodekat.github.io/presentations/2017-isugg-lime/slides.html)
 
-<br>
 
-#### <font color="#2B547E"> Introducing ggResidpanel: An R Package for Easy Visualization of Residuals </font>
-
-**May 8, 2018** - Poster for Kansas State University Conference on Applied Statistics in Agriculture
-
-As consultants on a wide variety of projects across many majors, a common oversight we encounter is a failure to examine the residuals. This is particularly true when the client is performing the analysis in R. We were inspired by the residual panel in SAS to create an R package that easily provides users with a similar panel of plots. The ggResidpanel package in R is intended to give a single view of diagnostic plots for checking the key underlying assumptions of linear models. A variety of options gives the user the ability to choose from a selection of plots to display in a window. This includes SAS’s default residual panel as well as R’s default plots for linear models. Other options have been included to ensure that this package can also be applied to deviance or Pearson residuals if the user inputs a generalized linear model.  Cook’s D plots and interactive plots using Plotly are included to provide a straightforward process to identify outliers and influential points while connecting findings back to the data.  
-
-##### [Poster](https://goodekat.github.io/presentations/2018-kstate-ggresidpanel/poster.pdf)
 
