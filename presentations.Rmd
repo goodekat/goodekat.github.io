@@ -11,9 +11,9 @@
 
 Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for predictive models. The technique fits a ridge regression model to binary encoded perturbations created from the observed data weighted by proximity to the  prediction of interest. The predicted values associated with the perturbations computed using the complex model are used as the response variable in the regression. The coefficients from the linear model are then used to determine the influential variables. We have developed some visualizations and other diagnostic tools to assess the explanations produced by LIME from a random forest. In particular, we consider how well the simple model fit by LIME captures the random forest model and how the results from LIME vary based on different algorithm input options. To demonstrate these tools, we apply LIME to a random forest fit to a forensics bullet matching dataset using the lime R package and apply our methods to diagnose the LIME explanations.
 
-##### [Slides](https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/slides.pdf) 
-##### [Poster](https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/poster.pdf)
-##### [Code](https://github.com/goodekat/presentations/tree/master/2019-jsm-lime_diagnostics)
+##### <a href="https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/slides.pdf"><font color="#368BC1">Slides</font></a>
+##### <a href="https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/poster.pdf"><font color="#368BC1">Poster</font></a>
+##### <a href="https://github.com/goodekat/presentations/tree/master/2019-jsm-lime_diagnostics"><font color="#368BC1">Code</font></a>
 
 ---
 
@@ -23,8 +23,8 @@ Random forests are known for their accurate predictive abilities, but they are a
 
 Residuals are a key tool used to diagnose models. As a statistical consultant for researchers in many areas, I often find myself reminding my clients to visualize residuals to assess model assumptions. Many of my clients are working with mixed models, and I recently realized that I often recommend the use of certain residual types without a full understanding of the implications of selecting one type over another. This led me to have an interest in better understanding the many residuals types for mixed model. In this talk, I will provide a review of the residual types available for linear mixed models (marginal, conditional, studentized, etc.). I will explain how the residuals are computed and how these computations differ between R and SAS. I will also discuss what I have learned from the literature about how to select a residual type when assessing a model. Lastly, I will briefly touch on residual types for generalized linear mixed models and list some unanswered questions. If time permits, I will pose these remaining questions to the attendees to discuss as a group.
 
-##### [Slides](https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides.html)
-##### [Code](https://github.com/goodekat/presentations/tree/master/2019-nccc-lmm_residuals)
+##### <a href="https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides.html"><font color="#342D7E">Slides</font></a>
+##### <a href="https://github.com/goodekat/presentations/tree/master/2019-nccc-lmm_residuals"><font color="#342D7E">Code</font></a>
 
 ---
 
@@ -36,8 +36,8 @@ Residuals are a key tool used to diagnose models. As a statistical consultant fo
 
 Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. Recently, a technique called LIME was developed to provide local interpretations for complex predictive models. LIME determines which variables are important in a prediction of interest by fitting a local linear regression to model predictions and perturbations of the data. The coefficients from the linear model are used to interpret the complex model. While applying LIME to random forests, I encountered some unusual results. This led me to develop some diagnostic tools to evaluate LIME. I will demonstrate these by assessing the application of LIME to a random forest fit to a forensics bullet matching dataset.
 
-##### [Poster](https://goodekat.github.io/presentations/2019-gpsrc-limetorf/poster.pdf)  
-##### [Code](https://github.com/goodekat/presentations/tree/master/2019-gpsrc-limetorf)  
+##### <a href="https://goodekat.github.io/presentations/2019-gpsrc-limetorf/poster.pdf"><font color="#2B547E">Poster</font></a>
+##### <a href="https://github.com/goodekat/presentations/tree/master/2019-gpsrc-limetorf"><font color="#2B547E">Code</font></a>
 
 ---
 
@@ -47,8 +47,8 @@ Random forests are known for their accurate predictive abilities, but they are a
 
 Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for black-box predictive models. In this talk, I will explain the LIME procedure and show an application of LIME to predictions from a random forest model fit to a bullet matching dataset. I will present a Shiny app I created to view the LIME explanations. Additionally, I will discuss the issues that I have encountered while working with LIME, some of the attempts at a solution, and future directions for my research.
 
-##### [Slides](https://goodekat.github.io/presentations/2019-isugg-limetorf/slides.html)
-##### [Code](https://github.com/goodekat/presentations/tree/master/2019-isugg-limetorf)
+##### <a href="https://goodekat.github.io/presentations/2019-isugg-limetorf/slides.html"><font color="#368BC1">Slides</font></a>
+##### <a href="https://github.com/goodekat/presentations/tree/master/2019-isugg-limetorf"><font color="#368BC1">Code</font></a>
 
 ---
 
@@ -60,9 +60,9 @@ Random forests are known for their accurate predictive abilities, but they are a
 
 As consultants on a wide variety of projects across many majors, a common oversight we encounter is a failure to examine the residuals. This is particularly true when the client is performing the analysis in R. We were inspired by the residual panel in SAS to create an R package that easily provides users with a similar panel of plots. The ggResidpanel package in R is intended to give a single view of diagnostic plots for checking the key underlying assumptions of linear models. A variety of options gives the user the ability to choose from a selection of plots to display in a window. This includes SAS’s default residual panel as well as R’s default plots for linear models. Other options have been included to ensure that this package can also be applied to deviance or Pearson residuals if the user inputs a generalized linear model. Cook’s D plots and interactive plots using Plotly are included to provide a straightforward process to identify outliers and influential points while connecting findings back to the data.
 
-##### [Talk](https://goodekat.github.io/presentations/2018-isugg-ggResidpanel/talk.html)
-##### [Poster](https://goodekat.github.io/presentations/2018-kstate-ggresidpanel/poster.pdf)
-##### [Code](https://github.com/goodekat/presentations/tree/master/2018-isugg-ggResidpanel)
+##### <a href="https://goodekat.github.io/presentations/2018-isugg-ggResidpanel/talk.html"><font color="#342D7E">Talk</font></a>
+##### <a href="https://goodekat.github.io/presentations/2018-kstate-ggresidpanel/poster.pdf"><font color="#342D7E">Poster</font></a>
+##### <a href="https://github.com/goodekat/presentations/tree/master/2018-isugg-ggResidpanel"><font color="#342D7E">Code</font></a>
 
 ---
 
@@ -72,9 +72,8 @@ As consultants on a wide variety of projects across many majors, a common oversi
 
 LIME (Local Interpretable Model-agnostic Explanations) is a method that explains how black box models determine individual predictions. It was developed by computer scientists at the University of Washington and implemented in Python, and recently, Thomas Pedersen developed the R package lime that allows R users to implement the procedure. In this talk, I will explain the motivation for LIME, discuss how it works, and show examples using LIME in R. Additionally, I will encourage participation as we work through an example the creators of LIME used to test the usefulness of LIME, so please bring your laptop if possible.
 
-##### [Slides](https://goodekat.github.io/presentations/2017-isugg-lime/slides.html)
-
-##### [Code](https://github.com/goodekat/presentations/tree/master/2017-isugg-lime)
+##### <a href="https://goodekat.github.io/presentations/2017-isugg-lime/slides.html"><font color="#2B547E">Slides</font></a>
+##### <a href="https://github.com/goodekat/presentations/tree/master/2017-isugg-lime"><font color="#2B547E">Code</font></a>
 
 
 
