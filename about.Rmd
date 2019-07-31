@@ -5,4 +5,4 @@ I am working on my PhD in statistics at [Iowa State University](https://www.stat
 
 I love spending time in the outdoors, travelling, and playing ultimate frisbee. Here is a picture of me with my family's dog. Her name is Nova.
 
-<img src="/images/nova.png" width = 600 /> <img src="/images/rocks2.jpg" width = 250 />
+<img src="/images/nova.png" width = 600 class="center"/>
