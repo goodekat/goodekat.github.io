@@ -5,12 +5,14 @@
 
 <br>
 
-#### <font color="#368BC1"> ggResidpanel: Easy Creation of Panels of Diagnostics Plots </font>
+#### <font color="#2B547E"> ggResidpanel: Easy Creation of Panels of Diagnostics Plots </font>
 
 **October 4, 2019** - Presentation for ISU lunchinatoRs
 
-##### <a href="https://goodekat.github.io/presentations/2019-lunchinatoRs-ggResidpanel/slides.html">Slides</font></a>
-##### <a href="https://github.com/goodekat/presentations/tree/master/2019-lunchinatoRs-ggResidpanel"><font color="#368BC1">Code</font></a>
+Overview and tutorial on ggResidpanel.
+
+##### <a href="https://goodekat.github.io/presentations/2019-lunchinatoRs-ggResidpanel/slides.html"><font color="#2B547E">Slides</font></a>
+##### <a href="https://github.com/goodekat/presentations/tree/master/2019-lunchinatoRs-ggResidpanel"><font color="#2B547E">Code</font></a>
 
 ---
 
