@@ -5,6 +5,17 @@
 
 <br>
 
+#### <font color="#342D7E"> gganimate (with a spooky twist) </font>
+
+**October 31, 2019** - Talk for ISU graphics group
+
+gganimate allows for the animation of ggplot2 graphics. The package has been around for a while, but it has been updated to allow for easier transitions from static ggplot2 graphic to animated versions. This talk is meant to be an interactive tutorial on how to use the updated version of gganimate. You are encouraged to bring a laptop to follow along. Since the talk will be given on Halloween, spooky datasets will be used to demonstrate the functionality of gganimate.
+
+##### <a href="https://goodekat.github.io/presentations/2019-isugg-gganimate-spooky/slides.html"><font color="#342D7E">Slides</font></a>
+##### <a href="https://github.com/goodekat/presentations/tree/master/2019-isugg-gganimate-spooky"><font color="#342D7E">Code</font></a>
+
+---
+
 #### <font color="#2B547E"> ggResidpanel: Easy Creation of Panels of Diagnostics Plots </font>
 
 **October 4, 2019** - Presentation for ISU lunchinatoRs

@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -85,7 +86,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -246,18 +246,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -336,14 +324,26 @@ $(document).ready(function () {
 <p><br></p>
 <p><img src="/images/rocks.jpg" width = 1000 /></p>
 <p><br></p>
+<div id="gganimate-with-a-spooky-twist" class="section level4">
+<h4><font color="#342D7E"> gganimate (with a spooky twist) </font></h4>
+<p><strong>October 31, 2019</strong> - Talk for ISU graphics group</p>
+<p>gganimate allows for the animation of ggplot2 graphics. The package has been around for a while, but it has been updated to allow for easier transitions from static ggplot2 graphic to animated versions. This talk is meant to be an interactive tutorial on how to use the updated version of gganimate. You are encouraged to bring a laptop to follow along. Since the talk will be given on Halloween, spooky datasets will be used to demonstrate the functionality of gganimate.</p>
+<div id="slides" class="section level5">
+<h5><a href="https://goodekat.github.io/presentations/2019-isugg-gganimate-spooky/slides.html"><font color="#342D7E">Slides</font></a></h5>
+</div>
+<div id="code" class="section level5">
+<h5><a href="https://github.com/goodekat/presentations/tree/master/2019-isugg-gganimate-spooky"><font color="#342D7E">Code</font></a></h5>
+<hr />
+</div>
+</div>
 <div id="ggresidpanel-easy-creation-of-panels-of-diagnostics-plots" class="section level4">
 <h4><font color="#2B547E"> ggResidpanel: Easy Creation of Panels of Diagnostics Plots </font></h4>
 <p><strong>October 4, 2019</strong> - Presentation for ISU lunchinatoRs</p>
 <p>Overview and tutorial on ggResidpanel.</p>
-<div id="slides" class="section level5">
+<div id="slides-1" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-lunchinatoRs-ggResidpanel/slides.html"><font color="#2B547E">Slides</font></a></h5>
 </div>
-<div id="code" class="section level5">
+<div id="code-1" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-lunchinatoRs-ggResidpanel"><font color="#2B547E">Code</font></a></h5>
 <hr />
 </div>
@@ -352,13 +352,13 @@ $(document).ready(function () {
 <h4><font color="#368BC1"> Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations from Random Forests </font></h4>
 <p><strong>July 29, 2019</strong> - Speed presentation and e-poster for JSM 2019</p>
 <p>Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for predictive models. The technique fits a ridge regression model to binary encoded perturbations created from the observed data weighted by proximity to the prediction of interest. The predicted values associated with the perturbations computed using the complex model are used as the response variable in the regression. The coefficients from the linear model are then used to determine the influential variables. We have developed some visualizations and other diagnostic tools to assess the explanations produced by LIME from a random forest. In particular, we consider how well the simple model fit by LIME captures the random forest model and how the results from LIME vary based on different algorithm input options. To demonstrate these tools, we apply LIME to a random forest fit to a forensics bullet matching dataset using the lime R package and apply our methods to diagnose the LIME explanations.</p>
-<div id="slides-1" class="section level5">
+<div id="slides-2" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/slides.pdf"><font color="#368BC1">Slides</font></a></h5>
 </div>
 <div id="poster" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/poster.pdf"><font color="#368BC1">Poster</font></a></h5>
 </div>
-<div id="code-1" class="section level5">
+<div id="code-2" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-jsm-lime_diagnostics"><font color="#368BC1">Code</font></a></h5>
 <hr />
 </div>
@@ -367,10 +367,10 @@ $(document).ready(function () {
 <h4><font color="#342D7E"> A Review and Discussion of Residuals for Mixed Models </font></h4>
 <p><strong>June 20, 2019</strong> - Talk for NCCC-170 meeting 2019</p>
 <p>Residuals are a key tool used to diagnose models. As a statistical consultant for researchers in many areas, I often find myself reminding my clients to visualize residuals to assess model assumptions. Many of my clients are working with mixed models, and I recently realized that I often recommend the use of certain residual types without a full understanding of the implications of selecting one type over another. This led me to have an interest in better understanding the many residuals types for mixed model. In this talk, I will provide a review of the residual types available for linear mixed models (marginal, conditional, studentized, etc.). I will explain how the residuals are computed and how these computations differ between R and SAS. I will also discuss what I have learned from the literature about how to select a residual type when assessing a model. Lastly, I will briefly touch on residual types for generalized linear mixed models and list some unanswered questions. If time permits, I will pose these remaining questions to the attendees to discuss as a group.</p>
-<div id="slides-2" class="section level5">
+<div id="slides-3" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides.html"><font color="#342D7E">Slides</font></a></h5>
 </div>
-<div id="code-2" class="section level5">
+<div id="code-3" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-nccc-lmm_residuals"><font color="#342D7E">Code</font></a></h5>
 <hr />
 </div>
@@ -383,7 +383,7 @@ $(document).ready(function () {
 <div id="poster-1" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-gpsrc-limetorf/poster.pdf"><font color="#2B547E">Poster</font></a></h5>
 </div>
-<div id="code-3" class="section level5">
+<div id="code-4" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-gpsrc-limetorf"><font color="#2B547E">Code</font></a></h5>
 <hr />
 </div>
@@ -392,10 +392,10 @@ $(document).ready(function () {
 <h4><font color="#368BC1"> An Application of LIME to a Random Forest Model </font></h4>
 <p><strong>March 1, 2019</strong> - Talk for ISU graphics group</p>
 <p>Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for black-box predictive models. In this talk, I will explain the LIME procedure and show an application of LIME to predictions from a random forest model fit to a bullet matching dataset. I will present a Shiny app I created to view the LIME explanations. Additionally, I will discuss the issues that I have encountered while working with LIME, some of the attempts at a solution, and future directions for my research.</p>
-<div id="slides-3" class="section level5">
+<div id="slides-4" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-isugg-limetorf/slides.html"><font color="#368BC1">Slides</font></a></h5>
 </div>
-<div id="code-4" class="section level5">
+<div id="code-5" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-isugg-limetorf"><font color="#368BC1">Code</font></a></h5>
 <hr />
 </div>
@@ -411,7 +411,7 @@ $(document).ready(function () {
 <div id="poster-2" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2018-kstate-ggresidpanel/poster.pdf"><font color="#342D7E">Poster</font></a></h5>
 </div>
-<div id="code-5" class="section level5">
+<div id="code-6" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2018-isugg-ggResidpanel"><font color="#342D7E">Code</font></a></h5>
 <hr />
 </div>
@@ -420,10 +420,10 @@ $(document).ready(function () {
 <h4><font color="#2B547E"> Interpreting Predictions from Black Box Models with LIME </font></h4>
 <p><strong>November 9, 2017</strong> - Talk for ISU graphics group</p>
 <p>LIME (Local Interpretable Model-agnostic Explanations) is a method that explains how black box models determine individual predictions. It was developed by computer scientists at the University of Washington and implemented in Python, and recently, Thomas Pedersen developed the R package lime that allows R users to implement the procedure. In this talk, I will explain the motivation for LIME, discuss how it works, and show examples using LIME in R. Additionally, I will encourage participation as we work through an example the creators of LIME used to test the usefulness of LIME, so please bring your laptop if possible.</p>
-<div id="slides-4" class="section level5">
+<div id="slides-5" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2017-isugg-lime/slides.html"><font color="#2B547E">Slides</font></a></h5>
 </div>
-<div id="code-6" class="section level5">
+<div id="code-7" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2017-isugg-lime"><font color="#2B547E">Code</font></a></h5>
 </div>
 </div>
@@ -445,6 +445,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
