@@ -5,7 +5,7 @@
 
 <br>
 
-#### <font color="#342D7E"> gganimate (with a spooky twist) </font>
+#### <font color="#342D7E"> Explaining Neural Network Predictions for Functional Data Using Principal Component Analysis and Feature Importance </font>
 
 **September 24, 2020** - Talk for ISU graphics group
 
