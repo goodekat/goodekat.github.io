@@ -322,9 +322,51 @@ $(document).ready(function () {
 
 
 <p><br></p>
+<div id="limeaid" class="section level3">
+<h3><font color="#2B547E"> limeaid </font> <img align="right" src="https://github.com/goodekat/limeaid/blob/master/inst/limeaid-sticker2.png?raw=true" width = 125 /></h3>
+<p>limeaid is an R package for assessing explanations created using the R package <a href="https://lime.data-imaginist.com/">lime</a>. The current implementation was developed to be used with classification models with a binary response and continuous features. The package can be installed from GitHub, and additional information on limeaid is available on the <a href="https://github.com/goodekat/limeaid">GitHub repository</a>.</p>
+<p>Example of a feature heatmap depicting LIME explanation across various tuning parameters for a random forest fit to the iris data.</p>
+<pre class="r"><code>library(cowplot)
+library(lime)
+library(limeaid)
+library(randomForest)
+
+# Iris training and testing
+iris_test &lt;- iris[1:5, 1:4]
+iris_train &lt;- iris[-(1:5), 1:4]
+iris_lab &lt;- iris[[5]][-(1:5)]
+
+# Fit a random forest model to the iris training data
+set.seed(20200334)
+rf &lt;- randomForest(Species ~ .,
+                   data = cbind(iris_train, 
+                                Species = iris_lab))
+
+# Run apply_lime on the iris data
+lime_applied &lt;- apply_lime(train = iris_train,
+                           test = iris_test,
+                           model = rf,
+                           label = &quot;virginica&quot;,
+                           n_features = 2,
+                           sim_method = c(&#39;quantile_bins&#39;,
+                                          &#39;equal_bins&#39;,
+                                          &#39;kernel_density&#39;),
+                           nbins = 2:4, 
+                           gower_pow = c(1, 5),
+                           return_perms = TRUE, 
+                           seed = 20200334)
+
+# Extract the explanations from the apply_lime output
+explanations &lt;- lime_applied$explain
+
+# Create a heatmap of the features chosen
+plot_feature_heatmap(explanations)</code></pre>
+<p><img src="packages_files/figure-html/unnamed-chunk-1-1.png" width="768" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
 <div id="ggresidpanel" class="section level3">
-<h3><font color="#2B547E"> ggResidpanel </font> <img align="right" src="/images/ggResidpanel.png" width = 125 /></h3>
-<p>ggResidpanel is an R package Katie Rey and I developed for creating panels of diagnostic plots for residuals from a model using ggplot2. It also allows for the creation of interactive versions of the plots using plotly.</p>
+<h3><font color="#2B547E"> ggResidpanel </font> <img align="right" src="https://github.com/goodekat/ggResidpanel/blob/master/README_files/figure-static/logo.png?raw=true" width = 125 /></h3>
+<p>ggResidpanel is an R package <a href="https://github.com/reykp">Katie Rey</a> and I developed for creating panels of diagnostic plots for residuals from a model using ggplot2. It also allows for the creation of interactive versions of the plots using plotly.</p>
 <p>The package has recently been released on CRAN! An overview of the package can be found at this <a href="https://goodekat.github.io/ggResidpanel/">website</a>. The source code can be found in the <a href="https://github.com/goodekat/ggResidpanel">GitHub repository</a>.</p>
 <p>Here is an example panel of diagnostic plots created using ggResidpanel.</p>
 <pre class="r"><code># Fit a linear model
@@ -332,7 +374,23 @@ lm_model1 &lt;- lm(Volume ~ Girth, data = trees)
 
 # Use the resid_panel function from ggResidpanel to create a panel of diagnostics plots
 ggResidpanel::resid_panel(lm_model1)</code></pre>
-<p><img src="packages_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="packages_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+<div id="redres" class="section level3">
+<h3><font color="#2B547E"> redres </font> <img align="right" src="https://github.com/goodekat/redres/blob/master/README_files/static-figures/sticker.png?raw=true" width = 125 /></h3>
+<p>redres is an R package developed to help with diagnosing linear mixed models fit using the function lmer from the lme4 package. It is meant to supplement the <code>lme4</code> package. redres was created by me, <a href="https://github.com/kmcclernon">Kellie McClernon</a>, <a href="https://github.com/jingzhao19">Jing Zhao</a>, <a href="https://github.com/yudizhangzyd">Yudi Zhang</a>, and <a href="https://github.com/huo198909">Yonghui Huo</a> as a project for <a href="https://stat585-at-isu.github.io/">STAT 585</a> (taught by <a href="https://github.com/heike">Dr. Heike Hoffman</a>). The package is currently only available on GitHub, but we hope to update it and add it to CRAN. More information can be found on the package <a href="https://goodekat.github.io/redres/index.html">website</a> and <a href="https://github.com/goodekat/redres">GitHub repository</a>.</p>
+<p>Here is an example using redres to plot the raw conditional residuals from an lmer model.</p>
+<pre class="r"><code>library(redres)
+library(lme4)
+
+# Fits a linear mixed effects model
+m &lt;- lmer(height ~ rep + treatment*variety + (1|rep:treatment) + (1|rep:treatment:variety), 
+          data = paprika)
+
+# Use redres to create a residual plot using the conditional residuals
+plot_redres(m)</code></pre>
+<p><img src="packages_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 
 
