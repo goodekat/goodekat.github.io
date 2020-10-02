@@ -17,9 +17,7 @@ I hope you find them helpful. `r emo::ji("smile")` Descriptions of them are incl
 
 ### <font color="#368BC1"> ggResidpanel </font> <img align="right" src="https://github.com/goodekat/ggResidpanel/blob/master/README_files/figure-static/logo.png?raw=true" width = 125 /> {#ggResidpanel}
 
-ggResidpanel is an R package [Katie Rey](https://github.com/reykp) and I developed for creating panels of diagnostic plots for residuals from a model using ggplot2. It also allows for the creation of interactive versions of the plots using plotly. 
-
-The package has recently been released on CRAN! An overview of the package can be found at this [website](https://goodekat.github.io/ggResidpanel/). The source code can be found in the [GitHub repository](https://github.com/goodekat/ggResidpanel).
+ggResidpanel is an R package [Katie Rey](https://github.com/reykp) and I developed for creating panels of diagnostic plots for residuals from a model using ggplot2. It also allows for the creation of interactive versions of the plots using plotly. The package ic available on CRAN. An overview of the package can be found at this [website](https://goodekat.github.io/ggResidpanel/). The source code can be found in the [GitHub repository](https://github.com/goodekat/ggResidpanel).
 
 Here is an example panel of diagnostic plots created using ggResidpanel.
 
