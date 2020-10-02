@@ -1,13 +1,19 @@
 
 <br>
 
+<img src="/images/kayak.jpeg" width = 1000 />
+
+<br>
+
 I've written and/or helped to develop a handful of R packages:
 
 - [ggResidpanel](#ggResidpanel)
 - [limeaid](#limeaid)
 - [redres](#redres)
 
-I hope you find them helpful. `r emo::ji("smile")`Descriptions of them are included below.
+I hope you find them helpful. `r emo::ji("smile")` Descriptions of them are included below.
+
+---
 
 ### <font color="#368BC1"> ggResidpanel </font> <img align="right" src="https://github.com/goodekat/ggResidpanel/blob/master/README_files/figure-static/logo.png?raw=true" width = 125 /> {#ggResidpanel}
 
