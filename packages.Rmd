@@ -25,18 +25,20 @@ rf <- randomForest(Species ~ .,
                                 Species = iris_lab))
 
 # Run apply_lime on the iris data
-lime_applied <- apply_lime(train = iris_train,
-                           test = iris_test,
-                           model = rf,
-                           label = "virginica",
-                           n_features = 2,
-                           sim_method = c('quantile_bins',
-                                          'equal_bins',
-                                          'kernel_density'),
-                           nbins = 2:4, 
-                           gower_pow = c(1, 5),
-                           return_perms = TRUE, 
-                           seed = 20200334)
+lime_applied <- apply_lime(
+  train = iris_train,
+  test = iris_test,
+  model = rf,
+  label = "virginica",
+  n_features = 2,
+  sim_method = c('quantile_bins',
+                 'equal_bins',
+                 'kernel_density'),
+  nbins = 2:4,
+  gower_pow = c(1, 5),
+  return_perms = TRUE,
+  seed = 20200334
+)
 
 # Extract the explanations from the apply_lime output
 explanations <- lime_applied$explain
