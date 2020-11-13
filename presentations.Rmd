@@ -5,6 +5,31 @@
 
 <br>
 
+<!-- #### <font color="#342D7E"> The Delta Method </font> -->
+
+<!-- **November 16, 2020** - Talk for [Bob Klaver's](https://www.nrem.iastate.edu/people/robert-klaver) ISU Ecology 607 class  -->
+
+<!-- This talk discusses the delta method and ways to apply it in R -->
+
+<!-- ##### <a href="https://goodekat.github.io/presentations/2020-isu-delta-method/slides.html#1"><font color="#342D7E">Slides</font></a> -->
+<!-- ##### <a href="https://github.com/goodekat/presentations/tree/master/2020-isu-delta-method"><font color="#342D7E">Code</font></a> -->
+
+<!-- --- -->
+
+#### <font color="#2B547E"> Explaining Neural Networks with Functional Data Using PCA and Feature Importance </font>
+
+**November 14, 2020** - Talk for AAAI 2020 Fall Symposium on AI in the Government and Public Sector
+
+Optical spectral-temporal signatures extracted from videos of explosions provide information for identifying characteristics of the corresponding explosive devices. Currently, the identification is done using heuristic algorithms and direct subject matter expert review. An improvement in predictive performance may be obtained by using machine learning, but this application lends itself to high consequence national security decisions, so it is not only important to provide high accuracy but clear explanations for the predictions to garner confidence in the model. While much work has been done to develop explainability methods for machine learning models, not much of the work focuses on situations with input variables of the form of functional data such optical spectral-temporal signatures. We propose a procedure for explaining machine learning models fit using functional data that accounts for the functional nature the data. Our approach makes use of functional principal component analysis (fPCA) and permutation feature importance (PFI). fPCA is used to transform the functions to create uncorrelated functional principal components (fPCs). The model is trained using the fPCs as inputs, and PFI is applied to identify the fPCs important to the model for prediction. Visualizations are used to interpret the variability explained by the fPCs that are found to be important by PFI to determine the aspects of the functions that are important for prediction. We demonstrate the technique by explaining neural networks fit to explosion optical spectral-temporal signatures for predicting characteristics of the explosive devices.
+
+Sandia National Laboratories is a multimission laboratory managed and operated by National Technology & Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy's National Nuclear Security Administration under contract DE-NA0003525. This paper describes objective technical results and analysis. Any subjective views or opinions that might be expressed in the paper do not necessarily represent the views of the U.S. Department of Energy or the United States Government. SAND2020-12004 C
+
+##### <a href="https://goodekat.github.io/presentations/2020-aaai-fpca-pfi/slides.pdf"><font color="#2B547E">Slides</font></a>
+##### <a href="https://www.youtube.com/watch?v=8UxKbfUyc2M&t=273s"><font color="#2B547E"> YouTube Video </font></a>
+##### <a href="https://arxiv.org/abs/2010.12063"><font color="#2B547E">Conference Paper</font></a>
+
+---
+
 #### <font color="#368BC1"> A Statistical Consultant’s Perspective on Getting Help with R </font>
 
 **October 2, 2020** - Talk given with AES Statistical Consultants (Haoyan Hu, Miranda Tilton, and Yudi Zhang) at ISU LunchinatoRs
@@ -43,7 +68,7 @@ Machine learning models are excellent predictors, but it is impractical to inter
 
 **December 3, 2019** - Talk on my research at Sandia
 
- A desire to be able to interpret machine learning models has led to an area of research focused on providing explanations for predictions made by black-box models. One method that has resulted from this area of research is LIME (Ribeiro et. al. 2016). LIME stands for local interpretable model-agnostic explanations. The method provides an explanation for a black box prediction by using an interpretable model, referred to as an explainer model, to approximate the complex black-box model in a local region around a prediction of interest. The quality of the explanation produced by LIME will depend on how good of an approximation the interpretable model is to the complex model. Currently, few tools have been provided to assess this approximation. We are developing visualizations that diagnose the explanation produced by LIME. In this talk, I will provide a brief overview of LIME, motivate the importance of the assessing LIME explanations, and introduce our diagnostic visualizations.
+A desire to be able to interpret machine learning models has led to an area of research focused on providing explanations for predictions made by black-box models. One method that has resulted from this area of research is LIME (Ribeiro et. al. 2016). LIME stands for local interpretable model-agnostic explanations. The method provides an explanation for a black box prediction by using an interpretable model, referred to as an explainer model, to approximate the complex black-box model in a local region around a prediction of interest. The quality of the explanation produced by LIME will depend on how good of an approximation the interpretable model is to the complex model. Currently, few tools have been provided to assess this approximation. We are developing visualizations that diagnose the explanation produced by LIME. In this talk, I will provide a brief overview of LIME, motivate the importance of the assessing LIME explanations, and introduce our diagnostic visualizations.
 
 ##### <a href="https://goodekat.github.io/presentations/2019-sandia-lime-diagnostics/slides.html"><font color="#368BC1">Slides</font></a>
 ##### <a href="https://github.com/goodekat/presentations/tree/master/2019-sandia-lime-diagnostics"><font color="#368BC1">Code</font></a>
