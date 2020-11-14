@@ -5,16 +5,16 @@
 
 <br>
 
-<!-- #### <font color="#342D7E"> The Delta Method </font> -->
+#### <font color="#342D7E"> The Delta Method </font>
 
-<!-- **November 16, 2020** - Talk for [Bob Klaver's](https://www.nrem.iastate.edu/people/robert-klaver) ISU Ecology 607 class  -->
+**November 16, 2020** - Talk for [Bob Klaver's](https://www.nrem.iastate.edu/people/robert-klaver) ISU Ecology 607 class
 
-<!-- This talk discusses the delta method and ways to apply it in R -->
+This talk discusses the delta method and ways to apply it in R
 
-<!-- ##### <a href="https://goodekat.github.io/presentations/2020-isu-delta-method/slides.html#1"><font color="#342D7E">Slides</font></a> -->
-<!-- ##### <a href="https://github.com/goodekat/presentations/tree/master/2020-isu-delta-method"><font color="#342D7E">Code</font></a> -->
+##### <a href="https://goodekat.github.io/presentations/2020-isu-delta-method/slides.html#1"><font color="#342D7E">Slides</font></a>
+##### <a href="https://github.com/goodekat/presentations/tree/master/2020-isu-delta-method"><font color="#342D7E">Code</font></a>
 
-<!-- --- -->
+---
 
 #### <font color="#2B547E"> Explaining Neural Networks with Functional Data Using PCA and Feature Importance </font>
 
@@ -34,7 +34,7 @@ Sandia National Laboratories is a multimission laboratory managed and operated b
 
 **October 2, 2020** - Talk given with AES Statistical Consultants (Haoyan Hu, Miranda Tilton, and Yudi Zhang) at ISU LunchinatoRs
 
-Everyone runs into problems when writing code in R (even statisticians). Sometimes the problems are small picture such as bugs in the code. Other times the problems are large picture such as how to implement an analysis all together. In this talk, we will provide a statistical consultant’s perspective on getting help with R. We’ll tell about the resources our consulting group provides to ISU graduate students who need help with R code and/or statistical analysis for a research project. We’ll also cover resources for helping yourself, internet resources for asking questions about R, and tips for practicing a good workflow in R that will hopefully help to avoid problems.
+Everyone runs into problems when writing code in R (even statisticians). Sometimes the problems are small picture such as bugs in the code. Other times the problems are large picture such as how to implement an analysis all together. In this talk, we will provide a statistical consultant’s perspective on getting help with R. We’ll tell about the resources our consulting group provides to ISU graduate students who need help with R code and/or statistical analysis for a research project. We’ll also cover resources for helping yourself, internet resources for asking questions about R, and tips for practicing a good work flow in R that will hopefully help to avoid problems.
 
 ##### <a href="https://goodekat.github.io/consulting-at-lunchinatoRs/slides.html"><font color="#368BC1">Slides</font></a>
 ##### <a href="https://github.com/goodekat/consulting-at-lunchinatoRs"><font color="#368BC1">Code</font></a>
