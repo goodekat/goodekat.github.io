@@ -5,7 +5,7 @@
 
 <br>
 
-#### <font color="#342D7E"> The Delta Method </font>
+#### <font color="#342D7E"> The Delta Method and Applications to Mark Recapture Models</font>
 
 **November 16, 2020** - Talk for [Bob Klaver's](https://www.nrem.iastate.edu/people/robert-klaver) ISU Ecology 607 class
 
