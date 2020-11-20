@@ -5,6 +5,14 @@
 
 <br>
 
+#### <font color="#368BC1"> Explaining Black Box Machine Learning Models </font>
+
+**November 20, 2020** - Talk given for employees at Autodesk on an overview of explainable machine learning with Xioadan (Annie) Lyu
+
+##### <a href="https://goodekat.github.io/presentations/2020-autodesk-eml/slides.pdf"><font color="#368BC1">Slides</font></a>
+
+---
+
 #### <font color="#342D7E"> The Delta Method and Applications to Mark Recapture Models</font>
 
 **November 16, 2020** - Talk for [Bob Klaver's](https://www.nrem.iastate.edu/people/robert-klaver) ISU Ecology 607 class
