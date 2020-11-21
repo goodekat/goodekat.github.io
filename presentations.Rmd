@@ -7,7 +7,7 @@
 
 #### <font color="#368BC1"> Explaining Black Box Machine Learning Models </font>
 
-**November 20, 2020** - Talk given for employees at Autodesk on an overview of explainable machine learning with Xioadan (Annie) Lyu
+**November 20, 2020** - Talk given to the ACS Data Analytics team at [Autodesk](https://www.autodesk.com/) on an overview of explainable machine learning with [Xiaodan (Annie) Lyu](https://annielyu.com/).
 
 ##### <a href="https://goodekat.github.io/presentations/2020-autodesk-eml/slides.pdf"><font color="#368BC1">Slides</font></a>
 
