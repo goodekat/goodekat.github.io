@@ -5,7 +5,7 @@
 
 <br>
 
-#### <font color="#2B547E"> A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics </font>
+#### <font color="#2B547E"> WhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics </font>
 
 **February 25, 2021** - Talk for [ISU Graphics Group](https://isu-graphics.rbind.io/)
 
