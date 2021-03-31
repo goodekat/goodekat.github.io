@@ -13,12 +13,22 @@
 
 <title>presentations.utf8</title>
 
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -35,11 +45,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,32 +57,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 
@@ -88,10 +67,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -108,40 +83,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -169,7 +117,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -181,7 +129,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -192,10 +140,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -207,7 +168,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -326,7 +286,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -337,15 +297,27 @@ $(document).ready(function () {
 <p><br></p>
 <p><img src="/images/rocks.jpg" width = 1000 /></p>
 <p><br></p>
+<div id="tracing-trees-visualizing-variability-in-the-architecture-of-random-forest-trees-using-extensions-of-trace-plots" class="section level4">
+<h4><font color="#342D7E"> Tracing Trees: Visualizing Variability in the Architecture of Random Forest Trees Using Extensions of Trace Plots </font></h4>
+<p><strong>April 1, 2021</strong> - Talk for <a href="https://isu-graphics.rbind.io/">ISU Graphics Group</a></p>
+<p>Random forests are a popular method for statistical applications with an objective of prediction. While an individual tree within a random forest provides a clear decision path for how a prediction is made, the ensemble of trees from the forest creates a complex decision process that is difficult to interpret. One approach used to gain insight into this decision process is visualization of the model. Various approaches have been taken to visualize random forests including trace plots developed by Simon Urbanek (<a href="https://link.springer.com/chapter/10.1007/978-3-540-33037-0_11" class="uri">https://link.springer.com/chapter/10.1007/978-3-540-33037-0_11</a>). Trace plots depict the trees in a random forest using a structure similar to parallel coordinate plots that allows for a direct comparison of the trees. In this talk, I’ll describe trace plots and discuss my recent work on implementing and extending trace plots in R. I’ll also discuss my attempts to use trace plots to compare variability between clusters of trees in a random forest and visualizing representative or summary trees in the context of tree variability.</p>
+<div id="slides" class="section level5">
+<h5><a href="https://goodekat.github.io/presentations/2021-isugg-trace-plots/slides.html"><font color="#342D7E">Slides</font></a></h5>
+</div>
+<div id="code" class="section level5">
+<h5><a href="https://github.com/goodekat/presentations/tree/master/2021-isugg-trace-plots"><font color="#342D7E">Code</font></a></h5>
+<hr />
+</div>
+</div>
 <div id="whoseegg-a-shiny-app-for-identifying-invasive-carp-using-random-forests-and-fish-egg-characteristics" class="section level4">
 <h4><font color="#2B547E"> WhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics </font></h4>
 <p><strong>February 25, 2021</strong> - Talk for <a href="https://isu-graphics.rbind.io/">ISU Graphics Group</a></p>
 <p>The fish species of Grass Carp (<em>Ctenopharyngodon idella</em>), Silver Carp (<em>Hypophthalmichthys molitrix</em>), and Bighead Carp (<em>H. nobilis</em>) are categorized as invasive carp in North America. There is interest from a natural resource management perspective to monitor the populations and spread of the fish species. A common monitoring practice is to collect and genetically identify fish eggs, but this process is both costly in money and time. <a href="https://afspubs.onlinelibrary.wiley.com/doi/abs/10.1002/nafm.10380">Camacho et al. (2019)</a> demonstrated the use of machine learning as a possibility for a more efficient method of identifying invasive carp. Camacho et al. (2019) trained random forests on easy to measure egg characteristics such as water conductivity and average membrane diameter, and the models returned high accuracy.</p>
 <p>In this talk, I will present my recent work with Dr. Michael Weber (NREM) and Dr. Philip Dixon on a Shiny app (WhoseEgg) for identifying invasive carp using random forests based on those from Camacho et al. (2019). The app is intended to be a tool for researchers to input their own fish egg data and easily obtain random forest predictions via a point-and-click user interface. We began work on the app in January, so it is still in development. I will share the current state of the app and our goals for enhancement. I will also ask the audience for feedback. We would greatly appreciate suggestions for adjustments to make the app more user friendly.</p>
-<div id="slides" class="section level5">
+<div id="slides-1" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2021-isugg-shiny-fish/slides.html#1"><font color="#2B547E">Slides</font></a></h5>
 </div>
-<div id="code" class="section level5">
+<div id="code-1" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2021-isugg-shiny-fish"><font color="#2B547E"> Code </font></a></h5>
 <hr />
 </div>
@@ -353,7 +325,7 @@ $(document).ready(function () {
 <div id="explaining-black-box-machine-learning-models" class="section level4">
 <h4><font color="#368BC1"> Explaining Black Box Machine Learning Models </font></h4>
 <p><strong>November 20, 2020</strong> - Talk given to the ACS Data Analytics team at <a href="https://www.autodesk.com/">Autodesk</a> on an overview of explainable machine learning with <a href="https://annielyu.com/">Xiaodan (Annie) Lyu</a>.</p>
-<div id="slides-1" class="section level5">
+<div id="slides-2" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2020-autodesk-eml/slides.pdf"><font color="#368BC1">Slides</font></a></h5>
 <hr />
 </div>
@@ -362,10 +334,10 @@ $(document).ready(function () {
 <h4><font color="#342D7E"> The Delta Method and Applications to Mark Recapture Models</font></h4>
 <p><strong>November 16, 2020</strong> - Talk for <a href="https://www.nrem.iastate.edu/people/robert-klaver">Bob Klaver’s</a> ISU Ecology 607 class</p>
 <p>This talk discusses the delta method and ways to apply it in R</p>
-<div id="slides-2" class="section level5">
+<div id="slides-3" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2020-isu-delta-method/slides.html#1"><font color="#342D7E">Slides</font></a></h5>
 </div>
-<div id="code-1" class="section level5">
+<div id="code-2" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2020-isu-delta-method"><font color="#342D7E">Code</font></a></h5>
 <hr />
 </div>
@@ -375,7 +347,7 @@ $(document).ready(function () {
 <p><strong>November 14, 2020</strong> - Talk for AAAI 2020 Fall Symposium on AI in the Government and Public Sector</p>
 <p>Optical spectral-temporal signatures extracted from videos of explosions provide information for identifying characteristics of the corresponding explosive devices. Currently, the identification is done using heuristic algorithms and direct subject matter expert review. An improvement in predictive performance may be obtained by using machine learning, but this application lends itself to high consequence national security decisions, so it is not only important to provide high accuracy but clear explanations for the predictions to garner confidence in the model. While much work has been done to develop explainability methods for machine learning models, not much of the work focuses on situations with input variables of the form of functional data such optical spectral-temporal signatures. We propose a procedure for explaining machine learning models fit using functional data that accounts for the functional nature the data. Our approach makes use of functional principal component analysis (fPCA) and permutation feature importance (PFI). fPCA is used to transform the functions to create uncorrelated functional principal components (fPCs). The model is trained using the fPCs as inputs, and PFI is applied to identify the fPCs important to the model for prediction. Visualizations are used to interpret the variability explained by the fPCs that are found to be important by PFI to determine the aspects of the functions that are important for prediction. We demonstrate the technique by explaining neural networks fit to explosion optical spectral-temporal signatures for predicting characteristics of the explosive devices.</p>
 <p>Sandia National Laboratories is a multimission laboratory managed and operated by National Technology &amp; Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy’s National Nuclear Security Administration under contract DE-NA0003525. This paper describes objective technical results and analysis. Any subjective views or opinions that might be expressed in the paper do not necessarily represent the views of the U.S. Department of Energy or the United States Government. SAND2020-12004 C</p>
-<div id="slides-3" class="section level5">
+<div id="slides-4" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2020-aaai-fpca-pfi/slides.pdf"><font color="#2B547E">Slides</font></a></h5>
 </div>
 <div id="youtube-video" class="section level5">
@@ -390,10 +362,10 @@ $(document).ready(function () {
 <h4><font color="#368BC1"> A Statistical Consultant’s Perspective on Getting Help with R </font></h4>
 <p><strong>October 2, 2020</strong> - Talk given with AES Statistical Consultants (Haoyan Hu, Miranda Tilton, and Yudi Zhang) at ISU LunchinatoRs</p>
 <p>Everyone runs into problems when writing code in R (even statisticians). Sometimes the problems are small picture such as bugs in the code. Other times the problems are large picture such as how to implement an analysis all together. In this talk, we will provide a statistical consultant’s perspective on getting help with R. We’ll tell about the resources our consulting group provides to ISU graduate students who need help with R code and/or statistical analysis for a research project. We’ll also cover resources for helping yourself, internet resources for asking questions about R, and tips for practicing a good work flow in R that will hopefully help to avoid problems.</p>
-<div id="slides-4" class="section level5">
+<div id="slides-5" class="section level5">
 <h5><a href="https://goodekat.github.io/consulting-at-lunchinatoRs/slides.html"><font color="#368BC1">Slides</font></a></h5>
 </div>
-<div id="code-2" class="section level5">
+<div id="code-3" class="section level5">
 <h5><a href="https://github.com/goodekat/consulting-at-lunchinatoRs"><font color="#368BC1">Code</font></a></h5>
 <hr />
 </div>
@@ -403,7 +375,7 @@ $(document).ready(function () {
 <p><strong>September 24, 2020</strong> - Talk for ISU graphics group</p>
 <p>Explainable machine learning has become a quickly growing area of research as the use of black-box models continues to increase. While many methods have been proposed, little research has been done relating to applications involving functional data. As an intern at Sandia National Laboratories, I have been helping to develop methods to provide explanations for an application focused on predicting explosive device characteristics using optical spectral-temporal signatures from explosions. In this talk, I’ll discuss our approach that involves transforming the functions using functional principal component analysis, training neural networks on the functional principal components, and using permutation feature importance (PFI) to identify the principal components that are important for prediction. Visualization has played a key role in the interpretation of the functional principal components identified as important by PFI to understand the functional variability in the signatures that is driving the predictions made by the neural networks.</p>
 <p>Sandia National Laboratories is a multimission laboratory managed and operated by National Technology &amp; Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy’s National Nuclear Security Administration under contract DE-NA0003525. SAND no: SAND2020-10057 A</p>
-<div id="slides-5" class="section level5">
+<div id="slides-6" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2020-isugg-fpca-pfi/slides_with_SAND.pdf"><font color="#342D7E">Slides</font></a></h5>
 <hr />
 </div>
@@ -412,10 +384,10 @@ $(document).ready(function () {
 <h4><font color="#2B547E"> An Overview of Visualization Techniques for Explainable Machine Learning </font></h4>
 <p><strong>April 10, 2020</strong> - Talk for ISU graphics group</p>
 <p>Machine learning models are excellent predictors, but it is impractical to interpret many of these models. Despite this impracticality, it is important to be able to explain predictions to assess and validate models. As a result, a field of research has recently developed in the explainability of machine learning models. In this talk, I will provide an overview of explainable machine learning with a focus on visualization methods. I will discuss philosophies of “explainability”, model agnostic and model specific visualization methods, and code for creating some of the visualizations in R. I hope that this talk will provide listeners with an introduction to explainable machine learning and resources to learn more if desired.</p>
-<div id="slides-6" class="section level5">
+<div id="slides-7" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2020-isugg-iml/slides.html#1"><font color="#2B547E">Slides</font></a></h5>
 </div>
-<div id="code-3" class="section level5">
+<div id="code-4" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2020-isugg-iml"><font color="#2B547E">Code</font></a></h5>
 <hr />
 </div>
@@ -424,10 +396,10 @@ $(document).ready(function () {
 <h4><font color="#368BC1"> Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations </font></h4>
 <p><strong>December 3, 2019</strong> - Talk on my research at Sandia</p>
 <p>A desire to be able to interpret machine learning models has led to an area of research focused on providing explanations for predictions made by black-box models. One method that has resulted from this area of research is LIME (Ribeiro et. al. 2016). LIME stands for local interpretable model-agnostic explanations. The method provides an explanation for a black box prediction by using an interpretable model, referred to as an explainer model, to approximate the complex black-box model in a local region around a prediction of interest. The quality of the explanation produced by LIME will depend on how good of an approximation the interpretable model is to the complex model. Currently, few tools have been provided to assess this approximation. We are developing visualizations that diagnose the explanation produced by LIME. In this talk, I will provide a brief overview of LIME, motivate the importance of the assessing LIME explanations, and introduce our diagnostic visualizations.</p>
-<div id="slides-7" class="section level5">
+<div id="slides-8" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-sandia-lime-diagnostics/slides.html"><font color="#368BC1">Slides</font></a></h5>
 </div>
-<div id="code-4" class="section level5">
+<div id="code-5" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-sandia-lime-diagnostics"><font color="#368BC1">Code</font></a></h5>
 <hr />
 </div>
@@ -436,10 +408,10 @@ $(document).ready(function () {
 <h4><font color="#342D7E"> gganimate (with a spooky twist) </font></h4>
 <p><strong>October 31, 2019</strong> - Talk for ISU graphics group</p>
 <p>gganimate allows for the animation of ggplot2 graphics. The package has been around for a while, but it has been updated to allow for easier transitions from static ggplot2 graphic to animated versions. This talk is meant to be an interactive tutorial on how to use the updated version of gganimate. You are encouraged to bring a laptop to follow along. Since the talk will be given on Halloween, spooky datasets will be used to demonstrate the functionality of gganimate.</p>
-<div id="slides-8" class="section level5">
+<div id="slides-9" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-isugg-gganimate-spooky/slides.html"><font color="#342D7E">Slides</font></a></h5>
 </div>
-<div id="code-5" class="section level5">
+<div id="code-6" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-isugg-gganimate-spooky"><font color="#342D7E">Code</font></a></h5>
 <hr />
 </div>
@@ -448,10 +420,10 @@ $(document).ready(function () {
 <h4><font color="#2B547E"> ggResidpanel: Easy Creation of Panels of Diagnostics Plots </font></h4>
 <p><strong>October 4, 2019</strong> - Presentation for ISU lunchinatoRs</p>
 <p>Overview and tutorial on ggResidpanel.</p>
-<div id="slides-9" class="section level5">
+<div id="slides-10" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-lunchinatoRs-ggResidpanel/slides.html"><font color="#2B547E">Slides</font></a></h5>
 </div>
-<div id="code-6" class="section level5">
+<div id="code-7" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-lunchinatoRs-ggResidpanel"><font color="#2B547E">Code</font></a></h5>
 <hr />
 </div>
@@ -460,13 +432,13 @@ $(document).ready(function () {
 <h4><font color="#368BC1"> Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations from Random Forests </font></h4>
 <p><strong>July 29, 2019</strong> - Speed presentation and e-poster for JSM 2019</p>
 <p>Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for predictive models. The technique fits a ridge regression model to binary encoded perturbations created from the observed data weighted by proximity to the prediction of interest. The predicted values associated with the perturbations computed using the complex model are used as the response variable in the regression. The coefficients from the linear model are then used to determine the influential variables. We have developed some visualizations and other diagnostic tools to assess the explanations produced by LIME from a random forest. In particular, we consider how well the simple model fit by LIME captures the random forest model and how the results from LIME vary based on different algorithm input options. To demonstrate these tools, we apply LIME to a random forest fit to a forensics bullet matching dataset using the lime R package and apply our methods to diagnose the LIME explanations.</p>
-<div id="slides-10" class="section level5">
+<div id="slides-11" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/slides.pdf"><font color="#368BC1">Slides</font></a></h5>
 </div>
 <div id="poster" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/poster.pdf"><font color="#368BC1">Poster</font></a></h5>
 </div>
-<div id="code-7" class="section level5">
+<div id="code-8" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-jsm-lime_diagnostics"><font color="#368BC1">Code</font></a></h5>
 <hr />
 </div>
@@ -475,10 +447,10 @@ $(document).ready(function () {
 <h4><font color="#342D7E"> A Review and Discussion of Residuals for Mixed Models </font></h4>
 <p><strong>June 20, 2019</strong> - Talk for NCCC-170 meeting 2019</p>
 <p>Residuals are a key tool used to diagnose models. As a statistical consultant for researchers in many areas, I often find myself reminding my clients to visualize residuals to assess model assumptions. Many of my clients are working with mixed models, and I recently realized that I often recommend the use of certain residual types without a full understanding of the implications of selecting one type over another. This led me to have an interest in better understanding the many residuals types for mixed model. In this talk, I will provide a review of the residual types available for linear mixed models (marginal, conditional, studentized, etc.). I will explain how the residuals are computed and how these computations differ between R and SAS. I will also discuss what I have learned from the literature about how to select a residual type when assessing a model. Lastly, I will briefly touch on residual types for generalized linear mixed models and list some unanswered questions. If time permits, I will pose these remaining questions to the attendees to discuss as a group.</p>
-<div id="slides-11" class="section level5">
+<div id="slides-12" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides.html"><font color="#342D7E">Slides</font></a></h5>
 </div>
-<div id="code-8" class="section level5">
+<div id="code-9" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-nccc-lmm_residuals"><font color="#342D7E">Code</font></a></h5>
 <hr />
 </div>
@@ -491,7 +463,7 @@ $(document).ready(function () {
 <div id="poster-1" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-gpsrc-limetorf/poster.pdf"><font color="#2B547E">Poster</font></a></h5>
 </div>
-<div id="code-9" class="section level5">
+<div id="code-10" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-gpsrc-limetorf"><font color="#2B547E">Code</font></a></h5>
 <hr />
 </div>
@@ -500,10 +472,10 @@ $(document).ready(function () {
 <h4><font color="#368BC1"> An Application of LIME to a Random Forest Model </font></h4>
 <p><strong>March 1, 2019</strong> - Talk for ISU graphics group</p>
 <p>Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for black-box predictive models. In this talk, I will explain the LIME procedure and show an application of LIME to predictions from a random forest model fit to a bullet matching dataset. I will present a Shiny app I created to view the LIME explanations. Additionally, I will discuss the issues that I have encountered while working with LIME, some of the attempts at a solution, and future directions for my research.</p>
-<div id="slides-12" class="section level5">
+<div id="slides-13" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2019-isugg-limetorf/slides.html"><font color="#368BC1">Slides</font></a></h5>
 </div>
-<div id="code-10" class="section level5">
+<div id="code-11" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2019-isugg-limetorf"><font color="#368BC1">Code</font></a></h5>
 <hr />
 </div>
@@ -519,7 +491,7 @@ $(document).ready(function () {
 <div id="poster-2" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2018-kstate-ggresidpanel/poster.pdf"><font color="#342D7E">Poster</font></a></h5>
 </div>
-<div id="code-11" class="section level5">
+<div id="code-12" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2018-isugg-ggResidpanel"><font color="#342D7E">Code</font></a></h5>
 <hr />
 </div>
@@ -528,10 +500,10 @@ $(document).ready(function () {
 <h4><font color="#2B547E"> Interpreting Predictions from Black Box Models with LIME </font></h4>
 <p><strong>November 9, 2017</strong> - Talk for ISU graphics group</p>
 <p>LIME (Local Interpretable Model-agnostic Explanations) is a method that explains how black box models determine individual predictions. It was developed by computer scientists at the University of Washington and implemented in Python, and recently, Thomas Pedersen developed the R package lime that allows R users to implement the procedure. In this talk, I will explain the motivation for LIME, discuss how it works, and show examples using LIME in R. Additionally, I will encourage participation as we work through an example the creators of LIME used to test the usefulness of LIME, so please bring your laptop if possible.</p>
-<div id="slides-13" class="section level5">
+<div id="slides-14" class="section level5">
 <h5><a href="https://goodekat.github.io/presentations/2017-isugg-lime/slides.html"><font color="#2B547E">Slides</font></a></h5>
 </div>
-<div id="code-12" class="section level5">
+<div id="code-13" class="section level5">
 <h5><a href="https://github.com/goodekat/presentations/tree/master/2017-isugg-lime"><font color="#2B547E">Code</font></a></h5>
 </div>
 </div>
@@ -563,7 +535,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
