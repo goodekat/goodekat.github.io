@@ -2,7 +2,7 @@
 title: "Papers"
 ---
 
-<img src="/images/superior.jpg" width = 750 />
+<img src="/images/superior.jpg" width="750"/>
 
 ## 2022
 
@@ -14,15 +14,14 @@ M. A. Ausdemore, A. McCombs, D. Ries, A. Zhang, K. Shuler, K. Goode, J. D. Tucke
 
 ## 2021
 
-**Goode, K**, Hofmann, H. "Visual diagnostics of an explainer model: Tools for the assessment of LIME explanations." Stat Anal Data Min: The ASA Data Sci Journal. 2021; 14: 185– 200. [https://doi.org/10.1002/sam.11500](https://doi.org/10.1002/sam.11500). [GitHub repository](https://github.com/goodekat/LIME-diagnostics-paper).
+**Goode, K**, Hofmann, H. "Visual diagnostics of an explainer model: Tools for the assessment of LIME explanations." Stat Anal Data Min: The ASA Data Sci Journal. 2021; 14: 185-- 200. <https://doi.org/10.1002/sam.11500>. [GitHub repository](https://github.com/goodekat/LIME-diagnostics-paper).
 
 ## 2020
 
-**Goode, K.**, Ries, D., and Zollweg, J. "Explaining Neural Networks with Functional Data Using PCA and Feature Importance". AAAI 2020 Fall Symposium on AI in the Government and Public Sector.
-November 13-14, 2020. [https://arxiv.org/abs/2010.12063](https://arxiv.org/abs/2010.12063). [YouTube Video](https://www.youtube.com/watch?v=8UxKbfUyc2M&t=273s).
+**Goode, K.**, Ries, D., and Zollweg, J. "Explaining Neural Networks with Functional Data Using PCA and Feature Importance". AAAI 2020 Fall Symposium on AI in the Government and Public Sector. November 13-14, 2020. <https://arxiv.org/abs/2010.12063>. [YouTube Video](https://www.youtube.com/watch?v=8UxKbfUyc2M&t=273s).
 
 Dixon, P.M., **Goode, K.J.**, and Lay, C., 2020, "Profile likelihood confidence intervals for ECx". Iowa State Digital Library. Statistics Technical Reports. [https://lib.dr.iastate.edu/stat_las_reports/1](https://dr.lib.iastate.edu/entities/publication/7e0d7d0a-f514-4642-9814-c3b7bd821cc0)
 
 ## 2019
 
-Ball, E.E., **Goode, K.J.**, and Weber, M.J., 2019. "Effects of Transport Duration and Water Quality on Age-0 Walleye Stress and Survival", North American Journal of Aquaculture, 82:33–42. [https://doi.org/10.1002/naaq.10114](https://afspubs.onlinelibrary.wiley.com/doi/10.1002/naaq.10114).
+Ball, E.E., **Goode, K.J.**, and Weber, M.J., 2019. "Effects of Transport Duration and Water Quality on Age-0 Walleye Stress and Survival", North American Journal of Aquaculture, 82:33--42. [https://doi.org/10.1002/naaq.10114](https://afspubs.onlinelibrary.wiley.com/doi/10.1002/naaq.10114).

@@ -7,13 +7,11 @@ toc-depth: 2
 
 ### Tracing Trees: Visualizing Random Forest Tree Variability with Trace Plots
 
-**July 11, 2022** - Talk at Sandia National Labs  
+**July 11, 2022** - Talk at Sandia National Labs
 
 [Sides](https://goodekat.github.io/presentations/2022-trace-plots/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2022-trace-plots)
 
-<center>
-<img src="/images/presentations/2022-07-11.png" width = 500/>
-</center>
+<center><img src="/images/presentations/2022-07-11.png" width="500/"/></center>
 
 ## 2021
 
@@ -23,15 +21,13 @@ toc-depth: 2
 
 [Slides](https://goodekat.github.io/presentations/2021-lunchinatoRs-shiny-fish/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2021-lunchinatoRs-shiny-fish)
 
-<center>
-<img src="/images/presentations/2021-04-16.png" width = 500/>
-</center>
+<center><img src="/images/presentations/2021-04-16.png" width="500/"/></center>
 
 ### Tracing Trees: Visualizing Variability in the Architecture of Random Forest Trees Using Extensions of Trace Plots
 
-**April 1, 2021** -  Talk for [ISU Graphics Group](https://isu-graphics.rbind.io/)
+**April 1, 2021** - Talk for [ISU Graphics Group](https://isu-graphics.rbind.io/)
 
-Random forests are a popular method for statistical applications with an objective of prediction. While an individual tree within a random forest provides a clear decision path for how a prediction is made, the ensemble of trees from the forest creates a complex decision process that is difficult to interpret. One approach used to gain insight into this decision process is visualization of the model. Various approaches have been taken to visualize random forests including trace plots developed by Simon Urbanek ([https://link.springer.com/chapter/10.1007/978-3-540-33037-0_11](https://link.springer.com/chapter/10.1007/978-3-540-33037-0_11)). Trace plots depict the trees in a random forest using a structure similar to parallel coordinate plots that allows for a direct comparison of the trees. In this talk, I'll describe trace plots and discuss my recent work on implementing and extending trace plots in R. I'll also discuss my attempts to use trace plots to compare variability between clusters of trees in a random forest and visualizing representative or summary trees in the context of tree variability.
+Random forests are a popular method for statistical applications with an objective of prediction. While an individual tree within a random forest provides a clear decision path for how a prediction is made, the ensemble of trees from the forest creates a complex decision process that is difficult to interpret. One approach used to gain insight into this decision process is visualization of the model. Various approaches have been taken to visualize random forests including trace plots developed by Simon Urbanek (<https://link.springer.com/chapter/10.1007/978-3-540-33037-0_11>). Trace plots depict the trees in a random forest using a structure similar to parallel coordinate plots that allows for a direct comparison of the trees. In this talk, I'll describe trace plots and discuss my recent work on implementing and extending trace plots in R. I'll also discuss my attempts to use trace plots to compare variability between clusters of trees in a random forest and visualizing representative or summary trees in the context of tree variability.
 
 [Slides](https://goodekat.github.io/presentations/2021-isugg-trace-plots/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2021-isugg-trace-plots)
 
@@ -71,11 +67,11 @@ Sandia National Laboratories is a multimission laboratory managed and operated b
 
 [Slides](https://goodekat.github.io/presentations/2020-aaai-fpca-pfi/slides.pdf) [Recording](https://www.youtube.com/watch?v=8UxKbfUyc2M&t=273s) [Paper](https://arxiv.org/abs/2010.12063)
 
-### A Statistical Consultant’s Perspective on Getting Help with R
+### A Statistical Consultant's Perspective on Getting Help with R
 
 **October 2, 2020** - Talk given with AES Statistical Consultants (Haoyan Hu, Miranda Tilton, and Yudi Zhang) at ISU LunchinatoRs
 
-Everyone runs into problems when writing code in R (even statisticians). Sometimes the problems are small picture such as bugs in the code. Other times the problems are large picture such as how to implement an analysis all together. In this talk, we will provide a statistical consultant’s perspective on getting help with R. We’ll tell about the resources our consulting group provides to ISU graduate students who need help with R code and/or statistical analysis for a research project. We’ll also cover resources for helping yourself, internet resources for asking questions about R, and tips for practicing a good work flow in R that will hopefully help to avoid problems.
+Everyone runs into problems when writing code in R (even statisticians). Sometimes the problems are small picture such as bugs in the code. Other times the problems are large picture such as how to implement an analysis all together. In this talk, we will provide a statistical consultant's perspective on getting help with R. We'll tell about the resources our consulting group provides to ISU graduate students who need help with R code and/or statistical analysis for a research project. We'll also cover resources for helping yourself, internet resources for asking questions about R, and tips for practicing a good work flow in R that will hopefully help to avoid problems.
 
 [Slides](https://goodekat.github.io/consulting-at-lunchinatoRs/slides.html) [GitHub](https://github.com/goodekat/consulting-at-lunchinatoRs)
 
@@ -83,9 +79,9 @@ Everyone runs into problems when writing code in R (even statisticians). Sometim
 
 **September 24, 2020** - Talk for ISU graphics group
 
-Explainable machine learning has become a quickly growing area of research as the use of black-box models continues to increase. While many methods have been proposed, little research has been done relating to applications involving functional data. As an intern at Sandia National Laboratories, I have been helping to develop methods to provide explanations for an application focused on predicting explosive device characteristics using optical spectral-temporal signatures from explosions. In this talk, I’ll discuss our approach that involves transforming the functions using functional principal component analysis, training neural networks on the functional principal components, and using permutation feature importance (PFI) to identify the principal components that are important for prediction. Visualization has played a key role in the interpretation of the functional principal components identified as important by PFI to understand the functional variability in the signatures that is driving the predictions made by the neural networks.
+Explainable machine learning has become a quickly growing area of research as the use of black-box models continues to increase. While many methods have been proposed, little research has been done relating to applications involving functional data. As an intern at Sandia National Laboratories, I have been helping to develop methods to provide explanations for an application focused on predicting explosive device characteristics using optical spectral-temporal signatures from explosions. In this talk, I'll discuss our approach that involves transforming the functions using functional principal component analysis, training neural networks on the functional principal components, and using permutation feature importance (PFI) to identify the principal components that are important for prediction. Visualization has played a key role in the interpretation of the functional principal components identified as important by PFI to understand the functional variability in the signatures that is driving the predictions made by the neural networks.
 
-Sandia National Laboratories is a multimission laboratory managed and operated by National Technology & Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy’s National Nuclear Security Administration under contract DE-NA0003525. SAND no: SAND2020-10057 A
+Sandia National Laboratories is a multimission laboratory managed and operated by National Technology & Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy's National Nuclear Security Administration under contract DE-NA0003525. SAND no: SAND2020-10057 A
 
 [Slides](https://goodekat.github.io/presentations/2020-isugg-fpca-pfi/slides_with_SAND.pdf)
 
@@ -93,7 +89,7 @@ Sandia National Laboratories is a multimission laboratory managed and operated b
 
 **April 10, 2020** - Talk for ISU graphics group
 
-Machine learning models are excellent predictors, but it is impractical to interpret many of these models. Despite this impracticality, it is important to be able to explain predictions to assess and validate models. As a result, a field of research has recently developed in the explainability of machine learning models. In this talk, I will provide an overview of explainable machine learning with a focus on visualization methods. I will discuss philosophies of “explainability”, model agnostic and model specific visualization methods, and code for creating some of the visualizations in R. I hope that this talk will provide listeners with an introduction to explainable machine learning and resources to learn more if desired.
+Machine learning models are excellent predictors, but it is impractical to interpret many of these models. Despite this impracticality, it is important to be able to explain predictions to assess and validate models. As a result, a field of research has recently developed in the explainability of machine learning models. In this talk, I will provide an overview of explainable machine learning with a focus on visualization methods. I will discuss philosophies of "explainability", model agnostic and model specific visualization methods, and code for creating some of the visualizations in R. I hope that this talk will provide listeners with an introduction to explainable machine learning and resources to learn more if desired.
 
 [Slides](https://goodekat.github.io/presentations/2020-isugg-iml/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2020-isugg-iml)
 
@@ -113,7 +109,7 @@ A desire to be able to interpret machine learning models has led to an area of r
 
 gganimate allows for the animation of ggplot2 graphics. The package has been around for a while, but it has been updated to allow for easier transitions from static ggplot2 graphic to animated versions. This talk is meant to be an interactive tutorial on how to use the updated version of gganimate. You are encouraged to bring a laptop to follow along. Since the talk will be given on Halloween, spooky datasets will be used to demonstrate the functionality of gganimate.
 
-[Slides](https://goodekat.github.io/presentations/2019-isugg-gganimate-spooky/slides.html"><font color="#342D7E) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-isugg-gganimate-spooky)
+[Slides](https://goodekat.github.io/presentations/2019-isugg-gganimate-spooky/slides.html%22%3E%3Cfont%20color=%22#342D7E) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-isugg-gganimate-spooky)
 
 ### ggResidpanel: Easy Creation of Panels of Diagnostics Plots
 
@@ -127,7 +123,7 @@ Overview and tutorial on ggResidpanel.
 
 **July 29, 2019** - Speed presentation and e-poster for JSM 2019
 
-Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for predictive models. The technique fits a ridge regression model to binary encoded perturbations created from the observed data weighted by proximity to the  prediction of interest. The predicted values associated with the perturbations computed using the complex model are used as the response variable in the regression. The coefficients from the linear model are then used to determine the influential variables. We have developed some visualizations and other diagnostic tools to assess the explanations produced by LIME from a random forest. In particular, we consider how well the simple model fit by LIME captures the random forest model and how the results from LIME vary based on different algorithm input options. To demonstrate these tools, we apply LIME to a random forest fit to a forensics bullet matching dataset using the lime R package and apply our methods to diagnose the LIME explanations.
+Random forests are known for their accurate predictive abilities, but they are a part of the family of machine learning models that lack interpretability. A technique called LIME was developed to provide local interpretations for predictive models. The technique fits a ridge regression model to binary encoded perturbations created from the observed data weighted by proximity to the prediction of interest. The predicted values associated with the perturbations computed using the complex model are used as the response variable in the regression. The coefficients from the linear model are then used to determine the influential variables. We have developed some visualizations and other diagnostic tools to assess the explanations produced by LIME from a random forest. In particular, we consider how well the simple model fit by LIME captures the random forest model and how the results from LIME vary based on different algorithm input options. To demonstrate these tools, we apply LIME to a random forest fit to a forensics bullet matching dataset using the lime R package and apply our methods to diagnose the LIME explanations.
 
 [Slides](https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/slides.pdf) [Poster](https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/poster.pdf) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-jsm-lime_diagnostics)
 
@@ -167,7 +163,7 @@ An R Package for Easy Visualization of Residuals
 
 **May 8, 2018** - Poster for Kansas State University Conference on Applied Statistics in Agriculture
 
-As consultants on a wide variety of projects across many majors, a common oversight we encounter is a failure to examine the residuals. This is particularly true when the client is performing the analysis in R. We were inspired by the residual panel in SAS to create an R package that easily provides users with a similar panel of plots. The ggResidpanel package in R is intended to give a single view of diagnostic plots for checking the key underlying assumptions of linear models. A variety of options gives the user the ability to choose from a selection of plots to display in a window. This includes SAS’s default residual panel as well as R’s default plots for linear models. Other options have been included to ensure that this package can also be applied to deviance or Pearson residuals if the user inputs a generalized linear model. Cook’s D plots and interactive plots using Plotly are included to provide a straightforward process to identify outliers and influential points while connecting findings back to the data.
+As consultants on a wide variety of projects across many majors, a common oversight we encounter is a failure to examine the residuals. This is particularly true when the client is performing the analysis in R. We were inspired by the residual panel in SAS to create an R package that easily provides users with a similar panel of plots. The ggResidpanel package in R is intended to give a single view of diagnostic plots for checking the key underlying assumptions of linear models. A variety of options gives the user the ability to choose from a selection of plots to display in a window. This includes SAS's default residual panel as well as R's default plots for linear models. Other options have been included to ensure that this package can also be applied to deviance or Pearson residuals if the user inputs a generalized linear model. Cook's D plots and interactive plots using Plotly are included to provide a straightforward process to identify outliers and influential points while connecting findings back to the data.
 
 [Slides](https://goodekat.github.io/presentations/2018-isugg-ggResidpanel/talk.html) [Poster](https://goodekat.github.io/presentations/2018-kstate-ggresidpanel/poster.pdf) [GitHub](https://github.com/goodekat/presentations/tree/master/2018-isugg-ggResidpanel)
 
@@ -180,6 +176,3 @@ As consultants on a wide variety of projects across many majors, a common oversi
 LIME (Local Interpretable Model-agnostic Explanations) is a method that explains how black box models determine individual predictions. It was developed by computer scientists at the University of Washington and implemented in Python, and recently, Thomas Pedersen developed the R package lime that allows R users to implement the procedure. In this talk, I will explain the motivation for LIME, discuss how it works, and show examples using LIME in R. Additionally, I will encourage participation as we work through an example the creators of LIME used to test the usefulness of LIME, so please bring your laptop if possible.
 
 [Slides](https://goodekat.github.io/presentations/2017-isugg-lime/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2017-isugg-lime)
-
-
-
