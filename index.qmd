@@ -1,0 +1,30 @@
+---
+title: "Katherine Goode"
+description: | 
+             | *Research and Development Statistician*
+             | Senior Member of Technical Staff
+             | Sandia National Laboratories 
+image: images/kat.jpg
+about:
+  template: trestles
+---
+
+::: column-page
+## Bio
+
+I am a statistician with research interests in explainable machine learning and data visualization. I have a PhD in statistics from [Iowa State University](https://www.stat.iastate.edu/), an M.S. in statistics from the [University of Wisconsin, Madison](https://stat.wisc.edu/), and a B.A. in mathematics from [Lawrence University](https://www.lawrence.edu/academics/college/mathematics). My PhD adviser was [Heike Hofmann](https://github.com/heike), and my dissertation focused on visualization techniques for explainability of machine learning ([Visual diagnostics for explaining machine learning models](https://dr.lib.iastate.edu/items/abac51d2-c05b-4ef2-90f5-03740ff5c682)). I currently work for [Sandia National Laboratories](https://www.sandia.gov/) as a research and development statistician.
+
+## Contact Information
+
+Email: kjgoode\@sandia.gov
+
+Phone: 505-844-1998
+
+Mailing Address:
+
+> Katherine Goode\
+> Statistical Sciences\
+> Sandia National Laboratories\
+> PO Box 5800 MS 0829\
+> Albuquerque, NM 87185
+:::

@@ -1,7 +1,0 @@
-
-<br>
-
-<img src="/images/gl.png" width = 1000 />
-
-<font size=6> **Katherine Goode** </font> <font size=3> Statistics PhD Student, Iowa State University </font>
-

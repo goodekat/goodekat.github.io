@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Katherine Goode"
+  search: true
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - papers.qmd
+      - presentations.qmd
+      - software.qmd
+      - icon: github
+        url: "https://github.com/goodekat"
+      - icon: linkedin
+        url: "https://www.linkedin.com/in/katherine-goode-363517a9/"
+     
+format:
+  html:
+    theme: yeti
+    css: styles.css
+    toc: true
+
+editor: visual
+
