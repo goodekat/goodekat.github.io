@@ -4,7 +4,7 @@ description: |
              | *Research and Development Statistician*
              | Senior Member of Technical Staff
              | Sandia National Laboratories 
-image: images/kat.jpg
+image: images/kjg.jpg
 about:
   template: trestles
 ---
