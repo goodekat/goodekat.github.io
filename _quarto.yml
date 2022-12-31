@@ -12,6 +12,7 @@ website:
       - papers.qmd
       - presentations.qmd
       - software.qmd
+      - resume.Rmd
       - icon: github
         url: "https://github.com/goodekat"
       - icon: linkedin
