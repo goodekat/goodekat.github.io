@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "My full CV is available here."
+  },
+  {
     "objectID": "papers.html#section",
     "href": "papers.html#section",
     "title": "Papers",
@@ -32,7 +39,7 @@
     "href": "index.html",
     "title": "Katherine Goode",
     "section": "",
-    "text": "I am a statistician with research interests in explainable machine learning and data visualization. I have a PhD in statistics from Iowa State University, an M.S. in statistics from the University of Wisconsin, Madison, and a B.A. in mathematics from Lawrence University. My PhD adviser was Heike Hofmann, and my dissertation focused on visualization techniques for explainability of machine learning (Visual diagnostics for explaining machine learning models). I currently work for Sandia National Laboratories as a research and development statistician.\n\n\n\nEmail: kjgoode@sandia.gov\nPhone: 505-844-1998\nMailing Address:\n\nKatherine Goode\nStatistical Sciences\nSandia National Laboratories\nPO Box 5800 MS 0829\nAlbuquerque, NM 87185"
+    "text": "I am a statistician with research interests in explainable machine learning and data visualization. I have a PhD in statistics from Iowa State University, an M.S. in statistics from the University of Wisconsin, Madison, and a B.A. in mathematics from Lawrence University. My PhD adviser was Heike Hofmann, and my dissertation focused on visualization techniques for explainability of machine learning (Visual diagnostics for explaining machine learning models). I currently work for Sandia National Laboratories as a research and development statistician.\n\n\n\nEmail: kjgoode@sandia.gov\nPhone: 505-844-1998\nMailing Address:\n\nStatistical Sciences\nSandia National Laboratories\nPO Box 5800 MS 0829\nAlbuquerque, NM 87185"
   },
   {
     "objectID": "software.html",

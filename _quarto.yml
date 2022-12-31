@@ -12,8 +12,7 @@ website:
       - papers.qmd
       - presentations.qmd
       - software.qmd
-      - text: "CV"
-        url: "https://goodekat.github.io/cv/goode_cv.pdf"
+      - resume.qmd
       - icon: github
         url: "https://github.com/goodekat"
       - icon: linkedin
