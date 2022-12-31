@@ -2,7 +2,7 @@
 title: "Papers"
 ---
 
-<img src="/images/superior.jpg" width="750"/>
+<img src="/images/superior.jpg" width="100%"/>
 
 ## 2022
 

@@ -11,7 +11,7 @@ toc-depth: 2
 
 [Sides](https://goodekat.github.io/presentations/2022-trace-plots/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2022-trace-plots)
 
-<center><img src="/images/presentations/2022-07-11.png" width="500/"/></center>
+<center><img src="/images/presentations/2022-07-11.png" width="75%"/></center>
 
 ## 2021
 
@@ -21,7 +21,7 @@ toc-depth: 2
 
 [Slides](https://goodekat.github.io/presentations/2021-lunchinatoRs-shiny-fish/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2021-lunchinatoRs-shiny-fish)
 
-<center><img src="/images/presentations/2021-04-16.png" width="500/"/></center>
+<center><img src="/images/presentations/2021-04-16.png" width="75%"/></center>
 
 ### Tracing Trees: Visualizing Variability in the Architecture of Random Forest Trees Using Extensions of Trace Plots
 
