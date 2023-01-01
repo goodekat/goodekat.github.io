@@ -1,7 +1,7 @@
 ---
 title: "gganimate (with a spooky twist)"
 date: "October 31, 2019"
-image: "figs/2019-10-31.png"
+image: "../images/2019-10-31.png"
 ---
 
 *Talk for ISU graphics group*
@@ -10,4 +10,4 @@ gganimate allows for the animation of ggplot2 graphics. The package has been aro
 
 [Slides](https://goodekat.github.io/presentations/2019-isugg-gganimate-spooky/slides.html%22%3E%3Cfont%20color=%22#342D7E) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-isugg-gganimate-spooky)
 
-<center>![](figs/2019-10-31.png){width="100%"}</center>
+<center>![](../images/2019-10-31.png){width="100%"}</center>

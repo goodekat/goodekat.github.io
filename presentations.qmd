@@ -2,7 +2,7 @@
 title: "Presentations"
 toc-depth: 2
 listing: 
-  contents: presentations
+  contents: presentations/
   type: default
   sort: "date desc"
 ---
