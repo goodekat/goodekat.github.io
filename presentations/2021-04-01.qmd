@@ -1,7 +1,7 @@
 ---
 title: "Tracing Trees: Visualizing Variability in the Architecture of Random Forest Trees Using Extensions of Trace Plots"
 date: "2021-04-01"
-image: "figs/2021-04-01.png"
+image: "../images/2021-04-01.png"
 ---
 
 *Talk for [ISU Graphics Group](https://isu-graphics.rbind.io/).*
@@ -10,4 +10,4 @@ Random forests are a popular method for statistical applications with an objecti
 
 [Slides](https://goodekat.github.io/presentations/2021-isugg-trace-plots/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2021-isugg-trace-plots)
 
-<center>![](figs/2021-04-01.png){width="100%"}</center>
+<center>![](../images/2021-04-01.png){width="100%"}</center>
