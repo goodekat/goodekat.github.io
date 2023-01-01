@@ -1,7 +1,7 @@
 ---
 title: "Tracing Trees: Visualizing Random Forest Tree Variability with Trace Plots"
 date: "July 11, 2022"
-image: "figs/2022-07-11.png"
+image: "../images/2022-07-11.png"
 ---
 
 *Talk given at Sandia National Labs.*
@@ -10,4 +10,4 @@ An introduction to trace plots and overview of my research on trace plots.
 
 [Sides](https://goodekat.github.io/presentations/2022-trace-plots/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2022-trace-plots)
 
-<center>![](figs/2022-07-11.png){width="100%"}</center>
+<center>![](../images/2022-07-11.png){width="100%"}</center>

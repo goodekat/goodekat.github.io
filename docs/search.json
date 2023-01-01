@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "presentations/2022-07-11.html",
+    "href": "presentations/2022-07-11.html",
+    "title": "Tracing Trees: Visualizing Random Forest Tree Variability with Trace Plots",
+    "section": "",
+    "text": "Talk given at Sandia National Labs.\nAn introduction to trace plots and overview of my research on trace plots.\nSides GitLab"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Tracing Trees: Visualizing Random Forest Tree Variability with Trace Plots\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n  \n\n\n\n\nWhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics\n\n\n\n\n\n\n\n\n\n\n\n\nApr 16, 2021\n\n\n\n\n\n\n  \n\n\n\n\nTracing Trees: Visualizing Variability in the Architecture of Random Forest Trees Using Extensions of Trace Plots\n\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2021\n\n\n\n\n\n\n  \n\n\n\n\nWhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2021\n\n\n\n\n\n\n  \n\n\n\n\nExplaining Black Box Machine Learning Models\n\n\n\n\n\n\n\n\n\n\n\n\nNov 20, 2020\n\n\n\n\n\n\n  \n\n\n\n\nThe Delta Method and Applications to Mark Recapture Models\n\n\n\n\n\n\n\n\n\n\n\n\nNov 16, 2020\n\n\n\n\n\n\n  \n\n\n\n\nExplaining Neural Networks with Functional Data Using PCA and Feature Importance\n\n\n\n\n\n\n\n\n\n\n\n\nNov 14, 2020\n\n\n\n\n\n\n  \n\n\n\n\nA Statistical Consultant’s Perspective on Getting Help with R\n\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2020\n\n\n\n\n\n\n  \n\n\n\n\nExplaining Neural Network Predictions for Functional Data Using Principal Component Analysis and Feature Importance\n\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2020\n\n\n\n\n\n\n  \n\n\n\n\nAn Overview of Visualization Techniques for Explainable Machine Learning\n\n\n\n\n\n\n\n\n\n\n\n\nApr 10, 2020\n\n\n\n\n\n\n  \n\n\n\n\nVisual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations\n\n\n\n\n\n\n\n\n\n\n\n\nDec 3, 2019\n\n\n\n\n\n\n  \n\n\n\n\ngganimate (with a spooky twist)\n\n\n\n\n\n\n\n\n\n\n\n\nOct 31, 2019\n\n\n\n\n\n\n  \n\n\n\n\nggResidpanel: Easy Creation of Panels of Diagnostics Plots\n\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2019\n\n\n\n\n\n\n  \n\n\n\n\nVisual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations from Random Forests\n\n\n\n\n\n\n\n\n\n\n\n\nJul 29, 2019\n\n\n\n\n\n\n  \n\n\n\n\nA Review and Discussion of Residuals for Mixed Models\n\n\n\n\n\n\n\n\n\n\n\n\nJun 20, 2019\n\n\n\n\n\n\n  \n\n\n\n\nUsing LIME to Interpret a Random Forest Model with an Application to Bullet Matching Data\n\n\n\n\n\n\n\n\n\n\n\n\nMay 13, 2019\n\n\n\n\n\n\n  \n\n\n\n\nAn Application of LIME to a Random Forest Model\n\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2019\n\n\n\n\n\n\n  \n\n\n\n\nIntroducing ggResidpanel: An R Package for Easy Visualization of Residuals\n\n\n\n\n\n\n\n\n\n\n\n\nOct 12, 2018\n\n\n\n\n\n\n  \n\n\n\n\nIntroducing ggResidpanel: An R Package for Easy Visualization of Residuals\n\n\n\n\n\n\n\n\n\n\n\n\nMay 8, 2018\n\n\n\n\n\n\n  \n\n\n\n\nInterpreting Predictions from Black Box Models with LIME\n\n\n\n\n\n\n\n\n\n\n\n\nNov 9, 2017\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "papers.html#section",
     "href": "papers.html#section",
     "title": "Papers",
@@ -28,13 +42,6 @@
     "text": "2019\nBall, E.E., Goode, K.J., and Weber, M.J., 2019. “Effects of Transport Duration and Water Quality on Age-0 Walleye Stress and Survival”, North American Journal of Aquaculture, 82:33–42. https://doi.org/10.1002/naaq.10114."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Katherine Goode",
-    "section": "",
-    "text": "I am a statistician with research interests in explainable machine learning and data visualization. I have a PhD in statistics from Iowa State University, an M.S. in statistics from the University of Wisconsin, Madison, and a B.A. in mathematics from Lawrence University. My PhD adviser was Heike Hofmann, and my dissertation focused on visualization techniques for explainability of machine learning (Visual diagnostics for explaining machine learning models). I currently work for Sandia National Laboratories as a research and development statistician.\nYou can find my resume here (PDF version), and my full CV is available here.\n\n\n\nEmail: kjgoode@sandia.gov\nPhone: 505-844-1998\nMailing Address:\n\nStatistical Sciences\nSandia National Laboratories\nPO Box 5800 MS 0829\nAlbuquerque, NM 87185"
-  },
-  {
     "objectID": "presentations/2019-10-31.html",
     "href": "presentations/2019-10-31.html",
     "title": "gganimate (with a spooky twist)",
@@ -61,6 +68,13 @@
     "title": "WhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics",
     "section": "",
     "text": "Talk for ISU Graphics Group.\nThe fish species of Grass Carp (Ctenopharyngodon idella), Silver Carp (Hypophthalmichthys molitrix), and Bighead Carp (H. nobilis) are categorized as invasive carp in North America. There is interest from a natural resource management perspective to monitor the populations and spread of the fish species. A common monitoring practice is to collect and genetically identify fish eggs, but this process is both costly in money and time. Camacho et al. (2019) demonstrated the use of machine learning as a possibility for a more efficient method of identifying invasive carp. Camacho et al. (2019) trained random forests on easy to measure egg characteristics such as water conductivity and average membrane diameter, and the models returned high accuracy.\nIn this talk, I will present my recent work with Dr. Michael Weber (NREM) and Dr. Philip Dixon on a Shiny app (WhoseEgg) for identifying invasive carp using random forests based on those from Camacho et al. (2019). The app is intended to be a tool for researchers to input their own fish egg data and easily obtain random forest predictions via a point-and-click user interface. We began work on the app in January, so it is still in development. I will share the current state of the app and our goals for enhancement. I will also ask the audience for feedback. We would greatly appreciate suggestions for adjustments to make the app more user friendly.\nSlides GitHub"
+  },
+  {
+    "objectID": "presentations/2020-11-16.html",
+    "href": "presentations/2020-11-16.html",
+    "title": "The Delta Method and Applications to Mark Recapture Models",
+    "section": "",
+    "text": "Talk for Bob Klaver’s ISU Ecology 607 class.\nThis talk discusses the delta method and ways to apply it in R.\nSlides GitHub"
   },
   {
     "objectID": "presentations/2020-11-14.html",
@@ -112,13 +126,6 @@
     "text": "Talk given to the ISU LunchinatoRs.\nAn introduction to the WhoseEgg app.\nSlides GitLab"
   },
   {
-    "objectID": "presentations/2022-11-16.html",
-    "href": "presentations/2022-11-16.html",
-    "title": "The Delta Method and Applications to Mark Recapture Models",
-    "section": "",
-    "text": "Talk for Bob Klaver’s ISU Ecology 607 class.\nThis talk discusses the delta method and ways to apply it in R.\nSlides GitHub"
-  },
-  {
     "objectID": "presentations/2018-05-08.html",
     "href": "presentations/2018-05-08.html",
     "title": "Introducing ggResidpanel: An R Package for Easy Visualization of Residuals",
@@ -161,13 +168,6 @@
     "text": "Talk given to the statistics department at Sandia National Laboratories\nA desire to be able to interpret machine learning models has led to an area of research focused on providing explanations for predictions made by black-box models. One method that has resulted from this area of research is LIME (Ribeiro et. al. 2016). LIME stands for local interpretable model-agnostic explanations. The method provides an explanation for a black box prediction by using an interpretable model, referred to as an explainer model, to approximate the complex black-box model in a local region around a prediction of interest. The quality of the explanation produced by LIME will depend on how good of an approximation the interpretable model is to the complex model. Currently, few tools have been provided to assess this approximation. We are developing visualizations that diagnose the explanation produced by LIME. In this talk, I will provide a brief overview of LIME, motivate the importance of the assessing LIME explanations, and introduce our diagnostic visualizations.\nSlides GitHub"
   },
   {
-    "objectID": "presentations/2022-07-11.html",
-    "href": "presentations/2022-07-11.html",
-    "title": "Tracing Trees: Visualizing Random Forest Tree Variability with Trace Plots",
-    "section": "",
-    "text": "Talk given at Sandia National Labs.\nAn introduction to trace plots and overview of my research on trace plots.\nSides GitLab"
-  },
-  {
     "objectID": "presentations/2020-11-20.html",
     "href": "presentations/2020-11-20.html",
     "title": "Explaining Black Box Machine Learning Models",
@@ -180,12 +180,5 @@
     "title": "Software",
     "section": "",
     "text": "Below are descriptions of R packages that I’ve developed.\n\nggResidpanel\nlimeaid\nredres\nTreeTracer\n\n\n\n ggResidpanel \n\nggResidpanel is an R package Katie Rey and I developed for creating panels of diagnostic plots for residuals from a model using ggplot2. It also allows for the creation of interactive versions of the plots using plotly. The package ic available on CRAN. An overview of the package can be found at this website. The source code can be found in the GitHub repository.\nHere is an example panel of diagnostic plots created using ggResidpanel.\n\n# Fit a linear model\nlm_model1 <- lm(Volume ~ Girth, data = trees)\n\n# Use the resid_panel function from ggResidpanel to create a panel of diagnostics plots\nggResidpanel::resid_panel(lm_model1)\n\n\n\n\n\n\n\n\n\n\n\n limeaid \n\nlimeaid is an R package for assessing explanations created using the R package lime. The current implementation was developed to be used with classification models with a binary response and continuous features. The package can be installed from GitHub, and additional information on limeaid is available on the GitHub repository.\nExample of a feature heatmap depicting LIME explanation across various tuning parameters for a random forest fit to the iris data.\n\nlibrary(limeaid)\nlibrary(randomForest)\n\n# Iris training and testing\niris_test <- iris[1:5, 1:4]\niris_train <- iris[-(1:5), 1:4]\niris_lab <- iris[[5]][-(1:5)]\n\n# Fit a random forest model to the iris training data\nset.seed(20200334)\nrf <- randomForest(Species ~ .,\n                   data = cbind(iris_train, \n                                Species = iris_lab))\n\n# Run apply_lime on the iris data\nlime_applied <- apply_lime(\n  train = iris_train,\n  test = iris_test,\n  model = rf,\n  label = \"virginica\",\n  n_features = 2,\n  sim_method = c('quantile_bins',\n                 'equal_bins',\n                 'kernel_density'),\n  nbins = 2:4,\n  gower_pow = c(1, 5),\n  return_perms = TRUE,\n  seed = 20200334\n)\n\n# Extract the explanations from the apply_lime output\nexplanations <- lime_applied$explain\n\n# Create a heatmap of the features chosen\nplot_feature_heatmap(explanations)\n\n\n\n\n\n\n\n\n\n\n\n redres \n\nredres is an R package developed to help with diagnosing linear mixed models fit using the function lmer from the lme4 package. It is meant to supplement the lme4 package. redres was created by me, Kellie McClernon, Jing Zhao, Yudi Zhang, and Yonghui Huo as a project for STAT 585 (taught by Dr. Heike Hoffman). The package is currently only available on GitHub, but we hope to update it and add it to CRAN. More information can be found on the package website and GitHub repository.\nHere is an example using redres to plot the raw conditional residuals from an lmer model.\n\nlibrary(redres)\nlibrary(lme4)\n\n# Fits a linear mixed effects model\nm <- lmer(height ~ rep + treatment*variety + (1|rep:treatment) + (1|rep:treatment:variety), \n          data = paprika)\n\n# Use redres to create a residual plot using the conditional residuals\nplot_redres(m)\n\n\n\n\n\n\n\n\n\n\n\n TreeTracer \nTreeTracer is an R package for creating trace plots of trees from random forests fit using the randomForest R package. Trace plots are useful tools for visually comparing trees from a random forest. See Urbanek (2008) for additional information about trace plots. The source code can be found in the GitHub repository.\nHere is an example panel of diagnostic plots created using ggResidpanel.\n\n# Load the Palmer penguins data\npenguins <- na.omit(palmerpenguins::penguins)\n\n# Select the features for training the model\nlibrary(dplyr)\npenguin_features <- \n  penguins %>% \n  select(bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g)\n\n# Fit a random forest\nset.seed(71)\npenguin_rf <-\n  randomForest::randomForest(\n    species ~ bill_length_mm + bill_depth_mm + flipper_length_mm + body_mass_g,\n    data = penguins, \n    ntree = 50\n  )\n\n# Trace plots of trees in the forest\nTreeTracer::trace_plot(\n  rf = penguin_rf,\n  train = penguin_features,\n  tree_ids = 1:penguin_rf$ntree,\n  alpha = 0.4\n)"
-  },
-  {
-    "objectID": "presentations.html",
-    "href": "presentations.html",
-    "title": "Presentations",
-    "section": "",
-    "text": "Tracing Trees: Visualizing Random Forest Tree Variability with Trace Plots\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n  \n\n\n\n\nWhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics\n\n\n\n\n\n\n\n\n\n\n\n\nApr 16, 2021\n\n\n\n\n\n\n  \n\n\n\n\nTracing Trees: Visualizing Variability in the Architecture of Random Forest Trees Using Extensions of Trace Plots\n\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2021\n\n\n\n\n\n\n  \n\n\n\n\nWhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2021\n\n\n\n\n\n\n  \n\n\n\n\nExplaining Black Box Machine Learning Models\n\n\n\n\n\n\n\n\n\n\n\n\nNov 20, 2020\n\n\n\n\n\n\n  \n\n\n\n\nThe Delta Method and Applications to Mark Recapture Models\n\n\n\n\n\n\n\n\n\n\n\n\nNov 16, 2020\n\n\n\n\n\n\n  \n\n\n\n\nExplaining Neural Networks with Functional Data Using PCA and Feature Importance\n\n\n\n\n\n\n\n\n\n\n\n\nNov 14, 2020\n\n\n\n\n\n\n  \n\n\n\n\nA Statistical Consultant’s Perspective on Getting Help with R\n\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2020\n\n\n\n\n\n\n  \n\n\n\n\nExplaining Neural Network Predictions for Functional Data Using Principal Component Analysis and Feature Importance\n\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2020\n\n\n\n\n\n\n  \n\n\n\n\nAn Overview of Visualization Techniques for Explainable Machine Learning\n\n\n\n\n\n\n\n\n\n\n\n\nApr 10, 2020\n\n\n\n\n\n\n  \n\n\n\n\nVisual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations\n\n\n\n\n\n\n\n\n\n\n\n\nDec 3, 2019\n\n\n\n\n\n\n  \n\n\n\n\ngganimate (with a spooky twist)\n\n\n\n\n\n\n\n\n\n\n\n\nOct 31, 2019\n\n\n\n\n\n\n  \n\n\n\n\nggResidpanel: Easy Creation of Panels of Diagnostics Plots\n\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2019\n\n\n\n\n\n\n  \n\n\n\n\nVisual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations from Random Forests\n\n\n\n\n\n\n\n\n\n\n\n\nJul 29, 2019\n\n\n\n\n\n\n  \n\n\n\n\nA Review and Discussion of Residuals for Mixed Models\n\n\n\n\n\n\n\n\n\n\n\n\nJun 20, 2019\n\n\n\n\n\n\n  \n\n\n\n\nUsing LIME to Interpret a Random Forest Model with an Application to Bullet Matching Data\n\n\n\n\n\n\n\n\n\n\n\n\nMay 13, 2019\n\n\n\n\n\n\n  \n\n\n\n\nAn Application of LIME to a Random Forest Model\n\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2019\n\n\n\n\n\n\n  \n\n\n\n\nIntroducing ggResidpanel: An R Package for Easy Visualization of Residuals\n\n\n\n\n\n\n\n\n\n\n\n\nOct 12, 2018\n\n\n\n\n\n\n  \n\n\n\n\nIntroducing ggResidpanel: An R Package for Easy Visualization of Residuals\n\n\n\n\n\n\n\n\n\n\n\n\nMay 8, 2018\n\n\n\n\n\n\n  \n\n\n\n\nInterpreting Predictions from Black Box Models with LIME\n\n\n\n\n\n\n\n\n\n\n\n\nNov 9, 2017\n\n\n\n\n\n\nNo matching items"
   }
 ]
