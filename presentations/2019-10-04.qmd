@@ -1,0 +1,13 @@
+---
+title: "ggResidpanel: Easy Creation of Panels of Diagnostics Plots"
+date: "October 4, 2019"
+image: "figs/2019-10-04.png"
+---
+
+*Presentation for ISU lunchinatoRs*
+
+Overview and tutorial on ggResidpanel.
+
+[Slides](https://goodekat.github.io/presentations/2019-lunchinatoRs-ggResidpanel/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-lunchinatoRs-ggResidpanel)
+
+<center>![](figs/2019-10-04.png){width="100%"}</center>

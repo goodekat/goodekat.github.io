@@ -1,7 +1,0 @@
----
-title: "Resume"
----
-
-My full CV is available [here](https://goodekat.github.io/cv/goode_cv.pdf).
-
-<img src="../cv/resume.pdf" width="1000%"/>

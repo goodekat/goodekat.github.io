@@ -1,0 +1,13 @@
+---
+title: "Explaining Black Box Machine Learning Models"
+date: "November 20, 2020"
+image: "figs/xxx.png"
+---
+
+*Talk given to the ACS Data Analytics team at [Autodesk](https://www.autodesk.com/).* 
+
+An overview of explainable machine learning presented along with [Xiaodan (Annie) Lyu](https://annielyu.com/).
+
+[Slides](https://goodekat.github.io/presentations/2020-autodesk-eml/slides.pdf)
+
+<center>![](figs/xxx.png){width="100%"}</center>

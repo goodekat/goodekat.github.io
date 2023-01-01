@@ -1,0 +1,13 @@
+---
+title: "Interpreting Predictions from Black Box Models with LIME"
+date: "November 9, 2017"
+image: "figs/2017-11-09.png"
+---
+
+*Talk for ISU graphics group*
+
+LIME (Local Interpretable Model-agnostic Explanations) is a method that explains how black box models determine individual predictions. It was developed by computer scientists at the University of Washington and implemented in Python, and recently, Thomas Pedersen developed the R package lime that allows R users to implement the procedure. In this talk, I will explain the motivation for LIME, discuss how it works, and show examples using LIME in R. Additionally, I will encourage participation as we work through an example the creators of LIME used to test the usefulness of LIME, so please bring your laptop if possible.
+
+[Slides](https://goodekat.github.io/presentations/2017-isugg-lime/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2017-isugg-lime)
+
+<center>![](figs/2017-11-09.png){width="100%"}</center>

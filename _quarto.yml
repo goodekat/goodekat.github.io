@@ -12,7 +12,6 @@ website:
       - papers.qmd
       - presentations.qmd
       - software.qmd
-      - resume.qmd
       - icon: github
         url: "https://github.com/goodekat"
       - icon: linkedin
@@ -25,4 +24,3 @@ format:
     toc: true
 
 editor: visual
-

@@ -1,0 +1,13 @@
+---
+title: "A Statistical Consultant's Perspective on Getting Help with R"
+date: "October 2, 2020"
+image: "figs/2020-10-02.png"
+---
+
+*Talk given with AES Statistical Consultants (Haoyan Hu, Miranda Tilton, and Yudi Zhang) at ISU LunchinatoRs*
+
+Everyone runs into problems when writing code in R (even statisticians). Sometimes the problems are small picture such as bugs in the code. Other times the problems are large picture such as how to implement an analysis all together. In this talk, we will provide a statistical consultant's perspective on getting help with R. We'll tell about the resources our consulting group provides to ISU graduate students who need help with R code and/or statistical analysis for a research project. We'll also cover resources for helping yourself, internet resources for asking questions about R, and tips for practicing a good work flow in R that will hopefully help to avoid problems.
+
+[Slides](https://goodekat.github.io/consulting-at-lunchinatoRs/slides.html) [GitHub](https://github.com/goodekat/consulting-at-lunchinatoRs)
+
+<center>![](figs/2020-10-02.png){width="100%"}</center>
