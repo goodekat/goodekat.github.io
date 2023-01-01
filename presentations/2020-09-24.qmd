@@ -1,7 +1,7 @@
 ---
 title: "Explaining Neural Network Predictions for Functional Data Using Principal Component Analysis and Feature Importance"
 date: "September 24, 2020"
-image: "figs/2020-09-24.png"
+image: "../images/2020-09-24.png"
 ---
 
 *Talk for ISU graphics group*
@@ -12,4 +12,4 @@ Sandia National Laboratories is a multimission laboratory managed and operated b
 
 [Slides](https://goodekat.github.io/presentations/2020-isugg-fpca-pfi/slides_with_SAND.pdf)
 
-<center>![](figs/2020-09-24.png){width="100%"}</center>
+<center>![](../images/2020-09-24.png)</center>

@@ -1,7 +1,7 @@
 ---
 title: "Explaining Neural Networks with Functional Data Using PCA and Feature Importance"
 date: "November 14, 2020"
-image: "figs/2020-11-14.png"
+image: "../images/2020-11-14.png"
 ---
 
 *Talk for AAAI 2020 Fall Symposium on AI in the Government and Public Sector*
@@ -12,4 +12,4 @@ Sandia National Laboratories is a multimission laboratory managed and operated b
 
 [Slides](https://goodekat.github.io/presentations/2020-aaai-fpca-pfi/slides.pdf) [Recording](https://www.youtube.com/watch?v=8UxKbfUyc2M&t=273s) [Paper](https://arxiv.org/abs/2010.12063)
 
-<center>![](figs/2020-11-14.png){width="100%"}</center>
+<center>![](../images/2020-11-14.png){width="100%"}</center>
