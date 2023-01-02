@@ -8,6 +8,6 @@ image: "https://goodekat.github.io/presentations/2022-trace-plots/fig-static/pen
 
 An introduction to trace plots and overview of my research on trace plots.
 
-[Sides](https://goodekat.github.io/presentations/2022-trace-plots/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2022-trace-plots)
+[Slides](https://goodekat.github.io/presentations/2022-trace-plots/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2022-trace-plots)
 
 <center>![](https://goodekat.github.io/presentations/2022-trace-plots/fig-static/penguin-rep-trees-with-var.png){width="75%"}</center>
