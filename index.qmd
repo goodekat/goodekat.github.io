@@ -14,7 +14,10 @@ about:
 
 I am a statistician with research interests in explainable machine learning and data visualization. I have a PhD in statistics from [Iowa State University](https://www.stat.iastate.edu/), an M.S. in statistics from the [University of Wisconsin, Madison](https://stat.wisc.edu/), and a B.A. in mathematics from [Lawrence University](https://www.lawrence.edu/academics/college/mathematics). My PhD adviser was [Heike Hofmann](https://github.com/heike), and my dissertation focused on visualization techniques for explainability of machine learning ([Visual diagnostics for explaining machine learning models](https://dr.lib.iastate.edu/items/abac51d2-c05b-4ef2-90f5-03740ff5c682)). I currently work for [Sandia National Laboratories](https://www.sandia.gov/) as a research and development statistician.
 
-You can find my resume [here](https://goodekat.github.io/cv/resume.html) ([PDF version](https://goodekat.github.io/cv/resume.pdf)), and my full CV is available [here](https://goodekat.github.io/cv/goode_cv.pdf).
+My resume and CV are available here:
+
+- [Resume](https://goodekat.github.io/cv/resume.html) ([PDF version](https://goodekat.github.io/cv/resume.pdf))
+- [CV](https://goodekat.github.io/cv/goode_cv.pd)
 
 ## Contact Information
 

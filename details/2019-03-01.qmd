@@ -1,7 +1,7 @@
 ---
 title: "An Application of LIME to a Random Forest Model"
 date: "March 1, 2019"
-image: "figs/2019-03-01.png"
+image: "https://goodekat.github.io/presentations/2019-isugg-limetorf/figures/app.png"
 ---
 
 *Talk for ISU graphics group*
@@ -10,4 +10,4 @@ Random forests are known for their accurate predictive abilities, but they are a
 
 [Slides](https://goodekat.github.io/presentations/2019-isugg-limetorf/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-isugg-limetorf)
 
-<center>![](figs/2019-03-01.png){width="75%"}</center>
+<center>![](https://goodekat.github.io/presentations/2019-isugg-limetorf/figures/app.png){width="75%"}</center>
