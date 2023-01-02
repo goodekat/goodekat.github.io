@@ -1,7 +1,7 @@
 ---
 title: "WhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics"
 date: "2021-04-16"
-image: "../images/2021-04-16.png"
+image: "https://goodekat.github.io/presentations/2021-lunchinatoRs-shiny-fish/figures/app.png"
 ---
 
 *Talk given to the ISU [LunchinatoRs](https://github.com/ISU-LunchinatoRs).*
@@ -10,4 +10,4 @@ An introduction to the WhoseEgg app.
 
 [Slides](https://goodekat.github.io/presentations/2021-lunchinatoRs-shiny-fish/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2021-lunchinatoRs-shiny-fish)
 
-<center>![](../images/2021-04-16.png)</center>
+<center>![](https://goodekat.github.io/presentations/2021-lunchinatoRs-shiny-fish/figures/app.png){width="75%"}</center>

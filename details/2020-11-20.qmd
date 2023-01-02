@@ -10,4 +10,4 @@ An overview of explainable machine learning presented along with [Xiaodan (Annie
 
 [Slides](https://goodekat.github.io/presentations/2020-autodesk-eml/slides.pdf)
 
-<center>![](../images/2020-11-20.png){width="100%"}</center>
+<center>![](../images/2020-11-20.png){width="75%"}</center>

@@ -1,7 +1,7 @@
 ---
 title: "The Delta Method and Applications to Mark Recapture Models"
 date: "November 16, 2020"
-image: "../images/2020-11-16.png"
+image: "https://goodekat.github.io/presentations/2020-isu-delta-method/slides_files/figure-html/unnamed-chunk-14-1.png"
 ---
 
 *Talk for [Bob Klaver's](https://www.nrem.iastate.edu/people/robert-klaver) ISU Ecology 607 class.*
@@ -10,4 +10,4 @@ This talk discusses the delta method and ways to apply it in R.
 
 [Slides](https://goodekat.github.io/presentations/2020-isu-delta-method/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2020-isu-delta-method)
 
-<center>![](../images/2020-11-16.png)</center>
+<center>![](https://goodekat.github.io/presentations/2020-isu-delta-method/slides_files/figure-html/unnamed-chunk-14-1.png){width="75%"}</center>

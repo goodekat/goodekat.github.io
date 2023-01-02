@@ -1,7 +1,7 @@
 ---
 title: "An Overview of Visualization Techniques for Explainable Machine Learning"
 date: "April 10, 2020"
-image: "../images/2020-04-10.png"
+image: "https://goodekat.github.io/presentations/2020-isugg-iml/slides_files/figure-html/unnamed-chunk-24-1.png"
 ---
 
 *Talk for ISU graphics group*
@@ -10,4 +10,4 @@ Machine learning models are excellent predictors, but it is impractical to inter
 
 [Slides](https://goodekat.github.io/presentations/2020-isugg-iml/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2020-isugg-iml)
 
-<center>![](../images/2020-04-10.png)</center>
+<center>![](https://goodekat.github.io/presentations/2020-isugg-iml/slides_files/figure-html/unnamed-chunk-24-1.png){width="75%"}</center>
