@@ -1,7 +1,7 @@
 ---
 title: "Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations"
 date: "December 3, 2019"
-image: "../images/2019-12-03.png"
+image: "https://goodekat.github.io/presentations/2019-sandia-lime-diagnostics/figures/lime-bad.png"
 ---
 
 *Talk given to the statistics department at Sandia National Laboratories*
@@ -10,4 +10,4 @@ A desire to be able to interpret machine learning models has led to an area of r
 
 [Slides](https://goodekat.github.io/presentations/2019-sandia-lime-diagnostics/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-sandia-lime-diagnostics)
 
-<center>![](../images/2019-12-03.png)</center>
+<center>![](https://goodekat.github.io/presentations/2019-sandia-lime-diagnostics/figures/lime-bad.png){width="75%"}</center>

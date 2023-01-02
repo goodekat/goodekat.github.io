@@ -1,7 +1,7 @@
 ---
 title: "A Review and Discussion of Residuals for Mixed Models"
 date: "June 20, 2019"
-image: "figs/2019-06-20.png"
+image: "https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides_files/figure-html/unnamed-chunk-14-1.png"
 ---
 
 *Talk for NCCC-170 meeting 2019*
@@ -10,4 +10,4 @@ Residuals are a key tool used to diagnose models. As a statistical consultant fo
 
 [Slides](https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-nccc-lmm_residuals)
 
-<center>![](figs/2019-06-20.png){width="100%"}</center>
+<center>![](https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides_files/figure-html/unnamed-chunk-14-1.png){width="75%"}</center>

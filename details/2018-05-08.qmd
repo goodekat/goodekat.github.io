@@ -1,7 +1,7 @@
 ---
 title: "Introducing ggResidpanel: An R Package for Easy Visualization of Residuals"
 date: "May 8, 2018"
-image: "figs/2018-05-08.png"
+image: "../images/2018-05-08.png"
 ---
 
 *Poster for Kansas State University Conference on Applied Statistics in Agriculture presented with Katie Rey*
@@ -10,4 +10,4 @@ As consultants on a wide variety of projects across many majors, a common oversi
 
 [Poster](https://goodekat.github.io/presentations/2018-kstate-ggresidpanel/poster.pdf)
 
-<center>![](figs/2018-05-08.png){width="100%"}</center>
+<center>![](../images/2018-05-08.png){width="75%"}</center>

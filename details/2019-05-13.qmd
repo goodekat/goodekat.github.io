@@ -1,7 +1,7 @@
 ---
 title: "Using LIME to Interpret a Random Forest Model with an Application to Bullet Matching Data"
 date: "May 13, 2019"
-image: "figs/2019-05-13.png"
+image: "../images/2019-05-13.png"
 ---
 
 *Poster for Midwest Statistical Machine Learning Colloquium*
@@ -12,4 +12,4 @@ Random forests are known for their accurate predictive abilities, but they are a
 
 [Poster](https://goodekat.github.io/presentations/2019-gpsrc-limetorf/poster.pdf) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-gpsrc-limetorf)
 
-<center>![](figs/2019-05-13.png){width="100%"}</center>
+<center>![](../images/2019-05-13.png){width="75%"}</center>

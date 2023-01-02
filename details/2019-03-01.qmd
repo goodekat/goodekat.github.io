@@ -10,4 +10,4 @@ Random forests are known for their accurate predictive abilities, but they are a
 
 [Slides](https://goodekat.github.io/presentations/2019-isugg-limetorf/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-isugg-limetorf)
 
-<center>![](figs/2019-03-01.png){width="100%"}</center>
+<center>![](figs/2019-03-01.png){width="75%"}</center>

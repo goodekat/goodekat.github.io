@@ -1,7 +1,7 @@
 ---
 title: "Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations from Random Forests"
 date: "July 29, 2019"
-image: "figs/2019-07-29.png"
+image: "../images/2019-07-29.png"
 ---
 
 *Speed presentation and e-poster for JSM 2019*
@@ -10,4 +10,4 @@ Random forests are known for their accurate predictive abilities, but they are a
 
 [Slides](https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/slides.pdf) [Poster](https://goodekat.github.io/presentations/2019-jsm-lime_diagnostics/poster.pdf) [GitHub](https://github.com/goodekat/presentations/tree/master/2019-jsm-lime_diagnostics)
 
-<center>![](figs/2019-07-29.png){width="100%"}</center>
+<center>![](../images/2019-07-29.png){width="75%"}</center>

@@ -1,7 +1,7 @@
 ---
 title: "Interpreting Predictions from Black Box Models with LIME"
 date: "November 9, 2017"
-image: "figs/2017-11-09.png"
+image: "https://goodekat.github.io/presentations/2017-isugg-lime/figures/training_distributions.png"
 ---
 
 *Talk for ISU graphics group*
@@ -10,4 +10,4 @@ LIME (Local Interpretable Model-agnostic Explanations) is a method that explains
 
 [Slides](https://goodekat.github.io/presentations/2017-isugg-lime/slides.html) [GitHub](https://github.com/goodekat/presentations/tree/master/2017-isugg-lime)
 
-<center>![](figs/2017-11-09.png){width="100%"}</center>
+<center>![](https://goodekat.github.io/presentations/2017-isugg-lime/figures/training_distributions.png){width="75%"}</center>
