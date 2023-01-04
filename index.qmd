@@ -17,9 +17,9 @@ about:
     - icon: linkedin
       url: "https://www.linkedin.com/in/katherine-goode-363517a9/"
     - icon: file-person-fill
-      href: "https://goodekat.github.io/cv/resume/resume.html"
+      href: "https://goodekat.github.io/cv/resume/goode.html"
     - text: CV
-      href: "https://goodekat.github.io/cv/goode_cv.pdf"
+      href: "https://goodekat.github.io/cv/cv/goode.pdf"
 ---
 
 ::: {.column-page style="width: 90%"}
