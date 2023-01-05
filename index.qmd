@@ -7,19 +7,6 @@ description: |
 image: images/kjg.jpg
 about:
   template: trestles
-  links:
-    - icon: envelope
-      url: "mailto:kjgoode@sandia.gov"
-    - icon: github
-      url: "https://github.com/goodekat"
-    - icon: google
-      url: "https://scholar.google.com/citations?hl=en&user=yD_b79UAAAAJ"
-    - icon: linkedin
-      url: "https://www.linkedin.com/in/katherine-goode-363517a9/"
-    - icon: file-person-fill
-      href: "https://goodekat.github.io/cv/resume/goode.html"
-    - text: CV
-      href: "https://goodekat.github.io/cv/cv/goode.pdf"
 ---
 
 ::: {.column-page style="width: 90%"}

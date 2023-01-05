@@ -16,7 +16,9 @@ website:
         url: "https://github.com/goodekat"
       - icon: linkedin
         url: "https://www.linkedin.com/in/katherine-goode-363517a9/"
-     
+      - icon: google
+        url: "https://scholar.google.com/citations?hl=en&user=yD_b79UAAAAJ"
+
 format:
   html:
     theme: yeti
