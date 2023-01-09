@@ -6,7 +6,7 @@ title: "Papers"
 
 ## 2022
 
-**Goode, K.**, M.J. Weber, and P.M. Dixon. "WhoseEgg: Classification software for invasive carp eggs". Submitted to PeerJ Life and Environment.
+**Goode, K.**, M.J. Weber, and P.M. Dixon. "WhoseEgg: Classification software for invasive carp eggs". Accepted by PeerJ Life and Environment.
 
 **Goode, K.**, Weber, M.J., Matthews, A. and Pierce, C.L. (2022), "Evaluation of a Random Forest Model to Identify Invasive Carp Eggs Based on Morphometric Features". North Am J Fish Manage. [https://doi.org/10.1002/nafm.10616](https://afspubs.onlinelibrary.wiley.com/doi/10.1002/nafm.10616)
 
