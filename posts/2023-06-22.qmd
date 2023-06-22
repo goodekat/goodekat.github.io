@@ -1,7 +1,7 @@
 ---
 title: "Feature Importance with Deep Echo State Models"
 date: "June 22, 2023"
-image: "https://github.com/goodekat/presentations/blob/master/2023-siam-gs/figs/merra2_fi.png"
+image: "https://goodekat.github.io/presentations/2023-siam-gs/figs/merra2_fi.png"
 ---
 
 *Talk given at SIAM-GS in Bergen, Norway.*
@@ -10,4 +10,4 @@ Development of feature importance for echo state networks to characterize climat
 
 [Slides](https://goodekat.github.io/presentations/2023-siam-gs/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2023-siam-gs)
 
-<center>![](https://github.com/goodekat/presentations/blob/master/2023-siam-gs/figs/merra2_fi.png){width="75%"}</center>
+<center>![](https://goodekat.github.io/presentations/2023-siam-gs/figs/merra2_fi.png){width="95%"}</center>
