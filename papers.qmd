@@ -1,15 +1,39 @@
 ---
 title: "Papers"
+monofont: 'Arial'
 ---
 
 <img src="/images/gl.png" width="100%"/>
 
-
 ## 2023
 
-**Goode, K.**, M.J. Weber, and P.M. Dixon. 2023. "WhoseEgg: classification software for invasive carp eggs". PeerJ. 11:e14787. [https://doi.org/10.7717/peerj.14787](https://doi.org/10.7717/peerj.14787).
+<!-- ```{r echo = FALSE} -->
+<!-- library(RefManageR) -->
 
-**Goode, K.**, M.J. Weber, A. Matthews, and C.L. Pierce. 2023. "Evaluation of a Random Forest Model to Identify Invasive Carp Eggs Based on Morphometric Features". North Am J Fish Manage. 43: 46-60. [https://doi.org/10.1002/nafm.10616](https://doi.org/10.1002/nafm.10616)
+<!-- BibOptions( -->
+<!--   check.entries = FALSE, -->
+<!--   bib.style = "authoryear", -->
+<!--   sorting = "ydnt", -->
+<!--   style = "text", -->
+<!--   hyperlink = TRUE, -->
+<!--   dashed = FALSE, -->
+<!--   max.names = 10 -->
+<!-- ) -->
+
+<!-- papers = RefManageR::ReadBib(file = "references/papers.bib") -->
+
+<!-- NoCite(bib = papers) -->
+
+<!-- PrintBibliography(papers) -->
+
+<!-- # PrintBibliography(papers, .opts = list(bib.style = "authoryear", sorting = "ydnt", style = "text")) -->
+<!-- ``` -->
+
+**Goode, K.**, D. Ries, and K. McClernon. 2023. "Characterizing climate pathways using feature importance on echo state networks". Submitted to Statistical Analysis and Data Mining. CoDA special issue.
+
+**Goode, K.**, M.J. Weber, and P.M. Dixon. 2023. "WhoseEgg: classification software for invasive carp eggs". PeerJ. 11:e14787. <https://doi.org/10.7717/peerj.14787>.
+
+**Goode, K.**, M.J. Weber, A. Matthews, and C.L. Pierce. 2023. "Evaluation of a Random Forest Model to Identify Invasive Carp Eggs Based on Morphometric Features". North Am J Fish Manage. 43: 46-60. <https://doi.org/10.1002/nafm.10616>
 
 ## 2022
 
@@ -17,11 +41,11 @@ Ausdemore, M. A., A. McCombs, D. Ries, A. Zhang, K. Shuler, **K. Goode**, J. D. 
 
 ## 2021
 
-**Goode, K.** and H. Hofmann. "Visual diagnostics of an explainer model: Tools for the assessment of LIME explanations." 2021. Stat Anal Data Min: The ASA Data Sci Journal 14:185--200. [https://doi.org/10.1002/sam.11500](https://doi.org/10.1002/sam.11500). [GitHub](https://github.com/goodekat/LIME-diagnostics-paper).
+**Goode, K.** and H. Hofmann. "Visual diagnostics of an explainer model: Tools for the assessment of LIME explanations." 2021. Stat Anal Data Min: The ASA Data Sci Journal 14:185--200. <https://doi.org/10.1002/sam.11500>. [GitHub](https://github.com/goodekat/LIME-diagnostics-paper).
 
 ## 2020
 
-**Goode, K.**, D. Ries, and J. Zollweg. "Explaining Neural Networks with Functional Data Using PCA and Feature Importance". AAAI 2020 Fall Symposium on AI in the Government and Public Sector. November 13-14, 2020. [https://arxiv.org/abs/2010.12063](https://arxiv.org/abs/2010.12063). [YouTube Video](https://www.youtube.com/watch?v=8UxKbfUyc2M&t=273s).
+**Goode, K.**, D. Ries, and J. Zollweg. "Explaining Neural Networks with Functional Data Using PCA and Feature Importance". AAAI 2020 Fall Symposium on AI in the Government and Public Sector. November 13-14, 2020. <https://arxiv.org/abs/2010.12063>. [YouTube Video](https://www.youtube.com/watch?v=8UxKbfUyc2M&t=273s).
 
 Dixon, P.M., **K. Goode**, C. Lay. 2020. "Profile likelihood confidence intervals for ECx". Iowa State Digital Library. Statistics Technical Reports. [https://lib.dr.iastate.edu/stat_las_reports/1](https://dr.lib.iastate.edu/entities/publication/7e0d7d0a-f514-4642-9814-c3b7bd821cc0)
 

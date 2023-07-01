@@ -1,0 +1,453 @@
+---
+name: "Katherine"
+surname: "Goode"
+position: "Research and Development Statistician"
+address: "Sandia National Laboratories, P.O. Box 5800 MS 0829, Albuquerque, NM 87185"
+phone: "505-844-1998"
+www: "goodekat.github.io"
+email: "kjgoode@sandia.gov"
+github: "github.com/goodekat"
+linkedin: "katherine-goode-363517a9"
+aboutme: "I’m a research and development statistician at Sandia National Labs. My research interests include model assessment, explainable machine learning, and data visualization. I enjoy consulting and collaborating with scientists on data analyses."
+headcolor: "0A3FF2"
+date: "Last Updated: `r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(dplyr)
+library(tibble)
+library(vitae)
+```
+
+# Education
+
+```{r education-ISU}
+tribble(
+  ~ Degree,
+  ~ Year,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  "Doctor of Philosophy, Statistics",
+  "2016-2021",
+  "Iowa State University",
+  "Ames, IA",
+  c(
+    "Dissertation: Visual Diagnostics for Explaining Machine Learning Models",
+    "Major Professor: Dr. Heike Hofmann"
+  )
+) %>%
+  detailed_entries(Degree, Year, Institution, Where, Details)
+```
+
+\vspace{-0.5cm}
+
+```{r education-UW}
+tribble(
+  ~ Degree,
+  ~ Year,
+  ~ Institution,
+  ~ Where,
+  "Master of Science, Statistics",
+  "2013-2015",
+  "University of Wisconsin, Madison",
+  "Madison, WI"
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+\vspace{-0.5cm}
+
+```{r education-LU}
+tribble(
+  ~ Degree,
+  ~ Year,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  "Bachelor of Arts, Mathematics",
+  "2009-2013",
+  "Lawrence University",
+  "Appleton, WI",
+  c(
+    "Graduated Magna Cum Laude",
+    "Senior Capstone: An Explanation of Double-Error-Correcting BCH Codes"
+  )
+) %>%
+  detailed_entries(Degree, Year, Institution, Where, Details)
+```
+
+# Awards
+
+```{r awards}
+tribble(
+  ~Year,
+  ~Award,
+  ~Desc,
+  2023,
+  "Sandia National Laboratories Up and Coming Innovator Award",
+  "",
+  2019,
+  "Midwest Statistical Machine Learning Colloquium Poster Award",
+  "Awarded for `Using LIME to Interpret a Random Forest Model with an Application to Bullet Matching Data'",
+  2018,
+  "ISU Department of Statistics Dan Mowrey Consulting Excellence Award",
+  "Awarded in recognition of outstanding contributions in the area of statistical consulting while working toward a graduate degree.",
+  2017,
+  "ISU Department of Statistics Award for Experiential Development",
+  "Presented to a graduate student for excellent performance in multiple statistical efforts (teaching and consulting) as part of the graduate program."
+) %>%
+  detailed_entries(Desc, Year, Award)
+```
+
+# Experience
+
+```{r experience}
+tribble(
+  
+  ~ Position,
+  ~ Dates,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  
+  "Senior Member of Technical Staff",
+  "Dec 2021 - Current",
+  "Statistical Sciences Department", 
+  "Sandia National Laboratories",
+  c(
+    "Research and development statistician"
+  ), 
+  
+  "Postdoctoral Researcher",
+  "Sep 2021 - Dec 2021",
+  "Statistical Sciences Department", 
+  "Sandia National Laboratories",
+  c(
+    "Performed research on inverse models with functional data",
+    "Implemented shape analysis methods with national security data",
+    "Prepared manuscript for submission to peer reviewed journal"
+  ), 
+  
+  "Research and Development Intern",
+  "Dec 2019 - Sep 2021",
+  "Statistical Sciences Department",
+  "Sandia National Laboratories",
+  c(
+    "Performed research on neural networks explainability with functional data",
+    "Applied explainability methods to machine learning models",
+    "Presented on work at internal and external events"
+  ),
+  
+  "Graduate Research Assistant",
+  "Jan 2021 - June 2021",
+  "Natural Resource Ecology and Management",
+  "Iowa State University",
+  c(
+    "Developed R Shiny application to predict taxonomy of fish eggs using random forests",
+    "Assisted in writing manuscript to present the application",
+    "Advised by Dr. Michael Weber and Dr. Philip Dixon"
+  ),
+  
+  "Statistical Consultant",
+  "May 2016 - Dec 2020",
+  "Agriculture Experiment Station",
+  "Iowa State University",
+  c(
+    "Senior consultant from May 2018 to May 2020",
+    "Helped with administrative decisions",
+    "Trained and mentored new consultants",
+    "Provided statistical support on research projects for graduate students, professors, and staff from the colleges of agriculture and life sciences, engineering, human sciences, liberal arts and sciences, and veterinary medicine",
+    "Assisted with the implementation of analyses in R, SAS, JMP, and SPSS"
+  ),
+  
+  "Graduate Research Assistant",
+  "May 2019 - Aug 2019",
+  "Department Natural Resource Ecology and Management", 
+  "Iowa State University",
+  c(
+    "Assisted with analysis of toxicology study of monarch butterfly larvae exposed to insecticides",
+    "Wrote R code to compute profile confidence intervals for dose response curve models",
+    "Collaboration with Dr. Steven Bradbury and PhD Student Niranjana Krishnan"
+  ),
+  
+  "Data Analyst",
+  "2015",
+  "Research Administration Office", 
+  "Lawrence University",
+  c(
+    "Analyzed data from a study to compare the academic success and mood towards the university of undergraduates from freshman to sophomore years",
+    "Performed statistical analyses using SPSS"
+  ),
+
+  "Data Collection Assistant",
+  "Sep 2014 May 2015",
+  "Research Administration Office",
+  "Lawrence University",
+  c(
+    "Assisted with the data collection for a study on the evaluation of warning lights installed at a busy crosswalk on the university campus",
+    "Used Tracker software to determine the deceleration rate of vehicles from videos taken of cars approaching the crosswalk"
+  )
+
+) %>%
+  detailed_entries(Institution, Dates, Position, Where, Details)
+```
+
+# Publications
+
+```{r}
+bibliography_entries("../references/papers.bib") %>%
+  arrange(desc(issued), author$family)
+```
+
+# Talks
+
+```{r}
+bibliography_entries("../references/talks.bib") %>%
+  arrange(desc(issued), author$family)
+```
+
+# Posters
+
+```{r}
+bibliography_entries("../references/posters.bib") %>%
+  arrange(desc(issued), author$family)
+```
+
+# Software
+
+```{r}
+bibliography_entries("../references/software.bib") %>%
+  arrange(desc(issued), author$family)
+```
+
+# Workshops
+
+```{r workshops}
+tribble(
+  
+  ~ Position,
+  ~ Dates,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  
+  "Industrial Math/Stat Modeling (IMSM) Workshop for Graduate Students",
+  "July 2019",
+  "The Statistical and Applied Mathematical Sciences Institute (SAMSI)", 
+  "Asheville, NC",
+  c(
+    "Two week research workshop",
+    "Worked in a research group mentored by senior statisticians from Rho Inc.",
+    "Analyzed continuously monitored glucose data using functional data analysis",
+    "Assisted with the writing of a report and presentation on the research analysis"
+  )
+
+) %>%
+  detailed_entries(Institution, Dates, Position, Where, Details)
+```
+
+# Teaching
+
+**Workshops**
+
+```{r teaching-bootcamps}
+tribble(
+  ~ Position,
+  ~ Dates,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  "Predictive plant phenomics graduate student statistics bootcamp",
+  "2018-2019",
+  "Predictive Plant Phenomics Program",
+  "Iowa State University",
+  c(
+    "Led a one day statistics bootcamp",
+    "Discussed randomization, confidence intervals, and design of experiments",
+    "Prepared slides"
+  )
+) %>%
+  detailed_entries(Institution, Dates, Position, Where, Details)
+```
+
+**Instructor**
+
+```{r teaching-instructor}
+tribble(
+  ~ Position,
+  ~ Dates,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  
+  "STAT 101: Introduction to statistics",
+  "Spring 2016",
+  "Department of Statistics",
+  "Iowa State University",
+  c(
+    "Prepared and led lectures",
+    "Wrote and graded exams",
+    "Topics included summary statistics, visualization, normal distribution, hypothesis testing, confidence intervals, and JMP"
+  ),
+  
+  "MATH 107: Elementary statistics",
+  "Fall 2015",
+  "Mathematics Department",
+  "Lawrence University",
+  c(
+    "Organized the curriculum",
+    "Prepared and graded homework and exams",
+    "Topics included summary statistics, visualizations, randomization tests, bootstrap, normal distribution, hypothesis testing, confidence intervals, and R"
+  )
+  
+) %>%
+  detailed_entries(Institution, Dates, Position, Where, Details)
+```
+
+**Teaching Assistant**
+
+```{r teaching-assistant}
+tribble(
+  ~ Position,
+  ~ Dates,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  
+  "BMI 552: Regression methods for population health graduate students",
+  "Spring 2015",
+  "Department of Biostatistics & Medical Informatics",
+  "University of Wisconsin, Madison",
+  c(
+    "Taught labs",
+    "Held office hours",
+    "Topics included simple and multiple linear regression, logistic regression, survival analysis, and SAS"
+  ),
+  
+  "BMI 551: Introduction to biostatistics for population health graduate students",
+  "Fall 2014",
+  "Department of Biostatistics & Medical Informatics",
+  "University of Wisconsin, Madison",
+  c(
+    "Taught labs",
+    "Held office hours",
+    "Topics included summary statistics, visualizations, probability, normal distributions, hypothesis testing, confidence intervals, and R"
+  ),
+  
+  "STAT 301: Introduction to statistical methods for nonstatistics majors",
+  "Summer 2014",
+  "Department of Statistics",
+  "University of Wisconsin, Madison",
+  c(
+    "Prepared and led discussions",
+    "Graded homework and exams",
+    "Held office hours",
+    "Topics included summary statistics, visualizations, probability, normal distributions, hypothesis testing, and confidence intervals"
+  ),
+  
+  "STAT 302: Accelerated introduction to statistical methods for statistics undergraduate majors",
+  "Spring 2014",
+  "Department of Statistics",
+  "University of Wisconsin, Madison",
+  c(
+    "Prepared and led discussions",
+    "Graded homework and exams",
+    "Held office hours",
+    "Topics included summary statistics, visualizations, randomization tests, bootstrap, normal distribution, hypothesis testing, confidence intervals, and R"
+  ),
+  
+  "STAT 371: Introductory applied statistics for the life sciences",
+  "Fall 2013",
+  "Department of Statistics",
+  "University of Wisconsin, Madison",
+  c(
+    "Prepared and led discussions",
+    "Graded homework and exams",
+    "Held office hours and worked in the statistics help room",
+    "Topics included summary statistics, visualizations, probability, normal distributions, hypothesis testing, confidence intervals, and R"
+  )
+  
+) %>%
+  detailed_entries(Institution, Dates, Position, Where, Details)
+```
+
+**Mentor**
+
+```{r teaching-mentor}
+tribble(
+  ~ Position,
+  ~ Dates,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  
+  "Academic Mentor for Minority and First Generation Undergraduates",
+  "Fall 2014 - Spring 2015",
+  "Center for Academic Excellence",
+  "University of Wisconsin, Madison",
+  c(
+    "Mentored minority and first generation undergraduate students enrolled in statistics courses",
+    "Met weekly throughout the semester with individuals or small groups to review statistical concepts from class and make the material approachable",
+     "Discussed and encouraged strategies for academic success"
+  )
+     
+) %>%
+  detailed_entries(Institution, Dates, Position, Where, Details)
+```
+
+**Tutor**
+
+```{r teaching-tutor}
+tribble(
+  ~ Position,
+  ~ Dates,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  
+  "Statistics Tutor",
+  "Fall 2014 - Spring 2015",
+  "Department of Statistics",
+  "University of Wisconsin, Madison",
+  c(
+    "Tutored undergraduate students",
+    "Various introductory statistics courses"
+  )
+     
+) %>%
+  detailed_entries(Institution, Dates, Position, Where, Details)
+```
+
+# Service
+
+```{r service}
+tribble(
+  ~Year,
+  ~Desc,
+  "Sep 2019 - May 2020",
+  "Iowa State statistical graphics working group weekly seminar organizer",
+  "Sep 2018 - May 2019",
+  "Graduate student representative to ISU statistics department faculty meetings",
+  "Sep 2017 - May 2019",
+  "Recycling coordinator for ISU STATers (Statistics Graduate Student Organization)",
+  "Sep 2017 - May 2019",
+  "Treasurer and member of StatCom (Statistics in the Community) at Iowa State"
+) %>%
+  detailed_entries(Desc, Year)
+```
+
+# Skills
+
+```{r skills}
+tribble(
+  ~Desc,
+  "Working Knowledge: GitHub, JMP, LaTeX, Python, R, R Markdown, R Shiny, SAS",
+  "Basic Knowledge: C, SPSS"
+) %>%
+  detailed_entries(Desc)
+```

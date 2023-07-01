@@ -16,7 +16,7 @@ I am a statistician with research interests in explainable machine learning and 
 
 My resume and CV are available here:
 
-- [Resume](https://goodekat.github.io/cv/resume/goode.html) ([PDF version](https://goodekat.github.io/cv/resume/goode.pdf))
+- [Resume](https://goodekat.github.io/resume/goode.html) ([PDF version](https://goodekat.github.io/cv/resume/goode.pdf))
 - [CV](https://goodekat.github.io/cv/cv/goode.pdf)
 
 ## Contact Information

@@ -1,0 +1,146 @@
+---
+title: "Katherine Goode's resume"
+author: Katherine Goode
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: false
+knit: pagedown::chrome_print
+---
+
+```{css, echo = FALSE}
+#skills{
+  margin: 0.1in;
+  line-height: 1.5;
+}
+
+#awards{
+  margin: 0.1in;
+  line-height: 1.5;
+}
+
+#awards ul{
+  margin: 0.15in 0 0in;
+  padding: 0;
+}
+```
+
+# Aside
+
+![](kjg.jpg){width="100%"}
+
+## Contact Info {#contact}
+
+-   <i class="fa fa-paper-plane"></i> [kjgoode\@sandia.gov](mailto:kjgoode@sandia.gov){.email}
+-   <i class="fa fa-github"></i> [github.com/goodekat](https://github.com/goodekat)
+-   <i class="fa fa-link"></i> [goodekat.github.io](https://goodekat.github.io/)
+-   <i class="fa fa-phone"></i> +1 505-844-1998
+
+## Skills {#skills}
+
+-   Statistical analyses, statistical learning, data visualization
+
+-   GitHub, JMP, LaTeX, Python, R, R Markdown, R Shiny, SAS, SPSS
+
+## Awards {#awards}
+
+-   2023 Sandia National Laboratories Up and Coming Innovator Award
+
+-   2019 Midwest Statistical Machine Learning Colloquium Poster Award
+
+-   2018 ISU Department of Statistics Dan Mowrey Consulting Excellence Award
+
+-   2017 ISU Department of Statistics Award for Experiential Development
+
+## Disclaimer {#disclaimer}
+
+Last updated on `r Sys.Date()`.
+
+# Main
+
+## Katherine Goode {#title}
+
+### Statistician
+
+My research focuses on the explainability and interpretability of machine learning models. Other research interests include model assessment, data visualization, and random forest models. My full CV is available [here](https://goodekat.github.io/cv/goode_cv.pdf).
+
+## Education {data-icon="graduation-cap" data-concise="true"}
+
+### Iowa State University
+
+Ph.D in Statistics
+
+Ames, Iowa
+
+2021
+
+Thesis: [Visual diagnostics for explaining machine learning models](https://dr.lib.iastate.edu/items/abac51d2-c05b-4ef2-90f5-03740ff5c682)
+
+### University of Wisconsin, Madison
+
+M.S. in Statistics
+
+Madison, Wisconsin
+
+2015
+
+### Lawrence University
+
+B.A. in mathematics
+
+Appleton, Wisconsin
+
+2013
+
+## Experience {data-icon="gear"}
+
+### Senior Member of Technical Staff
+
+Statistical Sciences, Sandia National Laboratories
+
+Albuquerque, NM
+
+Current - 2021
+
+Research and development of statistical methods in application areas including climate and cyber security
+
+### Postdoctoral Researcher
+
+Statistical Sciences, Sandia National Laboratories
+
+Albuquerque, NM
+
+2021
+
+Researched use of elastic shape analysis with inverse models for functional data using and developed feature importance technique for echo state networks applied to climate data
+
+### Research and Development Intern
+
+Statistical Sciences, Sandia National Laboratories
+
+Albuquerque, NM
+
+2021 - 2019
+
+Developed explainable machine learning pipeline for functional data Presented on work at internal and external events
+
+### Graduate Research Assisstant
+
+Natural Resource Ecology and Management, ISU
+
+Ames, Iowa
+
+2021 and 2019
+
+Developed R Shiny application to predict taxonomy of fish eggs using random forests (2021) and assisted with analysis of toxicology study of monarch butterfly larvae exposed to insecticides (2019)
+
+### Statistical Consultant
+
+Agriculture Experiment Station, ISU
+
+Ames, Iowa
+
+2020 - 2016
+
+Provided statistical support on research projects for graduate students, professors, and staff across university departments
