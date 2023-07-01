@@ -1,33 +1,10 @@
 ---
 title: "Papers"
-monofont: 'Arial'
 ---
 
 <img src="/images/gl.png" width="100%"/>
 
 ## 2023
-
-<!-- ```{r echo = FALSE} -->
-<!-- library(RefManageR) -->
-
-<!-- BibOptions( -->
-<!--   check.entries = FALSE, -->
-<!--   bib.style = "authoryear", -->
-<!--   sorting = "ydnt", -->
-<!--   style = "text", -->
-<!--   hyperlink = TRUE, -->
-<!--   dashed = FALSE, -->
-<!--   max.names = 10 -->
-<!-- ) -->
-
-<!-- papers = RefManageR::ReadBib(file = "references/papers.bib") -->
-
-<!-- NoCite(bib = papers) -->
-
-<!-- PrintBibliography(papers) -->
-
-<!-- # PrintBibliography(papers, .opts = list(bib.style = "authoryear", sorting = "ydnt", style = "text")) -->
-<!-- ``` -->
 
 **Goode, K.**, D. Ries, and K. McClernon. 2023. "Characterizing climate pathways using feature importance on echo state networks". Submitted to Statistical Analysis and Data Mining. CoDA special issue.
 
