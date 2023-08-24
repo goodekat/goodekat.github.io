@@ -1,13 +1,13 @@
 ---
-title: "Feature Importance with Deep Echo State Models"
-date: "June 22, 2023"
-image: "https://goodekat.github.io/presentations/2023-siam-gs/figs/merra2_fi.png"
+title: "Characterizing climate pathways using feature importance on echo state networks"
+date: "August 8, 2023"
+image: "https://goodekat.github.io/presentations/2023-jsm/figs/merra2_heatmap.png"
 ---
 
-*Talk given at SIAM-GS in Bergen, Norway.*
+*Talk given at JSM in Toronto, Canada in the topic-contributed session 'Deep learning for climate change: forecasts, mitigation, and adaption'*
 
 Climate change due to human activity is considered a serious threat to our future. Climate intervention methods, such as solar radiation management, to reduce the negative impacts of climate change are becoming a real possibility. The development of algorithmic methods for understanding the short-term and long-term impacts of such events on climate change will help inform decision makers. Deep ensemble echo-state network (D-EESN) models may provide a route to assist with modeling the dynamic climate impacts. D-EESN models offer increased computational efficiency over other statistical spatio-temporal methods and provide uncertainty quantification through bootstrapping. However, D-EESN models are currently only able to provide forecasts and lack general interpretability. We are interested in developing methodology for understanding the relationships between the D-EESN inputs and outputs to help identify early indicators of significant climate impacts. We propose a variable importance technique for D-EESNs that returns the temporal importance of an input variable on forecasts. We demonstrate our methodology on reanalysis data that includes the 1991 eruption of Mount Pinatubo. We forecast stratospheric temperature given lagged stratospheric temperature and aerosol optical depth, and we use the proposed variable importance to capture the relationships between variables and how those relationships change over time.
 
-[Slides](https://goodekat.github.io/presentations/2023-siam-gs/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2023-siam-gs)
+[Slides](https://goodekat.github.io/presentations/2023-jsm/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2023-jsm)
 
-<center>![](https://goodekat.github.io/presentations/2023-siam-gs/figs/merra2_fi.png){width="95%"}</center>
+<center>![](https://goodekat.github.io/presentations/2023-jsm/figs/merra2_heatmap.png){width="100%"}</center>
