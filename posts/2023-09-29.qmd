@@ -1,7 +1,7 @@
 ---
 title: "Characterizing climate pathways using feature importance on echo state networks"
 date: "September 29, 2023"
-image: "https://goodekat.github.io/presentations/2023-jsm/figs/merra2_heatmap.png"
+image: "https://goodekat.github.io/presentations/2023-acasa/webiste-pic.png"
 ---
 
 *Talk given for the annual meeting of the Albuquerque Chapter of the ASA in Santa Fe, New Mexico.*
