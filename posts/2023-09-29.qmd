@@ -1,7 +1,7 @@
 ---
 title: "Characterizing climate pathways using feature importance on echo state networks"
 date: "September 29, 2023"
-image: "https://goodekat.github.io/presentations/2023-acasa/webiste-pic.png"
+image: "https://goodekat.github.io/presentations/2023-acasa/website-pic.png"
 ---
 
 *Talk given for the annual meeting of the Albuquerque Chapter of the ASA in Santa Fe, New Mexico.*
@@ -10,4 +10,4 @@ Climate change due to human activity is considered a serious threat to our futur
 
 [Slides](https://goodekat.github.io/presentations/2023-acasa/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2023-acasa)
 
-<center>![](https://goodekat.github.io/presentations/2023-acasa/webiste-pic.png){width="100%"}</center>
+<center>![](https://goodekat.github.io/presentations/2023-acasa/website-pic.png){width="100%"}</center>
