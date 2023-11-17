@@ -8,6 +8,7 @@ Below are descriptions of R packages that I've developed.
 -   [limeaid](#limeaid)
 -   [redres](#redres)
 -   [TreeTracer](#TreeTracer)
+-   [veesa](#veesa)
 
 ------------------------------------------------------------------------
 
@@ -132,13 +133,13 @@ TreeTracer::trace_plot(
 )
 ```
 
-### <font color="#368BC1"> TreeTracer </font> {#TreeTracer}
+### <font color="#368BC1"> veesa </font> {#veesa}
 
 VEESA is an R package for explainable machine learning with functional data. The package implements the VEESA pipeline for using elastic shape analysis to model functional data and computes feature importance to explain predictions. VEESA can be downloaded from the [GitHub repository](https://github.com/sandialabs/veesa).
 
 Here is an example applying the VEESA pipeline.
 
-```{r message = FALSE, fig.align = "center", fig.height = 4, fig.width = 12}
+```{r message = FALSE, fig.align = "center", fig.height = 6, fig.width = 12, out.width = "100%"}
 # Simulate data
 sim_data = veesa::simulate_functions(M = 100, N = 75, seed = 20211130)
 
@@ -148,6 +149,22 @@ id = unique(sim_data$id)
 M_test = length(id) * 0.25
 id_test = sample(x = id, size = M_test, replace = F)
 sim_data = sim_data |> dplyr::mutate(data = ifelse(id %in% id_test, "test", "train"))
+
+# Plot simulated functions colored by covariate
+library(ggplot2)
+color_pal = wesanderson::wes_palette("Zissou1", 5, type = "continuous")
+plot_sim <-
+  sim_data |>
+  ggplot(aes(
+    x = t,
+    y = y,
+    color = x1,
+    group = id
+  )) +
+  geom_line(alpha = 0.75) +
+  scale_color_gradientn(colours =  color_pal) +
+  theme_bw() +
+  labs(title = "Effect of x1")
 
 # Prepare matrices from the data frames
 prep_matrix <- function(df, train_test) {
@@ -173,14 +190,14 @@ train_transformed_jfpca <-
     f = sim_train_matrix,
     time = times, 
     fpca_method = "jfpca",
-    optim_method = "DP"
+    optim_method = "DPo"
   )
 test_transformed_jfpca <-
   veesa::prep_testing_data(
     f = sim_test_matrix,
     time = times,
     train_prep = train_transformed_jfpca,
-    optim_method = "DP"
+    optim_method = "DPo"
   )
 
 # Response variable
@@ -208,7 +225,6 @@ set.seed(20211130)
 pfi_jfpca = veesa::compute_pfi(x = rf_jfpca_df |> dplyr::select(-x1), y = rf_jfpca_df$x1, f = rf_jfpca, K = 10, metric = "nmse")
 
 # PFI results 
-library(ggplot2)
 plot_pfi <-
   data.frame(pfi = pfi_jfpca$pfi) |>
   dplyr::mutate(pc = 1:dplyr::n()) |>
@@ -234,8 +250,10 @@ plot_pcdirs <-
   fpca_method = "jfpca",
   nrow = 2
 ) +
+  scale_color_manual(values = sort(color_pal, decreasing = T)) +
   labs(title = "Top PC for Joint fPCA")
 
 # Join plots
-cowplot::plot_grid(plot_pfi, plot_pcdirs)
+library(patchwork)
+plot_pfi / (plot_sim + plot_pcdirs)
 ```
