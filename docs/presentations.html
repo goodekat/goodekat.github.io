@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,8 +62,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -90,7 +98,35 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -99,52 +135,54 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Katherine Goode</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./papers.html">
- <span class="menu-text">Papers</span></a>
+    <a class="nav-link" href="./papers.html"> 
+<span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./presentations.html" aria-current="page">
- <span class="menu-text">Presentations</span></a>
+    <a class="nav-link active" href="./presentations.html" aria-current="page"> 
+<span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html">
- <span class="menu-text">Software</span></a>
+    <a class="nav-link" href="./software.html"> 
+<span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/goodekat"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/goodekat"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/katherine-goode-363517a9/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/katherine-goode-363517a9/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://scholar.google.com/citations?hl=en&amp;user=yD_b79UAAAAJ"><i class="bi bi-google" role="img">
+    <a class="nav-link" href="https://scholar.google.com/citations?hl=en&amp;user=yD_b79UAAAAJ"> <i class="bi bi-google" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -173,7 +211,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 
 
@@ -181,575 +221,600 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1695967200000" data-listing-file-modified-sort="1696264759467" data-listing-reading-time-sort="1.07">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1712124000000" data-listing-file-modified-sort="1711485204381" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
 <div class="thumbnail">
-<p><a href="./posts/2023-09-29.html"> <img src="https://goodekat.github.io/presentations/2023-acasa/website-pic.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2024-04-03.html" class="no-external"></a></p><a href="./posts/2024-04-03.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2023-acasa/website-pic.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-04-03.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-09-29.html">
 <h3 class="no-anchor listing-title">
-Characterizing climate pathways using feature importance on echo state networks
+<a href="./posts/2024-04-03.html" class="no-external">Characterizing climate pathways using echo state networks and feature importance</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2024-04-03.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk given for the annual meeting of the Albuquerque Chapter of the ASA in Santa Fe, New Mexico.</em>
+<a href="./posts/2024-04-03.html" class="no-external"><em>Talk given for the statistics department seminar at Montana State University.</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-04-03.html" class="no-external">
+<div class="listing-date">
+Apr 3, 2024
 </div>
 </a>
 </div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1695967200000" data-listing-file-modified-sort="1695936196160" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="214">
+<div class="thumbnail">
+<p><a href="./posts/2023-09-29.html" class="no-external"></a></p><a href="./posts/2023-09-29.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2023-acasa/website-pic.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-09-29.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-09-29.html" class="no-external">Characterizing climate pathways using feature importance on echo state networks</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-09-29.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-09-29.html" class="no-external"><em>Talk given for the annual meeting of the Albuquerque Chapter of the ASA in Santa Fe, New Mexico.</em></a>
+</div>
+</div>
 <div class="metadata">
-<a href="./posts/2023-09-29.html">
+<a href="./posts/2023-09-29.html" class="no-external">
 <div class="listing-date">
 Sep 29, 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1691474400000" data-listing-file-modified-sort="1696264759466" data-listing-reading-time-sort="1.09">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1691474400000" data-listing-file-modified-sort="1695933412451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
 <div class="thumbnail">
-<p><a href="./posts/2023-08-08.html"> <img src="https://goodekat.github.io/presentations/2023-jsm/figs/merra2_heatmap.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2023-08-08.html" class="no-external"></a></p><a href="./posts/2023-08-08.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2023-jsm/figs/merra2_heatmap.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-08-08.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-08-08.html">
 <h3 class="no-anchor listing-title">
-Characterizing climate pathways using feature importance on echo state networks
+<a href="./posts/2023-08-08.html" class="no-external">Characterizing climate pathways using feature importance on echo state networks</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-08-08.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk given at JSM in Toronto, Canada in the topic-contributed session ‘Deep learning for climate change: forecasts, mitigation, and adaption’</em>
+<a href="./posts/2023-08-08.html" class="no-external"><em>Talk given at JSM in Toronto, Canada in the topic-contributed session ‘Deep learning for climate change: forecasts, mitigation, and adaption’</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-08-08.html">
+<a href="./posts/2023-08-08.html" class="no-external">
 <div class="listing-date">
 Aug 8, 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1687413600000" data-listing-file-modified-sort="1696264759466" data-listing-reading-time-sort="1.025">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1687413600000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="205">
 <div class="thumbnail">
-<p><a href="./posts/2023-06-22.html"> <img src="https://goodekat.github.io/presentations/2023-siam-gs/figs/merra2_fi.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2023-06-22.html" class="no-external"></a></p><a href="./posts/2023-06-22.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2023-siam-gs/figs/merra2_fi.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-06-22.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-06-22.html">
 <h3 class="no-anchor listing-title">
-Feature Importance with Deep Echo State Models
+<a href="./posts/2023-06-22.html" class="no-external">Feature Importance with Deep Echo State Models</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-06-22.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk given at SIAM-GS in Bergen, Norway.</em>
+<a href="./posts/2023-06-22.html" class="no-external"><em>Talk given at SIAM-GS in Bergen, Norway.</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-06-22.html">
+<a href="./posts/2023-06-22.html" class="no-external">
 <div class="listing-date">
 Jun 22, 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1657519200000" data-listing-file-modified-sort="1696264759465" data-listing-reading-time-sort="0.095">
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1657519200000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19">
 <div class="thumbnail">
-<p><a href="./posts/2022-07-11.html"> <img src="https://goodekat.github.io/presentations/2022-trace-plots/fig-static/penguin-rep-trees-with-var.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2022-07-11.html" class="no-external"></a></p><a href="./posts/2022-07-11.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2022-trace-plots/fig-static/penguin-rep-trees-with-var.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2022-07-11.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2022-07-11.html">
 <h3 class="no-anchor listing-title">
-Tracing Trees: Visualizing Random Forest Tree Variability with Trace Plots
+<a href="./posts/2022-07-11.html" class="no-external">Tracing Trees: Visualizing Random Forest Tree Variability with Trace Plots</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2022-07-11.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk given at Sandia National Labs.</em>
+<a href="./posts/2022-07-11.html" class="no-external"><em>Talk given at Sandia National Labs.</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2022-07-11.html">
+<a href="./posts/2022-07-11.html" class="no-external">
 <div class="listing-date">
 Jul 11, 2022
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1618552800000" data-listing-file-modified-sort="1696264759465" data-listing-reading-time-sort="0.06">
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1618552800000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
 <div class="thumbnail">
-<p><a href="./posts/2021-04-16.html"> <img src="https://goodekat.github.io/presentations/2021-lunchinatoRs-shiny-fish/figures/app.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2021-04-16.html" class="no-external"></a></p><a href="./posts/2021-04-16.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2021-lunchinatoRs-shiny-fish/figures/app.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2021-04-16.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2021-04-16.html">
 <h3 class="no-anchor listing-title">
-WhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics
+<a href="./posts/2021-04-16.html" class="no-external">WhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2021-04-16.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk given to the ISU LunchinatoRs.</em>
+<a href="./posts/2021-04-16.html" class="no-external"><em>Talk given to the ISU LunchinatoRs.</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2021-04-16.html">
+<a href="./posts/2021-04-16.html" class="no-external">
 <div class="listing-date">
 Apr 16, 2021
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1617256800000" data-listing-file-modified-sort="1696264759464" data-listing-reading-time-sort="0.825">
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1617256800000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="165">
 <div class="thumbnail">
-<p><a href="./posts/2021-04-01.html"> <img src="https://goodekat.github.io/presentations/2021-isugg-trace-plots/figures/bullet-rf-small.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2021-04-01.html" class="no-external"></a></p><a href="./posts/2021-04-01.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2021-isugg-trace-plots/figures/bullet-rf-small.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2021-04-01.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2021-04-01.html">
 <h3 class="no-anchor listing-title">
-Tracing Trees: Visualizing Variability in the Architecture of Random Forest Trees Using Extensions of Trace Plots
+<a href="./posts/2021-04-01.html" class="no-external">Tracing Trees: Visualizing Variability in the Architecture of Random Forest Trees Using Extensions of Trace Plots</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2021-04-01.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for ISU Graphics Group.</em>
+<a href="./posts/2021-04-01.html" class="no-external"><em>Talk for ISU Graphics Group.</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2021-04-01.html">
+<a href="./posts/2021-04-01.html" class="no-external">
 <div class="listing-date">
 Apr 1, 2021
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1614236400000" data-listing-file-modified-sort="1696264759464" data-listing-reading-time-sort="1.175">
+<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1614236400000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="235">
 <div class="thumbnail">
-<p><a href="./posts/2021-02-25.html"> <img src="https://goodekat.github.io/presentations/2021-isugg-shiny-fish/figures/egg-characteristics.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2021-02-25.html" class="no-external"></a></p><a href="./posts/2021-02-25.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2021-isugg-shiny-fish/figures/egg-characteristics.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2021-02-25.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2021-02-25.html">
 <h3 class="no-anchor listing-title">
-WhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics
+<a href="./posts/2021-02-25.html" class="no-external">WhoseEgg: A Shiny App for Identifying Invasive Carp Using Random Forests and Fish Egg Characteristics</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2021-02-25.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for ISU Graphics Group.</em>
+<a href="./posts/2021-02-25.html" class="no-external"><em>Talk for ISU Graphics Group.</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2021-02-25.html">
+<a href="./posts/2021-02-25.html" class="no-external">
 <div class="listing-date">
 Feb 25, 2021
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1605855600000" data-listing-file-modified-sort="1696264759464" data-listing-reading-time-sort="0.105">
+<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1605855600000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
 <div class="thumbnail">
-<p><a href="./posts/2020-11-20.html"> <img src="./images/2020-11-20.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2020-11-20.html" class="no-external"></a></p><a href="./posts/2020-11-20.html" class="no-external">
+<p><img src="./images/2020-11-20.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020-11-20.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020-11-20.html">
 <h3 class="no-anchor listing-title">
-Explaining Black Box Machine Learning Models
+<a href="./posts/2020-11-20.html" class="no-external">Explaining Black Box Machine Learning Models</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2020-11-20.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk given to the ACS Data Analytics team at Autodesk.</em>
+<a href="./posts/2020-11-20.html" class="no-external"><em>Talk given to the ACS Data Analytics team at Autodesk.</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2020-11-20.html">
+<a href="./posts/2020-11-20.html" class="no-external">
 <div class="listing-date">
 Nov 20, 2020
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1605510000000" data-listing-file-modified-sort="1696264759464" data-listing-reading-time-sort="0.105">
+<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1605510000000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
 <div class="thumbnail">
-<p><a href="./posts/2020-11-16.html"> <img src="https://goodekat.github.io/presentations/2020-isu-delta-method/slides_files/figure-html/unnamed-chunk-14-1.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2020-11-16.html" class="no-external"></a></p><a href="./posts/2020-11-16.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2020-isu-delta-method/slides_files/figure-html/unnamed-chunk-14-1.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020-11-16.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020-11-16.html">
 <h3 class="no-anchor listing-title">
-The Delta Method and Applications to Mark Recapture Models
+<a href="./posts/2020-11-16.html" class="no-external">The Delta Method and Applications to Mark Recapture Models</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2020-11-16.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for Bob Klaver’s ISU Ecology 607 class.</em>
+<a href="./posts/2020-11-16.html" class="no-external"><em>Talk for Bob Klaver’s ISU Ecology 607 class.</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2020-11-16.html">
+<a href="./posts/2020-11-16.html" class="no-external">
 <div class="listing-date">
 Nov 16, 2020
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1605337200000" data-listing-file-modified-sort="1696264759463" data-listing-reading-time-sort="1.65">
+<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1605337200000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="330">
 <div class="thumbnail">
-<p><a href="./posts/2020-11-14.html"> <img src="./images/2020-11-14.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2020-11-14.html" class="no-external"></a></p><a href="./posts/2020-11-14.html" class="no-external">
+<p><img src="./images/2020-11-14.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020-11-14.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020-11-14.html">
 <h3 class="no-anchor listing-title">
-Explaining Neural Networks with Functional Data Using PCA and Feature Importance
+<a href="./posts/2020-11-14.html" class="no-external">Explaining Neural Networks with Functional Data Using PCA and Feature Importance</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2020-11-14.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for AAAI 2020 Fall Symposium on AI in the Government and Public Sector</em>
+<a href="./posts/2020-11-14.html" class="no-external"><em>Talk for AAAI 2020 Fall Symposium on AI in the Government and Public Sector</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2020-11-14.html">
+<a href="./posts/2020-11-14.html" class="no-external">
 <div class="listing-date">
 Nov 14, 2020
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1601618400000" data-listing-file-modified-sort="1696264759463" data-listing-reading-time-sort="0.635">
+<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1601618400000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="127">
 <div class="thumbnail">
-<p><a href="./posts/2020-10-02.html"> <img src="https://goodekat.github.io/consulting-at-lunchinatoRs/img/r_help.jpeg" class="thumnail-image"> </a></p>
+<p><a href="./posts/2020-10-02.html" class="no-external"></a></p><a href="./posts/2020-10-02.html" class="no-external">
+<p><img src="https://goodekat.github.io/consulting-at-lunchinatoRs/img/r_help.jpeg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020-10-02.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020-10-02.html">
 <h3 class="no-anchor listing-title">
-A Statistical Consultant’s Perspective on Getting Help with R
+<a href="./posts/2020-10-02.html" class="no-external">A Statistical Consultant’s Perspective on Getting Help with R</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2020-10-02.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk given with AES Statistical Consultants (Haoyan Hu, Miranda Tilton, and Yudi Zhang) at ISU LunchinatoRs</em>
+<a href="./posts/2020-10-02.html" class="no-external"><em>Talk given with AES Statistical Consultants (Haoyan Hu, Miranda Tilton, and Yudi Zhang) at ISU LunchinatoRs</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2020-10-02.html">
+<a href="./posts/2020-10-02.html" class="no-external">
 <div class="listing-date">
 Oct 2, 2020
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1600927200000" data-listing-file-modified-sort="1696264759463" data-listing-reading-time-sort="0.965">
+<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1600927200000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="193">
 <div class="thumbnail">
-<p><a href="./posts/2020-09-24.html"> <img src="https://goodekat.github.io/presentations/2020-isugg-fpca-pfi/website-figure.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2020-09-24.html" class="no-external"></a></p><a href="./posts/2020-09-24.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2020-isugg-fpca-pfi/website-figure.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020-09-24.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020-09-24.html">
 <h3 class="no-anchor listing-title">
-Explaining Neural Network Predictions for Functional Data Using Principal Component Analysis and Feature Importance
+<a href="./posts/2020-09-24.html" class="no-external">Explaining Neural Network Predictions for Functional Data Using Principal Component Analysis and Feature Importance</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2020-09-24.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for ISU graphics group</em>
+<a href="./posts/2020-09-24.html" class="no-external"><em>Talk for ISU graphics group</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2020-09-24.html">
+<a href="./posts/2020-09-24.html" class="no-external">
 <div class="listing-date">
 Sep 24, 2020
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1586498400000" data-listing-file-modified-sort="1696264759463" data-listing-reading-time-sort="0.59">
+<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1586498400000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="118">
 <div class="thumbnail">
-<p><a href="./posts/2020-04-10.html"> <img src="https://goodekat.github.io/presentations/2020-isugg-iml/slides_files/figure-html/unnamed-chunk-24-1.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2020-04-10.html" class="no-external"></a></p><a href="./posts/2020-04-10.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2020-isugg-iml/slides_files/figure-html/unnamed-chunk-24-1.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020-04-10.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020-04-10.html">
 <h3 class="no-anchor listing-title">
-An Overview of Visualization Techniques for Explainable Machine Learning
+<a href="./posts/2020-04-10.html" class="no-external">An Overview of Visualization Techniques for Explainable Machine Learning</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2020-04-10.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for ISU graphics group</em>
+<a href="./posts/2020-04-10.html" class="no-external"><em>Talk for ISU graphics group</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2020-04-10.html">
+<a href="./posts/2020-04-10.html" class="no-external">
 <div class="listing-date">
 Apr 10, 2020
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1575356400000" data-listing-file-modified-sort="1696264759462" data-listing-reading-time-sort="0.825">
+<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1575356400000" data-listing-file-modified-sort="1695933412450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="165">
 <div class="thumbnail">
-<p><a href="./posts/2019-12-03.html"> <img src="https://goodekat.github.io/presentations/2019-sandia-lime-diagnostics/figures/lime-bad.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2019-12-03.html" class="no-external"></a></p><a href="./posts/2019-12-03.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2019-sandia-lime-diagnostics/figures/lime-bad.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-12-03.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-12-03.html">
 <h3 class="no-anchor listing-title">
-Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations
+<a href="./posts/2019-12-03.html" class="no-external">Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-12-03.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk given to the statistics department at Sandia National Laboratories</em>
+<a href="./posts/2019-12-03.html" class="no-external"><em>Talk given to the statistics department at Sandia National Laboratories</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-12-03.html">
+<a href="./posts/2019-12-03.html" class="no-external">
 <div class="listing-date">
 Dec 3, 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1572501600000" data-listing-file-modified-sort="1696264759462" data-listing-reading-time-sort="0.425">
+<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1572501600000" data-listing-file-modified-sort="1695933412449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
 <div class="thumbnail">
-<p><a href="./posts/2019-10-31.html"> <img src="https://goodekat.github.io/presentations/2019-isugg-gganimate-spooky/slides_files/figure-html/revealout6-1.gif" class="thumnail-image"> </a></p>
+<p><a href="./posts/2019-10-31.html" class="no-external"></a></p><a href="./posts/2019-10-31.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2019-isugg-gganimate-spooky/slides_files/figure-html/revealout6-1.gif" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-10-31.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-10-31.html">
 <h3 class="no-anchor listing-title">
-gganimate (with a spooky twist)
+<a href="./posts/2019-10-31.html" class="no-external">gganimate (with a spooky twist)</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-10-31.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for ISU graphics group</em>
+<a href="./posts/2019-10-31.html" class="no-external"><em>Talk for ISU graphics group</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-10-31.html">
+<a href="./posts/2019-10-31.html" class="no-external">
 <div class="listing-date">
 Oct 31, 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1570168800000" data-listing-file-modified-sort="1696264759462" data-listing-reading-time-sort="0.045">
+<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1570168800000" data-listing-file-modified-sort="1695933412449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
 <div class="thumbnail">
-<p><a href="./posts/2019-10-04.html"> <img src="https://goodekat.github.io/presentations/2019-lunchinatoRs-ggResidpanel/slides_files/figure-html/unnamed-chunk-15-1.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2019-10-04.html" class="no-external"></a></p><a href="./posts/2019-10-04.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2019-lunchinatoRs-ggResidpanel/slides_files/figure-html/unnamed-chunk-15-1.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-10-04.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-10-04.html">
 <h3 class="no-anchor listing-title">
-ggResidpanel: Easy Creation of Panels of Diagnostics Plots
+<a href="./posts/2019-10-04.html" class="no-external">ggResidpanel: Easy Creation of Panels of Diagnostics Plots</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-10-04.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Presentation for ISU lunchinatoRs</em>
+<a href="./posts/2019-10-04.html" class="no-external"><em>Presentation for ISU lunchinatoRs</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-10-04.html">
+<a href="./posts/2019-10-04.html" class="no-external">
 <div class="listing-date">
 Oct 4, 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1564380000000" data-listing-file-modified-sort="1696264759462" data-listing-reading-time-sort="0.93">
+<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1564380000000" data-listing-file-modified-sort="1695933412449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="186">
 <div class="thumbnail">
-<p><a href="./posts/2019-07-29.html"> <img src="./images/2019-07-29.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2019-07-29.html" class="no-external"></a></p><a href="./posts/2019-07-29.html" class="no-external">
+<p><img src="./images/2019-07-29.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-07-29.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-07-29.html">
 <h3 class="no-anchor listing-title">
-Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations from Random Forests
+<a href="./posts/2019-07-29.html" class="no-external">Visual Diagnostics of a Model Explainer: Tools for the Assessment of LIME Explanations from Random Forests</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-07-29.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Speed presentation and e-poster for JSM 2019</em>
+<a href="./posts/2019-07-29.html" class="no-external"><em>Speed presentation and e-poster for JSM 2019</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-07-29.html">
+<a href="./posts/2019-07-29.html" class="no-external">
 <div class="listing-date">
 Jul 29, 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1561010400000" data-listing-file-modified-sort="1696264759462" data-listing-reading-time-sort="0.925">
+<div class="quarto-post image-right" data-index="18" data-listing-date-sort="1561010400000" data-listing-file-modified-sort="1695933412449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
 <div class="thumbnail">
-<p><a href="./posts/2019-06-20.html"> <img src="https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides_files/figure-html/unnamed-chunk-14-1.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2019-06-20.html" class="no-external"></a></p><a href="./posts/2019-06-20.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2019-nccc-lmm_residuals/slides_files/figure-html/unnamed-chunk-14-1.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-06-20.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-06-20.html">
 <h3 class="no-anchor listing-title">
-A Review and Discussion of Residuals for Mixed Models
+<a href="./posts/2019-06-20.html" class="no-external">A Review and Discussion of Residuals for Mixed Models</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-06-20.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for NCCC-170 meeting 2019</em>
+<a href="./posts/2019-06-20.html" class="no-external"><em>Talk for NCCC-170 meeting 2019</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-06-20.html">
+<a href="./posts/2019-06-20.html" class="no-external">
 <div class="listing-date">
 Jun 20, 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-listing-date-sort="1557727200000" data-listing-file-modified-sort="1696264759461" data-listing-reading-time-sort="0.715">
+<div class="quarto-post image-right" data-index="19" data-listing-date-sort="1557727200000" data-listing-file-modified-sort="1695933412449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="143">
 <div class="thumbnail">
-<p><a href="./posts/2019-05-13.html"> <img src="./images/2019-05-13.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2019-05-13.html" class="no-external"></a></p><a href="./posts/2019-05-13.html" class="no-external">
+<p><img src="./images/2019-05-13.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-05-13.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-05-13.html">
 <h3 class="no-anchor listing-title">
-Using LIME to Interpret a Random Forest Model with an Application to Bullet Matching Data
+<a href="./posts/2019-05-13.html" class="no-external">Using LIME to Interpret a Random Forest Model with an Application to Bullet Matching Data</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-05-13.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Poster for Midwest Statistical Machine Learning Colloquium</em>
+<a href="./posts/2019-05-13.html" class="no-external"><em>Poster for Midwest Statistical Machine Learning Colloquium</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-05-13.html">
+<a href="./posts/2019-05-13.html" class="no-external">
 <div class="listing-date">
 May 13, 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-listing-date-sort="1551423600000" data-listing-file-modified-sort="1696264759461" data-listing-reading-time-sort="0.555">
+<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1551423600000" data-listing-file-modified-sort="1695933412449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
 <div class="thumbnail">
-<p><a href="./posts/2019-03-01.html"> <img src="https://goodekat.github.io/presentations/2019-isugg-limetorf/figures/app.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2019-03-01.html" class="no-external"></a></p><a href="./posts/2019-03-01.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2019-isugg-limetorf/figures/app.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2019-03-01.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-03-01.html">
 <h3 class="no-anchor listing-title">
-An Application of LIME to a Random Forest Model
+<a href="./posts/2019-03-01.html" class="no-external">An Application of LIME to a Random Forest Model</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-03-01.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for ISU graphics group</em>
+<a href="./posts/2019-03-01.html" class="no-external"><em>Talk for ISU graphics group</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-03-01.html">
+<a href="./posts/2019-03-01.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1539324000000" data-listing-file-modified-sort="1696264759461" data-listing-reading-time-sort="0.915">
+<div class="quarto-post image-right" data-index="21" data-listing-date-sort="1539324000000" data-listing-file-modified-sort="1695933412449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
 <div class="thumbnail">
-<p><a href="./posts/2018-10-12.html"> <img src="https://goodekat.github.io/presentations/2018-isugg-ggResidpanel/figures/gg_resid_sticker4.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2018-10-12.html" class="no-external"></a></p><a href="./posts/2018-10-12.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2018-isugg-ggResidpanel/figures/gg_resid_sticker4.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2018-10-12.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2018-10-12.html">
 <h3 class="no-anchor listing-title">
-Introducing ggResidpanel: An R Package for Easy Visualization of Residuals
+<a href="./posts/2018-10-12.html" class="no-external">Introducing ggResidpanel: An R Package for Easy Visualization of Residuals</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2018-10-12.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for ISU graphics group with Katie Rey</em>
+<a href="./posts/2018-10-12.html" class="no-external"><em>Talk for ISU graphics group with Katie Rey</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2018-10-12.html">
+<a href="./posts/2018-10-12.html" class="no-external">
 <div class="listing-date">
 Oct 12, 2018
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-listing-date-sort="1525759200000" data-listing-file-modified-sort="1696264759461" data-listing-reading-time-sort="0.945">
+<div class="quarto-post image-right" data-index="22" data-listing-date-sort="1525759200000" data-listing-file-modified-sort="1695933412449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="189">
 <div class="thumbnail">
-<p><a href="./posts/2018-05-08.html"> <img src="./images/2018-05-08.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2018-05-08.html" class="no-external"></a></p><a href="./posts/2018-05-08.html" class="no-external">
+<p><img src="./images/2018-05-08.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2018-05-08.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2018-05-08.html">
 <h3 class="no-anchor listing-title">
-Introducing ggResidpanel: An R Package for Easy Visualization of Residuals
+<a href="./posts/2018-05-08.html" class="no-external">Introducing ggResidpanel: An R Package for Easy Visualization of Residuals</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2018-05-08.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Poster for Kansas State University Conference on Applied Statistics in Agriculture presented with Katie Rey</em>
+<a href="./posts/2018-05-08.html" class="no-external"><em>Poster for Kansas State University Conference on Applied Statistics in Agriculture presented with Katie Rey</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2018-05-08.html">
+<a href="./posts/2018-05-08.html" class="no-external">
 <div class="listing-date">
 May 8, 2018
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-listing-date-sort="1510210800000" data-listing-file-modified-sort="1696264759461" data-listing-reading-time-sort="0.52">
+<div class="quarto-post image-right" data-index="23" data-listing-date-sort="1510210800000" data-listing-file-modified-sort="1695933412449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="104">
 <div class="thumbnail">
-<p><a href="./posts/2017-11-09.html"> <img src="https://goodekat.github.io/presentations/2017-isugg-lime/figures/training_distributions.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2017-11-09.html" class="no-external"></a></p><a href="./posts/2017-11-09.html" class="no-external">
+<p><img src="https://goodekat.github.io/presentations/2017-isugg-lime/figures/training_distributions.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2017-11-09.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2017-11-09.html">
 <h3 class="no-anchor listing-title">
-Interpreting Predictions from Black Box Models with LIME
+<a href="./posts/2017-11-09.html" class="no-external">Interpreting Predictions from Black Box Models with LIME</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2017-11-09.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<em>Talk for ISU graphics group</em>
+<a href="./posts/2017-11-09.html" class="no-external"><em>Talk for ISU graphics group</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2017-11-09.html">
+<a href="./posts/2017-11-09.html" class="no-external">
 <div class="listing-date">
 Nov 9, 2017
 </div>
@@ -788,9 +853,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -826,10 +905,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -839,8 +917,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -855,6 +942,238 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -895,6 +1214,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
