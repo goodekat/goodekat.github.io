@@ -1,7 +1,7 @@
 ---
 title: "Characterizing climate pathways using echo state networks and feature importance"
 date: "April 3, 2024"
-image: "https://goodekat.github.io/presentations/2023-acasa/website-pic.png"
+image: "https://goodekat.github.io/presentations/2024-msu-esn/figs/merra2_fi.png"
 ---
 
 *Talk given for the statistics department seminar at Montana State University.*
