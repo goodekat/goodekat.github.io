@@ -1,7 +1,7 @@
 ---
 title: "Characterizing climate pathways using echo state networks and feature importance"
 date: "June 11, 2024"
-image: "https://goodekat.github.io/presentations/2024-wnar/figs/merra2_fi.png"
+image: "https://goodekat.github.io/presentations/2024-wnar/figs/esn-spatio-temp.png"
 ---
 
 *Talk given at [WNAR in Fort Collins, CO](https://wnar.org/wnar2024)*
@@ -10,4 +10,4 @@ Climate change due to human activity is considered a serious threat to our futur
 
 [Slides](https://goodekat.github.io/presentations/2024-wnar/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2024-wnar)
 
-<center>![](https://goodekat.github.io/presentations/2024-msu-esn/figs/merra2_fi.png){width="100%lk"}</center>
+<center>![](https://goodekat.github.io/presentations/2024-msu-esn/figs/esn-spatio-temp.png){width="100%lk"}</center>
