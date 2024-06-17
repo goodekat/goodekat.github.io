@@ -1,0 +1,13 @@
+---
+title: "Characterizing climate pathways using echo state networks and feature importance"
+date: "June 11, 2024"
+image: "https://goodekat.github.io/presentations/2024-wnar/figs/merra2_fi.png"
+---
+
+*Talk given at [WNAR in Fort Collins, CO](https://wnar.org/wnar2024)*
+
+Climate change due to human activity is considered a serious threat to our future. Intervention methods that aim to reduce the negative impacts of climate change, such as stratospheric aerosol injections, are becoming a real possibility. However, the downstream effects of such actions on the climate system are not well understood. The development of algorithmic methods for understanding the impacts of such events could help inform decision makers. Echo state network (ESN) models are a data driven option for modeling climate impacts. ESN are known for modeling dynamic systems and provide increased computational efficiency over other statistical methods. However, the ESN parameters are not interpretable. We develop a methodology for computing ESN temporal variable importance in the context of spatio-temporal data. We apply our method to quantify relationships between climate variables associated with the 1991 eruption of Mount Pinatubo (i.e., a natural stratospheric aerosol injection). In particular, we forecast temperatures given lagged values of other relevant climate variables such as aerosol optical depth. We use variable importance to understand the temporally evolving relationships between temperature and the predictor variables.
+
+[Slides](https://goodekat.github.io/presentations/2024-wnar/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2024-wnar)
+
+<center>![](https://goodekat.github.io/presentations/2024-msu-esn/figs/merra2_fi.png){width="100%lk"}</center>
