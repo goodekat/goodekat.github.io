@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-06-22">
+<meta name="dcterms.date" content="2024-08-06">
 
-<title>Katherine Goode - Feature Importance with Deep Echo State Models</title>
+<title>Katherine Goode - A framework for evaluating the maturity level of machine learning explanations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Feature Importance with Deep Echo State Models</h1>
+<h1 class="title">A framework for evaluating the maturity level of machine learning explanations</h1>
 </div>
 
 
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 22, 2023</p>
+      <p class="date">August 6, 2024</p>
     </div>
   </div>
   
@@ -162,11 +162,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Talk given at SIAM-GS in Bergen, Norway.</em></p>
-<p>Climate change due to human activity is considered a serious threat to our future. Climate intervention methods, such as solar radiation management, to reduce the negative impacts of climate change are becoming a real possibility. The development of algorithmic methods for understanding the short-term and long-term impacts of such events on climate change will help inform decision makers. Deep ensemble echo-state network (D-EESN) models may provide a route to assist with modeling the dynamic climate impacts. D-EESN models offer increased computational efficiency over other statistical spatio-temporal methods and provide uncertainty quantification through bootstrapping. However, D-EESN models are currently only able to provide forecasts and lack general interpretability. We are interested in developing methodology for understanding the relationships between the D-EESN inputs and outputs to help identify early indicators of significant climate impacts. We propose a variable importance technique for D-EESNs that returns the temporal importance of an input variable on forecasts. We demonstrate our methodology on reanalysis data that includes the 1991 eruption of Mount Pinatubo. We forecast stratospheric temperature given lagged stratospheric temperature and aerosol optical depth, and we use the proposed variable importance to capture the relationships between variables and how those relationships change over time.</p>
-<p><a href="https://goodekat.github.io/presentations/2023-siam-gs/slides.html">Slides</a> <a href="https://github.com/goodekat/presentations/tree/master/2023-siam-gs">GitLab</a></p>
+<p><em>Talk given at <a href="https://ww2.amstat.org/meetings/jsm/2024/">JSM 2024</a></em></p>
+<p>Scientific computational models are designed and implemented to represent known physical relationships of engineered systems. In situations where mechanistic equations are unknown or the computational burden is too expensive, machine learning (ML) techniques are becoming commonly employed in lieu of, to complement, or as surrogates for classic computational models to uncover these relationships and handle computational challenges. We refer to this fusion of traditional mathematical models with machine learning models as scientific machine learning (SciML). When SciML is used in high consequence applications, the ability to interpret the model is essential for assessment and understanding. However, many ML models are not inherently interpretable. Explainability techniques are intended to provide insight into “black box” ML models, but as with the models, it is imperative that explanations used in high consequence applications are accurate and meaningful. For this reason, we propose that ML explanations used to aid SciML that is deployed to support high consequence decisions be assessed via a framework of maturity level requirements. We draw inspiration from the Predictive Capability Maturity Model (PCMM) currently used at Sandia National Labs to assess the credibility of scientific computational models. The PCMM was specifically developed to assess scientific computational models for high consequence applications and, thus, provides a solid framework to build on for SciML maturity levels. In this talk, we will review PCMM and discuss our work towards developing maturity level requirements for ML explanations. While our efforts are focused on SciML, we believe that such evaluation requirements are relevant more broadly for ML, and we hope to provoke further discussion on the assessment of ML explainability.</p>
+<p><em>SNL is managed and operated by NTESS under DOE NNSA contract DE-NA0003525. SAND2024-01386C.</em></p>
+<p><a href="https://goodekat.github.io/presentations/2024-jsm/slides.pdf">Slides</a> <a href="https://github.com/goodekat/presentations/tree/master/2024-jsm">GitLab</a></p>
 <center>
-<img src="https://goodekat.github.io/presentations/2023-siam-gs/figs/merra2_fi.png" class="img-fluid" style="width:95.0%">
+<img src="../images/2024-08-06.png" class="img-fluid">
 </center>
 
 
