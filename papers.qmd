@@ -6,9 +6,9 @@ title: "Papers"
 
 ## 2025
 
-**Goode, K.**, Tucker, J. D., Ries, D., & Hofmann, H. (2025). An explainable pipeline for machine learning with functional data. Submitted to Annals of Applied Statistics.
+**Goode, K.**, Tucker, J. D., Ries, D., & Hofmann, H. (2025). An explainable pipeline for machine learning with functional data. Preprint. [https://arxiv.org/abs/2501.07602](https://arxiv.org/abs/2501.07602).
 
-Ries, D., **Goode, K.**, McClernon, K., and Hillman, B.: Using feature importance as exploratory data analysis tool on earth system models, Geosci. Model Dev. Discuss. Preprint, [https://gmd.copernicus.org/preprints/gmd-2024-133/](https://gmd.copernicus.org/preprints/gmd-2024-133/), in review.
+Ries, D., **Goode, K.**, McClernon, K., and Hillman, B.: Using feature importance as an exploratory data analysis tool on Earth system models, Geosci. Model Dev., 18, 1041–1065, [https://doi.org/10.5194/gmd-18-1041-2025](https://doi.org/10.5194/gmd-18-1041-2025), 2025.
 
 ## 2024
 
