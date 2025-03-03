@@ -10,4 +10,4 @@ Climate change due to human activity is considered a serious threat to our futur
 
 [Slides](https://goodekat.github.io/presentations/2024-wnar/slides.html) [GitLab](https://github.com/goodekat/presentations/tree/master/2024-wnar)
 
-<center>![](https://goodekat.github.io/presentations/2024-msu-esn/figs/esn-spatio-temp.png){width="100%lk"}</center>
+<center>![](https://goodekat.github.io/presentations/2024-wnar/figs/esn-spatio-temp.png){width="100%lk"}</center>

@@ -1,0 +1,19 @@
+---
+title: "Evaluating the Maturity Level of Scientific Machine Learning Explainability"
+date: "February 26, 2025"
+image: "../images/2025-02-26.png"
+---
+
+*Poster presented at [CoDA 2025](https://web.cvent.com/event/7845571b-b15d-418c-a24a-14468480c4ff/summary)*
+
+Scientific computational models use equations that capture known physical relationships for tasks such as simulating engineering systems. In situations where variable relationships are unknown or the computational burden is too expensive, machine learning (ML) techniques are becoming commonly employed. We refer to this as scientific machine learning (SciML). If SciML is used in high consequence applications, the ability to interpret the model is required for assessment and understanding. However, many ML models are not inherently interpretable. Explainability techniques are intended to provide insight into “black box” ML models, but as with the models, it is imperative that explanations used in high consequence applications are accurate and meaningful. The Predictive Capability Maturity 
+Model was introduced for assessing the maturity levels of scientific computational models in extremely high consequence applications such as storage of nuclear waste. We draw on this framework to introduce maturity level requirements for ML explanations used in high consequence SciML. Furthermore, we explore approaches for quantitatively evaluating explanations to assist with determining the maturity level of explanations.
+
+*SNL is managed and operated by NTESS under DOE NNSA contract DE-NA0003525. SAND2025-00532A.*
+
+[Poster](https://goodekat.github.io/presentations/2025-coda/poster.pdf)
+
+<center>![](../images/2025-02-26.png){width="100%lk"}</center>
+
+
+
