@@ -1,19 +1,18 @@
 ---
-title: "Evaluating the Maturity Level of Scientific Machine Learning Explainability"
-date: "February 26, 2025"
-image: "../images/2025-02-26.png"
+title: "FORESTR: Searching for patterns in random forests"
+date: "March 12, 2025"
+image: "../images/2025-03-12.png"
 ---
 
-*Poster presented at [CoDA 2025](https://web.cvent.com/event/7845571b-b15d-418c-a24a-14468480c4ff/summary)*
+*Talk given at the University of Nebraska-Lincoln Statistics Department Seminar.*
 
-Scientific computational models use equations that capture known physical relationships for tasks such as simulating engineering systems. In situations where variable relationships are unknown or the computational burden is too expensive, machine learning (ML) techniques are becoming commonly employed. We refer to this as scientific machine learning (SciML). If SciML is used in high consequence applications, the ability to interpret the model is required for assessment and understanding. However, many ML models are not inherently interpretable. Explainability techniques are intended to provide insight into “black box” ML models, but as with the models, it is imperative that explanations used in high consequence applications are accurate and meaningful. The Predictive Capability Maturity 
-Model was introduced for assessing the maturity levels of scientific computational models in extremely high consequence applications such as storage of nuclear waste. We draw on this framework to introduce maturity level requirements for ML explanations used in high consequence SciML. Furthermore, we explore approaches for quantitatively evaluating explanations to assist with determining the maturity level of explanations.
+Random forests have become a popular tool for data driven predictions and, as a result, are used, or considered for use, in national security mission applications. While individual regression/decision trees are typically considered interpretable, random forests are inherently difficult to interpret due to their ensemble of trees. A lack of model transparency may be less than desirable in high-consequence applications. We aim to increase the interpretability of random forests by finding patterns in the ensemble of trees. As a starting point, we develop a new distance metric for quantifying the similarity between trees based on their topologies (i.e., shapes). We base the metric on a novel distance metric for graphs that is a proper mathematical distance, is invariant to transformations, has registration between graphs, and computes topological evolutions between graphs. The tree distance metric enables computations of tree statistics (e.g., a “mean” tree) and identification of tree clusters. We apply the developed methodology to a toy dataset and a mission relevant product inspection dataset, which demonstrates how the metric provides insight into random forests. Furthermore, we discuss limitations of the approach and ideas for future research.
 
-*SNL is managed and operated by NTESS under DOE NNSA contract DE-NA0003525. SAND2025-00532A.*
+*SNL is managed and operated by NTESS under DOE NNSA contract DE-NA0003525. SAND2025-02523A.*
 
-[Poster](https://goodekat.github.io/presentations/2025-coda/poster.pdf)
+[Slides](https://goodekat.github.io/presentations/2025-unl/slides.pdf)
 
-<center>![](../images/2025-02-26.png){width="100%lk"}</center>
+<center>![](../images/2025-03-12){width="100%lk"}</center>
 
 
 
