@@ -13,9 +13,5 @@ about:
 ::: {.column-page style="width: 90%"}
 ## Bio
 
-I am a statistician with research interests in explainable machine learning and data visualization. I have a PhD in statistics from [Iowa State University](https://www.stat.iastate.edu/), an M.S. in statistics from the [University of Wisconsin, Madison](https://stat.wisc.edu/), and a B.A. in mathematics from [Lawrence University](https://www.lawrence.edu/academics/college/mathematics). My PhD adviser was [Heike Hofmann](https://github.com/heike), and my dissertation focused on visualization techniques for explainability of machine learning ([Visual diagnostics for explaining machine learning models](https://dr.lib.iastate.edu/items/abac51d2-c05b-4ef2-90f5-03740ff5c682)). I currently work for [Sandia National Laboratories](https://www.sandia.gov/) as a research and development statistician.
-
--   [Resume](https://goodekat.github.io/cv/resume/goode.html)
--   [CV](https://goodekat.github.io/cv/cv/goode.pdf)
-
+I am a statistician with research interests in explainable machine learning and data visualization. I have a PhD in statistics from [Iowa State University](https://www.stat.iastate.edu/), an M.S. in statistics from the [University of Wisconsin, Madison](https://stat.wisc.edu/), and a B.A. in mathematics from [Lawrence University](https://www.lawrence.edu/academics/college/mathematics). My PhD adviser was [Dr. Heike Hofmann](https://github.com/heike), and my dissertation focused on visualization techniques for explainability of machine learning ([Visual diagnostics for explaining machine learning models](https://dr.lib.iastate.edu/items/abac51d2-c05b-4ef2-90f5-03740ff5c682)). I currently work for [Sandia National Laboratories](https://www.sandia.gov/) as a research and development statistician working on solutions for trustworthy ML/AI. See here for my [resume](https://goodekat.github.io/cv/resume/goode.html) and [CV](https://goodekat.github.io/cv/cv/goode.pdf).
 :::
