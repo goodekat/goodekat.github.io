@@ -13,6 +13,3 @@ Random forests have become a popular tool for data driven predictions and, as a 
 [Slides](https://goodekat.github.io/presentations/2025-unl/slides.pdf)
 
 <center>![](../images/2025-03-12){width="100%lk"}</center>
-
-
-
