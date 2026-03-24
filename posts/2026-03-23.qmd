@@ -13,4 +13,4 @@ All ML models are benchmarked against two standard baselines: a persistence mode
 
 [Slides](https://goodekat.github.io/presentations/2026-siam-uq/slides.html)
 
-<center>![](../images/2026-03-23.png){width="80%lk"}</center>
+<center>![](../images/2026-03-23.png){width="60%"}</center>
